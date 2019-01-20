@@ -1,0 +1,51 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "name"
+      ]
+    },
+    "utter_admissions_UG": {
+      "slots": []
+    },
+    "utter_admissions_R": {
+      "slots": []
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "utter_admissions_IR": {
+      "slots": []
+    },
+    "utter_thanks": {
+      "slots": []
+    },
+    "utter_rename": {
+      "slots": []
+    },
+    "utter_admissions_PG": {
+      "slots": []
+    },
+    "utter_IR_response": {
+      "slots": []
+    },
+    "utter_help_start": {
+      "slots": []
+    },
+    "utter_name": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.12.4",
+  "python": "3.6.0",
+  "max_histories": [
+    3,
+    3
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy"
+  ],
+  "trained_at": "20190120-122846"
+}

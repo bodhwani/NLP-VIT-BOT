@@ -1,0 +1,115 @@
+intents:
+- greet
+- goodbye
+- thanks
+- deny
+- name
+- deny
+- contact
+- affirm
+- international_relations
+- admissions
+- admissions_UG
+- admissions_PG
+- admissions_R
+
+entities:
+- name
+
+
+slots:
+  name:
+    type: text
+
+
+actions:
+- utter_name
+- utter_help_start
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- utter_name_check
+- utter_rename
+- utter_IR_response
+- utter_admissions_response
+- utter_admissions_clarification
+- utter_admissions_UG
+- utter_admissions_PG
+- utter_admissions_R
+- utter_admissions_IR
+
+templates:
+  utter_name:
+  - text: "Hey there! Tell me your name."
+
+  utter_rename:
+  - text: "Sorry, lets try again then! Tell me your name."
+
+  utter_IR_response:
+  - text: "The International Relations office is responsible for handling all the international tie-ups and MoUs with colleges worldwide. They also engage in helping students of our college get internships and foreign admissions after their studies here. The IR office also takes care of the students who come to our university from other countries by co-ordinating with all departments and making sure they have a very pleasant experience in our university.
+      Contact
+location_on 109, First Floor
+Dr. MGR block
+VIT,
+Vellore,
+Tamil Nadu - 632014
+phone +(91) 416 220 2131 / 2243118 
+Fax : +91-416-2243092
+  More at http://www.vit.ac.in/academics/internationalRelations"
+
+  utter_admissions_response:
+  - text: "
+Admissions
+The Admissions Office is in charge of handling all aspects regarding admissions to the various Undergraduate, Postgraduate and research scholar programmes. This includes preparation of the question paper for the VITEEE and VITMEE entrance exams. They also manage the paper correction, counselling and handle the formalities of the selected students.
+Contact
+location_on G-09, Ground Floor
+Dr. MGR block
+VIT ,
+Vellore,
+Tamil Nadu - 632014
+phone Under Graduate : +(91) 416 220 2157 / 2168 /: +(91) 416 330 5555 
+Post Graduate : +(91) 416 220 4600
+More at : http://www.vit.ac.in/admissions
+"
+  utter_admissions_UG:
+  - text: "
+UG Admissions 2019 - 2020
+More at : http://www.vit.ac.in/admissions/ug"
+
+  utter_admissions_PG:
+  - text: "
+PG Admissions
+In the post-graduation programme (M.Tech) students are allowed to pursue the course of their choice from one of the 7 schools of VIT. The entry into these programmes occurs by successfully getting through the VITMEE examination conducted every year.
+More at : http://www.vit.ac.in/admissions/pg"
+
+  utter_admissions_R:
+  - text: "
+Research Admissions
+Amidst the numerous courses offered by VIT, there are a few that cater to the research domain as well, namely M. Phil, M. Tech. and Ph. D. Students have a wide of variety of choices ranging from Nano electronics, disaster management, HR, Finance to Cancer biology, structural engineering and several languages.
+Regulations
+More at : http://www.vit.ac.in/admissions/research"
+
+  utter_admissions_IR:
+  - text: "
+  International Admissions
+  VIT prides itself in the ability to provide an education that is coveted not only within in India but abroad as well. Proof of this is seen in the increasing number of international students pursuing their higher education in the university. There are currently students from over 50 different countries studying in the university. VIT also has over 200 MoUs with foreign universities. These tie ups along with the university’s ABET accreditation ensures that all of our students have the opportunity to experience a truly global education. Attractive scholarships are also provided to deserving candidates. These aside, the facilities and extra-curricular activities within the university provide our students a truly vibrant campus life.
+More at : http://www.vit.ac.in/admissions/international"
+
+  utter_admissions_clarification:
+  - text: "Would you like to know in detail about any of the following? : Undergraduate , Postgraduate , Research or International/NRI admissions"
+  
+  utter_name_check:
+  - text: "Hi {name}!. Did I get your name right?"
+
+  utter_help_start:
+  - text: "So {name}, What can I help you with?"
+
+  utter_greet:
+  - text: "Nice to you meet you {name}. How can I help?"
+
+  utter_goodbye:
+  - text: "Talk to you later!"
+  
+  utter_thanks:
+  - text: "My pleasure."
+  

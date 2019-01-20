@@ -1,0 +1,7 @@
+__pycache__
+env/
+Scripts/
+tcl/
+lib/
+Include/
+rasa_core.log
