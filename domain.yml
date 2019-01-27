@@ -12,6 +12,16 @@ intents:
 - admissions_UG
 - admissions_PG
 - admissions_R
+- campus_life
+- riviera
+- gravitas
+- fests
+- student_clubs
+- student_clubs_arts
+- student_clubs_literature
+- student_clubs_technology
+- student_clubs_outreach
+- student_clubs_fitness
 
 entities:
 - name
@@ -37,6 +47,17 @@ actions:
 - utter_admissions_PG
 - utter_admissions_R
 - utter_admissions_IR
+- utter_fests
+- utter_campus_life
+- utter_riviera
+- utter_gravitas
+- utter_specify
+- utter_student_clubs
+- utter_student_clubs_arts
+- utter_student_clubs_literature
+- utter_student_clubs_technology
+- utter_student_clubs_outreach
+- utter_student_clubs_fitness
 
 templates:
   utter_name:
@@ -112,4 +133,110 @@ More at : http://www.vit.ac.in/admissions/international"
   
   utter_thanks:
   - text: "My pleasure."
+
+  utter_campus_life:
+  - text: "Every effort has been made by the administration and other management boards to ensure that 
+    all students find VIT a very active, fun and 
+    resourceful place to spend their academic years. 
+    Aware of the impact these vital years can have on the 
+    minds of the future of our nation and the world, VIT 
+    strives to encourage, introduce and develop any and all 
+    activities to shape their minds. Through bringing clubs, 
+    chapters and college festivals, students are not only exposed 
+    to a competitive environment inside the university but also 
+    with reputed institutions across the country and the world.
+    You can know more about:
+    clubs
+    chapters
+    sports
+    fests"
+  utter_fests:
+  - text: "VIT annually conducts two fests - Gravitas and Riviera
+    Gravitas is a technological and design carnival and Riviera is a sports and cultural carnival"
+  utter_specify:
+  - text: "Can you specify?"
+  utter_riviera:
+  - text: "Riviera, the annual ISO certified sports and cultural fest of VIT with all its 
+    splendour and eminence is the biggest in South India one that boasts of the biggest 
+    entertainers in the Indian entertainment scenario. The fest holds record for most 
+    number of people arm wrestling, biggest number of people to form a human hand The 
+    four day extravaganza is a celebration of dance, drama, debate, literature while 
+    celebrating the plurality abode. 
+    Visit : http://www.vit.ac.in/campus/riviera or http://vitriviera.com/"
+  utter_gravitas:
+  - text: "Gravitas
+GraVITas is VIT University’s Annual technological and design Carnival. 
+This festival is an endeavour to provide a platform to all individuals to 
+showcase their skills and improve their innovation skills in the fields of 
+technology. The three day festival sees participation of students from all 
+across the country and also promotes exchange of ideas and sparks a collective
+ growth in development of this nation and its youth.
+ Visit : www.vitgravitas.com"
   
+
+  utter_student_clubs:
+  - text: "Student Clubs
+A club to fit everyone’s interests and clubs to fit everyone on 
+campus, VIT is enriched with these. Student clubs help students
+ build leadership and team-building skills. The clubs are 
+ responsible for the never-ending stream of activities and events 
+ that happen in our college. Name Technical, artistic, 
+ research-oriented or public speaking, everything and everyone 
+ are satisfied here.
+ There are clubs relating to:
+ Arts
+ Literature
+ technology
+ Outreach 
+ Fitness/Outdoor
+ "
+  utter_student_clubs_arts:
+  - text: " Following are the arts based clubs at VIT:
+  Creativity Club
+  Photography Club
+  Quiz Club
+  Culnary Club
+  Fine Arts Club
+  Dance Club
+  Music Club
+  Debate Society
+  Dramatics Club
+  Film society
+  You can get more information about the clubs at http://www.vit.ac.in/campus/studentclubs/arts"
+  utter_student_clubs_literature:
+  - text: " Following are the literature based clubs at VIT:
+  English Literary Association
+  KANNADA KASTHURI(KLA)
+  Hindi Literary Association
+  You can get more information about the clubs at http://www.vit.ac.in/campus/studentclubs/literature"
+  utter_student_clubs_technology:
+  - text: " Following are the technology based clubs at VIT:
+  VIT Animation Club
+  SABEST
+  RoboVITics
+  Technology and Gaming Club
+  The Electronics Club
+  You can get more information about the clubs at http://www.vit.ac.in/campus/studentclubs/technology"
+  utter_student_clubs_outreach:
+  - text: "Following are the clubs at VIT that focus on outreach:
+Environmental & Energy Conservation- E2PC
+fepsi
+TEDx
+Juvenile Care
+Uddeshya
+Youth Red Cross – VIT
+The Hindu Education Plus Club
+Anokha
+Cool the world
+Edforall
+Make A Difference
+KALVI! We nurture tomorrow!
+VIT SPARTANS
+Rotaract Club
+Becoming I Foundation
+   You can get more information about the clubs at http://www.vit.ac.in/campus/studentclubs/outreach"
+  utter_student_clubs_fitness:
+  - text: "Following are the fitness/outdoor based clubs at VIT:
+  Health Club
+  Trekking CLub
+   You can get more information about the clubs at http://www.vit.ac.in/campus/studentclubs/awareness"

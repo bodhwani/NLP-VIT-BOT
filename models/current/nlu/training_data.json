@@ -2,6 +2,222 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
+        "intent": "international_relations",
+        "text": "international tie-ups"
+      },
+      {
+        "intent": "international_relations",
+        "text": "MoUs with colleges worldwide"
+      },
+      {
+        "intent": "international_relations",
+        "text": "foreign"
+      },
+      {
+        "intent": "international_relations",
+        "text": "students who come to our university from other countries"
+      },
+      {
+        "intent": "international_relations",
+        "text": "other countries"
+      },
+      {
+        "intent": "international_relations",
+        "text": "connection with universities worldwide"
+      },
+      {
+        "intent": "international_relations",
+        "text": "International Relations Office"
+      },
+      {
+        "intent": "international_relations",
+        "text": "internationalization efforts"
+      },
+      {
+        "intent": "international_relations",
+        "text": "international cooperation"
+      },
+      {
+        "intent": "international_relations",
+        "text": "student exchange"
+      },
+      {
+        "intent": "international_relations",
+        "text": "Joint Programmes"
+      },
+      {
+        "intent": "international_relations",
+        "text": "international students"
+      },
+      {
+        "intent": "admissions",
+        "text": "Admissions Office"
+      },
+      {
+        "intent": "admissions",
+        "text": "admissions"
+      },
+      {
+        "intent": "admissions",
+        "text": "programmes"
+      },
+      {
+        "intent": "admissions",
+        "text": "entrance exams"
+      },
+      {
+        "intent": "admissions",
+        "text": "counselling"
+      },
+      {
+        "intent": "admissions",
+        "text": "admit"
+      },
+      {
+        "intent": "admissions",
+        "text": "getting into"
+      },
+      {
+        "intent": "admissions",
+        "text": "joining"
+      },
+      {
+        "intent": "admissions",
+        "text": "studying at"
+      },
+      {
+        "intent": "admissions",
+        "text": "attending"
+      },
+      {
+        "intent": "admissions",
+        "text": "learning at"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "BTech"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "VITEEE"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "Undergraduate"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "BArch"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "B. Sc."
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "UG Arts and Science"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "Bachelor of Science"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "Bachelor of Architecture"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "Bachelor of Technology"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "School of law"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "B. Des. Industrial Design"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "BA"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "BBA"
+      },
+      {
+        "intent": "admissions_UG",
+        "text": "LLB"
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "M.Tech"
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "Master of Technology"
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "M. Sc."
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "Master of Science"
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "MCA"
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "Master in Computer Applications"
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "MBA"
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "Master of Business Administration"
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "M. Des"
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "Master of Design"
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "Postgraduate"
+      },
+      {
+        "intent": "admissions_PG",
+        "text": "Post-graduate"
+      },
+      {
+        "intent": "admissions_R",
+        "text": "Research"
+      },
+      {
+        "intent": "admissions_R",
+        "text": "M. Phil"
+      },
+      {
+        "intent": "admissions_R",
+        "text": "M. Tech. by Research"
+      },
+      {
+        "intent": "admissions_R",
+        "text": "Ph. D."
+      },
+      {
+        "intent": "admissions_R",
+        "text": "Doctorate"
+      },
+      {
         "intent": "goodbye",
         "text": "Bye"
       },
@@ -230,110 +446,6 @@
         "text": "Agreed"
       },
       {
-        "intent": "contact",
-        "text": "how do i contact admissions office?"
-      },
-      {
-        "intent": "contact",
-        "text": "how do i speak to the registrars office?"
-      },
-      {
-        "intent": "contact",
-        "text": "how do i contact the finance office?"
-      },
-      {
-        "intent": "international_relations",
-        "text": "international tie-ups"
-      },
-      {
-        "intent": "international_relations",
-        "text": "MoUs with colleges worldwide"
-      },
-      {
-        "intent": "international_relations",
-        "text": "foreign"
-      },
-      {
-        "intent": "international_relations",
-        "text": "students who come to our university from other countries"
-      },
-      {
-        "intent": "international_relations",
-        "text": "other countries"
-      },
-      {
-        "intent": "international_relations",
-        "text": "connection with universities worldwide"
-      },
-      {
-        "intent": "international_relations",
-        "text": "International Relations Office"
-      },
-      {
-        "intent": "international_relations",
-        "text": "internationalization efforts"
-      },
-      {
-        "intent": "international_relations",
-        "text": "international cooperation"
-      },
-      {
-        "intent": "international_relations",
-        "text": "student exchange"
-      },
-      {
-        "intent": "international_relations",
-        "text": "Joint Programmes"
-      },
-      {
-        "intent": "international_relations",
-        "text": "international students"
-      },
-      {
-        "intent": "admissions",
-        "text": "Admissions Office"
-      },
-      {
-        "intent": "admissions",
-        "text": "admissions"
-      },
-      {
-        "intent": "admissions",
-        "text": "programmes"
-      },
-      {
-        "intent": "admissions",
-        "text": "entrance exams"
-      },
-      {
-        "intent": "admissions",
-        "text": "counselling"
-      },
-      {
-        "intent": "admissions",
-        "text": "admit"
-      },
-      {
-        "intent": "admissions",
-        "text": "getting into VIT"
-      },
-      {
-        "intent": "admissions",
-        "text": "joining VIT"
-      },
-      {
-        "intent": "admissions",
-        "text": "studying at VIT"
-      },
-      {
-        "intent": "admissions",
-        "text": "attending VIT"
-      },
-      {
-        "intent": "admissions",
-        "text": "learning at VIT"
-      },
-      {
         "intent": "deny",
         "text": "No"
       },
@@ -368,130 +480,6 @@
       {
         "intent": "deny",
         "text": "Disagreed"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "BTech"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "VITEEE"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "Undergraduate"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "BArch"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "B. Sc."
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "UG Arts and Science"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "Bachelor of Science"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "Bachelor of Architecture"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "Bachelor of Technology"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "School of law"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "B. Des. Industrial Design"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "BA"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "BBA"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "LLB"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "M.Tech"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Master of Technology"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "M. Sc."
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Master of Science"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "MCA"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Master in Computer Applications"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "MBA"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Master of Business Administration"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "M. Des"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Master of Design"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Postgraduate"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Post-graduate"
-      },
-      {
-        "intent": "admissions_R",
-        "text": "Research"
-      },
-      {
-        "intent": "admissions_R",
-        "text": "M. Phil"
-      },
-      {
-        "intent": "admissions_R",
-        "text": "M. Tech. by Research"
-      },
-      {
-        "intent": "admissions_R",
-        "text": "Ph. D."
-      },
-      {
-        "intent": "admissions_R",
-        "text": "Doctorate"
       },
       {
         "intent": "name",
@@ -684,6 +672,382 @@
           }
         ],
         "text": "John"
+      },
+      {
+        "intent": "campus_life",
+        "text": "Every effort has been made by the administration and other management boards to ensure that all students find VIT a very active, fun and resourceful place to spend their academic years. Aware of the impact these vital years can have on the minds of the future of our nation and the world, VIT strives to encourage, introduce and develop any and all activities to shape their minds. Through bringing clubs, chapters and college festivals, students are not only exposed to a competitive environment inside the university but also with reputed institutions across the country and the world."
+      },
+      {
+        "intent": "fests",
+        "text": "Carnival"
+      },
+      {
+        "intent": "fests",
+        "text": "Fests"
+      },
+      {
+        "intent": "fests",
+        "text": "Festival"
+      },
+      {
+        "intent": "fests",
+        "text": "Annual fests"
+      },
+      {
+        "intent": "riviera",
+        "text": "riviera"
+      },
+      {
+        "intent": "riviera",
+        "text": "Sports Carnival"
+      },
+      {
+        "intent": "riviera",
+        "text": "cultural Carnival"
+      },
+      {
+        "intent": "riviera",
+        "text": "arts"
+      },
+      {
+        "intent": "riviera",
+        "text": "sports"
+      },
+      {
+        "intent": "riviera",
+        "text": "music"
+      },
+      {
+        "intent": "riviera",
+        "text": "dance"
+      },
+      {
+        "intent": "riviera",
+        "text": "drama"
+      },
+      {
+        "intent": "riviera",
+        "text": "debate"
+      },
+      {
+        "intent": "riviera",
+        "text": "fashion"
+      },
+      {
+        "intent": "riviera",
+        "text": "celebrities"
+      },
+      {
+        "intent": "riviera",
+        "text": "Cultural fest"
+      },
+      {
+        "intent": "riviera",
+        "text": "culture"
+      },
+      {
+        "intent": "riviera",
+        "text": "diversity"
+      },
+      {
+        "intent": "riviera",
+        "text": "annual ISO certified sports and cultural fest"
+      },
+      {
+        "intent": "riviera",
+        "text": "entertainers"
+      },
+      {
+        "intent": "riviera",
+        "text": "arm wrestling"
+      },
+      {
+        "intent": "riviera",
+        "text": "human hand"
+      },
+      {
+        "intent": "riviera",
+        "text": "celebration"
+      },
+      {
+        "intent": "riviera",
+        "text": "literature"
+      },
+      {
+        "intent": "gravitas",
+        "text": "technical fest"
+      },
+      {
+        "intent": "gravitas",
+        "text": "design carnival"
+      },
+      {
+        "intent": "gravitas",
+        "text": "showcase their skills"
+      },
+      {
+        "intent": "gravitas",
+        "text": "technology"
+      },
+      {
+        "intent": "gravitas",
+        "text": "competitions"
+      },
+      {
+        "intent": "gravitas",
+        "text": "workshops"
+      },
+      {
+        "intent": "student_clubs",
+        "text": "extracurricular"
+      },
+      {
+        "intent": "student_clubs",
+        "text": "interests"
+      },
+      {
+        "intent": "student_clubs",
+        "text": "student clubs"
+      },
+      {
+        "intent": "student_clubs",
+        "text": "leadership skills"
+      },
+      {
+        "intent": "student_clubs",
+        "text": "team-building skills"
+      },
+      {
+        "intent": "student_clubs",
+        "text": "activities"
+      },
+      {
+        "intent": "student_clubs",
+        "text": "events"
+      },
+      {
+        "intent": "student_clubs",
+        "text": "Technical"
+      },
+      {
+        "intent": "student_clubs",
+        "text": "artistic"
+      },
+      {
+        "intent": "student_clubs",
+        "text": "research-oriented"
+      },
+      {
+        "intent": "student_clubs",
+        "text": "public speaking"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "creativity club"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "photography club"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "quiz club"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "culnary club"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "fine arts club"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "arts"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "dance club"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "debate society"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "debsoc"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "dramatics club"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "film society"
+      },
+      {
+        "intent": "student_clubs_arts",
+        "text": "music club"
+      },
+      {
+        "intent": "student_clubs_literature",
+        "text": "english literary association"
+      },
+      {
+        "intent": "student_clubs_literature",
+        "text": "KANNADA KASTHURI(KLA)"
+      },
+      {
+        "intent": "student_clubs_literature",
+        "text": "hindi literary association"
+      },
+      {
+        "intent": "student_clubs_literature",
+        "text": "literature clubs"
+      },
+      {
+        "intent": "student_clubs_literature",
+        "text": "language"
+      },
+      {
+        "intent": "student_clubs_technology",
+        "text": "technology clubs"
+      },
+      {
+        "intent": "student_clubs_technology",
+        "text": "Animation club"
+      },
+      {
+        "intent": "student_clubs_technology",
+        "text": "sabest"
+      },
+      {
+        "intent": "student_clubs_technology",
+        "text": "robovitics"
+      },
+      {
+        "intent": "student_clubs_technology",
+        "text": "TAG"
+      },
+      {
+        "intent": "student_clubs_technology",
+        "text": "gaming club"
+      },
+      {
+        "intent": "student_clubs_technology",
+        "text": "TEC"
+      },
+      {
+        "intent": "student_clubs_technology",
+        "text": "electronics club"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "outreach clubs"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Environmental club"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "energy conservation club"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "fepsi"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "TEDx"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Juvenile Care"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "NGO"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Uddeshya"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "YRC"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Youth Red Cross"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Red Cross"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Hindu education plus"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "THEP"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Anokha"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Cool the world"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Edforall"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "MAD"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Make a difference"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "KALVI"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Spartans"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Rotaract Club"
+      },
+      {
+        "intent": "student_clubs_outreach",
+        "text": "Becoming I Foundation"
+      },
+      {
+        "intent": "student_clubs_fitness",
+        "text": "fitness club"
+      },
+      {
+        "intent": "student_clubs_fitness",
+        "text": "outdoor club"
+      },
+      {
+        "intent": "student_clubs_fitness",
+        "text": "health club"
+      },
+      {
+        "intent": "student_clubs_fitness",
+        "text": "trekking club"
+      },
+      {
+        "intent": "student_clubs_fitness",
+        "text": "anandham"
       }
     ],
     "regex_features": [],
