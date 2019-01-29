@@ -5,3 +5,7 @@ tcl/
 lib/
 Include/
 rasa_core.log
+
+
+models/
+requirements.txt

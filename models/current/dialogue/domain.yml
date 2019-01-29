@@ -1,5 +1,3 @@
-%YAML 1.1
----
 actions:
 - utter_name
 - utter_help_start
@@ -26,53 +24,64 @@ actions:
 - utter_student_clubs_technology
 - utter_student_clubs_outreach
 - utter_student_clubs_fitness
+- utter_academics
+- utter_ffcs
+- utter_coe
+- utter_international_transfer_program
+- utter_library
+- utter_international_relations
+- utter_schools
 config:
   store_entities_as_slots: true
 entities:
 - name
 forms: []
 intents:
-- greet:
+- student_clubs_technology:
     use_entities: true
 - goodbye:
     use_entities: true
-- thanks:
-    use_entities: true
-- deny:
-    use_entities: true
-- name:
-    use_entities: true
-- contact:
-    use_entities: true
-- affirm:
-    use_entities: true
-- international_relations:
+- gravitas:
     use_entities: true
 - admissions:
     use_entities: true
-- admissions_UG:
+- academics:
+    use_entities: true
+- thanks:
+    use_entities: true
+- international_relations:
+    use_entities: true
+- student_clubs_literature:
+    use_entities: true
+- student_clubs_outreach:
+    use_entities: true
+- deny:
     use_entities: true
 - admissions_PG:
     use_entities: true
-- admissions_R:
+- name:
     use_entities: true
-- campus_life:
+- student_clubs_arts:
+    use_entities: true
+- affirm:
     use_entities: true
 - riviera:
     use_entities: true
-- gravitas:
+- ffcs:
+    use_entities: true
+- campus_life:
+    use_entities: true
+- admissions_R:
+    use_entities: true
+- greet:
+    use_entities: true
+- contact:
     use_entities: true
 - fests:
     use_entities: true
 - student_clubs:
     use_entities: true
-- student_clubs_arts:
-    use_entities: true
-- student_clubs_literature:
-    use_entities: true
-- student_clubs_technology:
-    use_entities: true
-- student_clubs_outreach:
+- admissions_UG:
     use_entities: true
 - student_clubs_fitness:
     use_entities: true
@@ -91,6 +100,18 @@ templates:
       making sure they have a very pleasant experience in our university. Contact
       location_on 109, First Floor Dr. MGR block VIT, Vellore, Tamil Nadu - 632014
       phone +(91) 416 220 2131 / 2243118 Fax : +91-416-2243092 More at http://www.vit.ac.in/academics/internationalRelations'
+  utter_academics:
+  - text: Teaching at VIT University is structured around Thirteen schools of study.
+      A student should register in one of the schools, depending on the degree/programme
+      he/she is interested in pursuing. Research centers are also part of the schools,
+      encouraging inter-departmental collaboration and opportunity for students to
+      participate in exciting research projects. The university offers 27 Undergraduate,
+      30 Postgraduate, 4 Integrated Programmes and 4 Research programmes. In addition
+      to full-time/part-time Ph.D., M.S.(BY RESEARCH) Degrees in Engineering and Management
+      Disciplines, M.Phil, Ph.D., in Science and Languages, Integrated Ph.D. programmes
+      also offered for engineering disciplines in selected schools. If you want to
+      find more information about Schools, International Relations, FFCS, Centers,
+      Library, check out here - http://vit.ac.in/academics
   utter_admissions_IR:
   - text: ' International Admissions VIT prides itself in the ability to provide an
       education that is coveted not only within in India but abroad as well. Proof
@@ -136,9 +157,20 @@ templates:
       clubs, chapters and college festivals, students are not only exposed to a competitive
       environment inside the university but also with reputed institutions across
       the country and the world. You can know more about: clubs chapters sports fests'
+  utter_coe:
+  - text: The Office of the Controller of Examinations is responsible for preparation,
+      scheduling, and conduct of Final Assessment Test (FAT) for all the programmes
+      offered by the institute. It also facilitates central valuation of answer scripts
+      and timely publication of Results. More information at http://vit.ac.in/academics/coe
   utter_fests:
   - text: VIT annually conducts two fests - Gravitas and Riviera Gravitas is a technological
       and design carnival and Riviera is a sports and cultural carnival
+  utter_ffcs:
+  - text: FFCS is a way in which a student has complete freedom in tailoring his course
+      the way he wishes. It accommodates the wants and needs of the entire student
+      community as a whole. With this system, a student can prepare his/her own timetable
+      with the specific courses he/she intends to do in that semester along with the
+      timings of classes and choice of professors. More info at http://vit.ac.in/academics/ffcs
   utter_goodbye:
   - text: Talk to you later!
   utter_gravitas:
@@ -152,6 +184,24 @@ templates:
   - text: Nice to you meet you {name}. How can I help?
   utter_help_start:
   - text: So {name}, What can I help you with?
+  utter_international_relations:
+  - text: A very sophisticated International Relations Office has been established
+      to help in the internationalization efforts. The office facilitates the initiation
+      and follow-up of international cooperation with substantial faculty & student
+      exchange, joint R&D and Joint Programmes. It also takes care of the international
+      students enrolled in the University in addition to the already existing exemplary
+      guest care. More information can be found at http://vit.ac.in/academics/internationalRelations
+  utter_international_transfer_program:
+  - text: ITP offers the entering students with an opportunity to study the first
+      two years of the bachelors degree in engineering at VIT and complete the last
+      two years of study in the USA, UK or Australia and get a degree from a partner
+      university there. More information can be found here - http://vit.ac.in/academics/itp
+  utter_library:
+  - text: The Central Library is centrally air-conditioned, well-protected with fire
+      alarm, Flap Barrier and CCTV surveillance. It has specialized collections of
+      Books, Journals & other resources in Sciences, Engineering and Technology, Biotechnology,
+      Humanities, Social Sciences and Management ranging from printed books, e-books,
+      back volumes and CDs/DVDs. More information can be found at http://vit.ac.in/academics/library
   utter_name:
   - text: Hey there! Tell me your name.
   utter_name_check:
@@ -166,6 +216,13 @@ templates:
       form a human hand The four day extravaganza is a celebration of dance, drama,
       debate, literature while celebrating the plurality abode. Visit : http://www.vit.ac.in/campus/riviera
       or http://vitriviera.com/'
+  utter_schools:
+  - text: text:"Teaching at VIT is structured around ten schools of study. A student
+      is registered in one of the schools, depending on the degree/programme he/she
+      student is interested in pursuing. Research centers are also part of the schools,
+      encouraging interdepartmental collaboration and opportunity for students to
+      participate in exciting research projects. The university offers 27 Undergraduate
+      and 30 Postgraduate programmes. More information can be found at http://vit.ac.in/academics/schools"
   utter_specify:
   - text: Can you specify?
   utter_student_clubs:

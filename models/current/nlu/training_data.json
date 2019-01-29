@@ -2,1056 +2,1304 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
-        "intent": "international_relations",
-        "text": "international tie-ups"
-      },
-      {
-        "intent": "international_relations",
-        "text": "MoUs with colleges worldwide"
-      },
-      {
-        "intent": "international_relations",
-        "text": "foreign"
-      },
-      {
-        "intent": "international_relations",
-        "text": "students who come to our university from other countries"
-      },
-      {
-        "intent": "international_relations",
-        "text": "other countries"
-      },
-      {
-        "intent": "international_relations",
-        "text": "connection with universities worldwide"
-      },
-      {
-        "intent": "international_relations",
-        "text": "International Relations Office"
-      },
-      {
-        "intent": "international_relations",
-        "text": "internationalization efforts"
-      },
-      {
-        "intent": "international_relations",
-        "text": "international cooperation"
-      },
-      {
-        "intent": "international_relations",
-        "text": "student exchange"
-      },
-      {
-        "intent": "international_relations",
-        "text": "Joint Programmes"
-      },
-      {
-        "intent": "international_relations",
-        "text": "international students"
-      },
-      {
-        "intent": "admissions",
-        "text": "Admissions Office"
-      },
-      {
-        "intent": "admissions",
-        "text": "admissions"
-      },
-      {
-        "intent": "admissions",
-        "text": "programmes"
-      },
-      {
-        "intent": "admissions",
-        "text": "entrance exams"
-      },
-      {
-        "intent": "admissions",
-        "text": "counselling"
-      },
-      {
-        "intent": "admissions",
-        "text": "admit"
-      },
-      {
-        "intent": "admissions",
-        "text": "getting into"
-      },
-      {
-        "intent": "admissions",
-        "text": "joining"
-      },
-      {
-        "intent": "admissions",
-        "text": "studying at"
-      },
-      {
-        "intent": "admissions",
-        "text": "attending"
-      },
-      {
-        "intent": "admissions",
-        "text": "learning at"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "BTech"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "VITEEE"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "Undergraduate"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "BArch"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "B. Sc."
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "UG Arts and Science"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "Bachelor of Science"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "Bachelor of Architecture"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "Bachelor of Technology"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "School of law"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "B. Des. Industrial Design"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "BA"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "BBA"
-      },
-      {
-        "intent": "admissions_UG",
-        "text": "LLB"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "M.Tech"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Master of Technology"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "M. Sc."
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Master of Science"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "MCA"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Master in Computer Applications"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "MBA"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Master of Business Administration"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "M. Des"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Master of Design"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Postgraduate"
-      },
-      {
-        "intent": "admissions_PG",
-        "text": "Post-graduate"
-      },
-      {
-        "intent": "admissions_R",
-        "text": "Research"
-      },
-      {
-        "intent": "admissions_R",
-        "text": "M. Phil"
-      },
-      {
-        "intent": "admissions_R",
-        "text": "M. Tech. by Research"
-      },
-      {
-        "intent": "admissions_R",
-        "text": "Ph. D."
-      },
-      {
-        "intent": "admissions_R",
-        "text": "Doctorate"
-      },
-      {
-        "intent": "goodbye",
-        "text": "Bye"
-      },
-      {
-        "intent": "goodbye",
-        "text": "Goodbye"
-      },
-      {
-        "intent": "goodbye",
-        "text": "See you later"
-      },
-      {
-        "intent": "goodbye",
-        "text": "Bye bot"
-      },
-      {
-        "intent": "goodbye",
-        "text": "Goodbye friend"
-      },
-      {
-        "intent": "goodbye",
-        "text": "bye"
-      },
-      {
-        "intent": "goodbye",
-        "text": "bye for now"
-      },
-      {
-        "intent": "goodbye",
-        "text": "catch you later"
-      },
-      {
-        "intent": "goodbye",
-        "text": "See you"
-      },
-      {
-        "intent": "goodbye",
-        "text": "goodnight"
-      },
-      {
-        "intent": "goodbye",
-        "text": "have a nice day"
-      },
-      {
-        "intent": "goodbye",
-        "text": "i'm off"
-      },
-      {
-        "intent": "goodbye",
-        "text": "see you later alligator"
-      },
-      {
-        "intent": "goodbye",
-        "text": "we'll speak soon"
-      },
-      {
-        "intent": "greet",
-        "text": "Hi"
-      },
-      {
-        "intent": "greet",
-        "text": "Hey"
-      },
-      {
-        "intent": "greet",
-        "text": "Hi bot"
-      },
-      {
-        "intent": "greet",
-        "text": "Hey bot"
-      },
-      {
-        "intent": "greet",
-        "text": "Hello"
-      },
-      {
-        "intent": "greet",
-        "text": "Good morning"
-      },
-      {
-        "intent": "greet",
-        "text": "hi again"
-      },
-      {
-        "intent": "greet",
-        "text": "hi folks"
-      },
-      {
-        "intent": "greet",
-        "text": "hi Mister"
-      },
-      {
-        "intent": "greet",
-        "text": "hi pal!"
-      },
-      {
-        "intent": "greet",
-        "text": "hi there"
-      },
-      {
-        "intent": "greet",
-        "text": "greetings"
-      },
-      {
-        "intent": "greet",
-        "text": "hello everybody"
-      },
-      {
-        "intent": "greet",
-        "text": "hello is anybody there"
-      },
-      {
-        "intent": "greet",
-        "text": "hello robot"
-      },
-      {
-        "intent": "thanks",
-        "text": "Thanks"
-      },
-      {
-        "intent": "thanks",
-        "text": "Thank you"
-      },
-      {
-        "intent": "thanks",
-        "text": "Thank you so much"
-      },
-      {
-        "intent": "thanks",
-        "text": "Thanks bot"
-      },
-      {
-        "intent": "thanks",
-        "text": "Thanks for that"
-      },
-      {
-        "intent": "thanks",
-        "text": "cheers"
-      },
-      {
-        "intent": "thanks",
-        "text": "cheers bro"
-      },
-      {
-        "intent": "thanks",
-        "text": "ok thanks!"
-      },
-      {
-        "intent": "thanks",
-        "text": "perfect thank you"
-      },
-      {
-        "intent": "thanks",
-        "text": "thanks a bunch for everything"
-      },
-      {
-        "intent": "thanks",
-        "text": "thanks for the help"
-      },
-      {
-        "intent": "thanks",
-        "text": "thanks a lot"
-      },
-      {
-        "intent": "thanks",
-        "text": "amazing, thanks"
-      },
-      {
-        "intent": "thanks",
-        "text": "cool, thanks"
-      },
-      {
-        "intent": "thanks",
-        "text": "cool thank you"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes sure"
-      },
-      {
-        "intent": "affirm",
-        "text": "absolutely"
-      },
-      {
-        "intent": "affirm",
-        "text": "for sure"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes yes yes"
-      },
-      {
-        "intent": "affirm",
-        "text": "definitely"
-      },
-      {
-        "intent": "affirm",
-        "text": "Kinda"
-      },
-      {
-        "intent": "affirm",
-        "text": "Almost"
-      },
-      {
-        "intent": "affirm",
-        "text": "Approximately"
-      },
-      {
-        "intent": "affirm",
-        "text": "Correct"
-      },
-      {
-        "intent": "affirm",
-        "text": "Accepted"
-      },
-      {
-        "intent": "affirm",
-        "text": "Success"
-      },
-      {
-        "intent": "affirm",
-        "text": "Agreed"
-      },
-      {
-        "intent": "deny",
-        "text": "No"
-      },
-      {
-        "intent": "deny",
-        "text": "Not at all"
-      },
-      {
-        "intent": "deny",
-        "text": "Nope"
-      },
-      {
-        "intent": "deny",
-        "text": "Nuh uh"
-      },
-      {
-        "intent": "deny",
-        "text": "Incorrect"
-      },
-      {
-        "intent": "deny",
-        "text": "Wrong"
-      },
-      {
-        "intent": "deny",
-        "text": "Denied"
-      },
-      {
-        "intent": "deny",
-        "text": "Fail"
-      },
-      {
-        "intent": "deny",
-        "text": "Disagreed"
-      },
-      {
-        "intent": "name",
+        "text": "academics", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "study", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "subjects", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "education", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "faculties", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "professor", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "research", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "program", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "Masters", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "M.S.", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "Ph.D.", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "M.Phil", 
+        "intent": "academics"
+      }, 
+      {
+        "text": "ffcs", 
+        "intent": "ffcs"
+      }, 
+      {
+        "text": "fully flexible credit system", 
+        "intent": "ffcs"
+      }, 
+      {
+        "text": "course", 
+        "intent": "ffcs"
+      }, 
+      {
+        "text": "credits", 
+        "intent": "ffcs"
+      }, 
+      {
+        "text": "timetable", 
+        "intent": "ffcs"
+      }, 
+      {
+        "text": "semester", 
+        "intent": "ffcs"
+      }, 
+      {
+        "text": "class", 
+        "intent": "ffcs"
+      }, 
+      {
+        "text": "semester", 
+        "intent": "ffcs"
+      }, 
+      {
+        "text": "balance curriculum", 
+        "intent": "ffcs"
+      }, 
+      {
+        "text": "branch change", 
+        "intent": "ffcs"
+      }, 
+      {
+        "text": "controller examinations", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "coe", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "final assessment test", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "fat", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "consolidated", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "grade", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "transcripts", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "paper seeing", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "revaluation", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "arrear", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "re-fat", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "evaluation", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "results", 
+        "intent": "coe"
+      }, 
+      {
+        "text": "higher studies", 
+        "intent": "international_transfer_program"
+      }, 
+      {
+        "text": "transfer", 
+        "intent": "international_transfer_program"
+      }, 
+      {
+        "text": "usa", 
+        "intent": "international_transfer_program"
+      }, 
+      {
+        "text": "uk", 
+        "intent": "international_transfer_program"
+      }, 
+      {
+        "text": "australia", 
+        "intent": "international_transfer_program"
+      }, 
+      {
+        "text": "partner university", 
+        "intent": "international_transfer_program"
+      }, 
+      {
+        "text": "library", 
+        "intent": "library"
+      }, 
+      {
+        "text": "books", 
+        "intent": "library"
+      }, 
+      {
+        "text": "conference", 
+        "intent": "library"
+      }, 
+      {
+        "text": "meeting", 
+        "intent": "library"
+      }, 
+      {
+        "text": "study place", 
+        "intent": "library"
+      }, 
+      {
+        "text": "internaltional", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "foreign", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "exchange", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "NRI", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "school", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "degree", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "program", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "advance science SAS", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "electronic engineering SENSE", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "architecture SPARC", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "information technology SITE", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "bio science SBST", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "mechanical SMED", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "civil SCE", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "computer science SCOPE", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "electrical SELECT", 
+        "intent": "schools"
+      }, 
+      {
+        "text": "Bye", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "Goodbye", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "See you later", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "Bye bot", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "Goodbye friend", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "bye", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "bye for now", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "catch you later", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "See you", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "goodnight", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "have a nice day", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "i'm off", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "see you later alligator", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "we'll speak soon", 
+        "intent": "goodbye"
+      }, 
+      {
+        "text": "Hi", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Hey", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Hi bot", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Hey bot", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Hello", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Good morning", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi again", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi folks", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi Mister", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi pal!", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hi there", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "greetings", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hello everybody", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hello is anybody there", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "hello robot", 
+        "intent": "greet"
+      }, 
+      {
+        "text": "Thanks", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "Thank you", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "Thank you so much", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "Thanks bot", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "Thanks for that", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "cheers", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "cheers bro", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "ok thanks!", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "perfect thank you", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "thanks a bunch for everything", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "thanks for the help", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "thanks a lot", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "amazing, thanks", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "cool, thanks", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "cool thank you", 
+        "intent": "thanks"
+      }, 
+      {
+        "text": "yes", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "yes sure", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "absolutely", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "for sure", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "yes yes yes", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "definitely", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "Kinda", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "Almost", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "Approximately", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "Correct", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "Accepted", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "Success", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "Agreed", 
+        "intent": "affirm"
+      }, 
+      {
+        "text": "No", 
+        "intent": "deny"
+      }, 
+      {
+        "text": "Not at all", 
+        "intent": "deny"
+      }, 
+      {
+        "text": "Nope", 
+        "intent": "deny"
+      }, 
+      {
+        "text": "Nuh uh", 
+        "intent": "deny"
+      }, 
+      {
+        "text": "Incorrect", 
+        "intent": "deny"
+      }, 
+      {
+        "text": "Wrong", 
+        "intent": "deny"
+      }, 
+      {
+        "text": "Denied", 
+        "intent": "deny"
+      }, 
+      {
+        "text": "Fail", 
+        "intent": "deny"
+      }, 
+      {
+        "text": "Disagreed", 
+        "intent": "deny"
+      }, 
+      {
         "entities": [
           {
-            "start": 11,
-            "end": 16,
-            "value": "Juste",
+            "start": 11, 
+            "end": 16, 
+            "value": "Juste", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "My name is Juste"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 5,
-            "end": 9,
-            "value": "Josh",
+            "start": 5, 
+            "end": 9, 
+            "value": "Josh", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "I am Josh"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 4,
-            "end": 8,
-            "value": "Lucy",
+            "start": 4, 
+            "end": 8, 
+            "value": "Lucy", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "I'm Lucy"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 15,
-            "end": 19,
-            "value": "Greg",
+            "start": 15, 
+            "end": 19, 
+            "value": "Greg", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "People call me Greg"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 5,
-            "end": 10,
-            "value": "David",
+            "start": 5, 
+            "end": 10, 
+            "value": "David", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "It's David"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 23,
-            "end": 26,
-            "value": "Amy",
+            "start": 23, 
+            "end": 26, 
+            "value": "Amy", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "Usually people call me Amy"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 11,
-            "end": 15,
-            "value": "John",
+            "start": 11, 
+            "end": 15, 
+            "value": "John", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "My name is John"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 16,
-            "end": 19,
-            "value": "Sam",
+            "start": 16, 
+            "end": 19, 
+            "value": "Sam", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "You can call me Sam"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 15,
-            "end": 20,
-            "value": "Linda",
+            "start": 15, 
+            "end": 20, 
+            "value": "Linda", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "Please call me Linda"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 13,
-            "end": 16,
-            "value": "Tom",
+            "start": 13, 
+            "end": 16, 
+            "value": "Tom", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "Name name is Tom"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 5,
-            "end": 12,
-            "value": "Richard",
+            "start": 5, 
+            "end": 12, 
+            "value": "Richard", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "I am Richard"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 4,
-            "end": 9,
-            "value": "Tracy",
+            "start": 4, 
+            "end": 9, 
+            "value": "Tracy", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "I'm Tracy"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 8,
-            "end": 13,
-            "value": "Sally",
+            "start": 8, 
+            "end": 13, 
+            "value": "Sally", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "Call me Sally"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 5,
-            "end": 12,
-            "value": "Philipp",
+            "start": 5, 
+            "end": 12, 
+            "value": "Philipp", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "I am Philipp"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 5,
-            "end": 12,
-            "value": "Charlie",
+            "start": 5, 
+            "end": 12, 
+            "value": "Charlie", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "I am Charlie"
-      },
+      }, 
       {
-        "intent": "name",
         "entities": [
           {
-            "start": 0,
-            "end": 4,
-            "value": "John",
+            "start": 0, 
+            "end": 4, 
+            "value": "John", 
             "entity": "name"
           }
-        ],
+        ], 
+        "intent": "name", 
         "text": "John"
-      },
-      {
-        "intent": "campus_life",
-        "text": "Every effort has been made by the administration and other management boards to ensure that all students find VIT a very active, fun and resourceful place to spend their academic years. Aware of the impact these vital years can have on the minds of the future of our nation and the world, VIT strives to encourage, introduce and develop any and all activities to shape their minds. Through bringing clubs, chapters and college festivals, students are not only exposed to a competitive environment inside the university but also with reputed institutions across the country and the world."
-      },
-      {
-        "intent": "fests",
-        "text": "Carnival"
-      },
-      {
-        "intent": "fests",
-        "text": "Fests"
-      },
-      {
-        "intent": "fests",
-        "text": "Festival"
-      },
-      {
-        "intent": "fests",
-        "text": "Annual fests"
-      },
-      {
-        "intent": "riviera",
-        "text": "riviera"
-      },
-      {
-        "intent": "riviera",
-        "text": "Sports Carnival"
-      },
-      {
-        "intent": "riviera",
-        "text": "cultural Carnival"
-      },
-      {
-        "intent": "riviera",
-        "text": "arts"
-      },
-      {
-        "intent": "riviera",
-        "text": "sports"
-      },
-      {
-        "intent": "riviera",
-        "text": "music"
-      },
-      {
-        "intent": "riviera",
-        "text": "dance"
-      },
-      {
-        "intent": "riviera",
-        "text": "drama"
-      },
-      {
-        "intent": "riviera",
-        "text": "debate"
-      },
-      {
-        "intent": "riviera",
-        "text": "fashion"
-      },
-      {
-        "intent": "riviera",
-        "text": "celebrities"
-      },
-      {
-        "intent": "riviera",
-        "text": "Cultural fest"
-      },
-      {
-        "intent": "riviera",
-        "text": "culture"
-      },
-      {
-        "intent": "riviera",
-        "text": "diversity"
-      },
-      {
-        "intent": "riviera",
-        "text": "annual ISO certified sports and cultural fest"
-      },
-      {
-        "intent": "riviera",
-        "text": "entertainers"
-      },
-      {
-        "intent": "riviera",
-        "text": "arm wrestling"
-      },
-      {
-        "intent": "riviera",
-        "text": "human hand"
-      },
-      {
-        "intent": "riviera",
-        "text": "celebration"
-      },
-      {
-        "intent": "riviera",
-        "text": "literature"
-      },
-      {
-        "intent": "gravitas",
-        "text": "technical fest"
-      },
-      {
-        "intent": "gravitas",
-        "text": "design carnival"
-      },
-      {
-        "intent": "gravitas",
-        "text": "showcase their skills"
-      },
-      {
-        "intent": "gravitas",
-        "text": "technology"
-      },
-      {
-        "intent": "gravitas",
-        "text": "competitions"
-      },
-      {
-        "intent": "gravitas",
-        "text": "workshops"
-      },
-      {
-        "intent": "student_clubs",
-        "text": "extracurricular"
-      },
-      {
-        "intent": "student_clubs",
-        "text": "interests"
-      },
-      {
-        "intent": "student_clubs",
-        "text": "student clubs"
-      },
-      {
-        "intent": "student_clubs",
-        "text": "leadership skills"
-      },
-      {
-        "intent": "student_clubs",
-        "text": "team-building skills"
-      },
-      {
-        "intent": "student_clubs",
-        "text": "activities"
-      },
-      {
-        "intent": "student_clubs",
-        "text": "events"
-      },
-      {
-        "intent": "student_clubs",
-        "text": "Technical"
-      },
-      {
-        "intent": "student_clubs",
-        "text": "artistic"
-      },
-      {
-        "intent": "student_clubs",
-        "text": "research-oriented"
-      },
-      {
-        "intent": "student_clubs",
-        "text": "public speaking"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "creativity club"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "photography club"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "quiz club"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "culnary club"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "fine arts club"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "arts"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "dance club"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "debate society"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "debsoc"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "dramatics club"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "film society"
-      },
-      {
-        "intent": "student_clubs_arts",
-        "text": "music club"
-      },
-      {
-        "intent": "student_clubs_literature",
-        "text": "english literary association"
-      },
-      {
-        "intent": "student_clubs_literature",
-        "text": "KANNADA KASTHURI(KLA)"
-      },
-      {
-        "intent": "student_clubs_literature",
-        "text": "hindi literary association"
-      },
-      {
-        "intent": "student_clubs_literature",
-        "text": "literature clubs"
-      },
-      {
-        "intent": "student_clubs_literature",
-        "text": "language"
-      },
-      {
-        "intent": "student_clubs_technology",
-        "text": "technology clubs"
-      },
-      {
-        "intent": "student_clubs_technology",
-        "text": "Animation club"
-      },
-      {
-        "intent": "student_clubs_technology",
-        "text": "sabest"
-      },
-      {
-        "intent": "student_clubs_technology",
-        "text": "robovitics"
-      },
-      {
-        "intent": "student_clubs_technology",
-        "text": "TAG"
-      },
-      {
-        "intent": "student_clubs_technology",
-        "text": "gaming club"
-      },
-      {
-        "intent": "student_clubs_technology",
-        "text": "TEC"
-      },
-      {
-        "intent": "student_clubs_technology",
-        "text": "electronics club"
-      },
-      {
-        "intent": "student_clubs_outreach",
-        "text": "outreach clubs"
-      },
-      {
-        "intent": "student_clubs_outreach",
-        "text": "Environmental club"
-      },
+      }, 
+      {
+        "text": "Every effort has been made by the administration and other management boards to ensure that all students find VIT a very active, fun and resourceful place to spend their academic years. Aware of the impact these vital years can have on the minds of the future of our nation and the world, VIT strives to encourage, introduce and develop any and all activities to shape their minds. Through bringing clubs, chapters and college festivals, students are not only exposed to a competitive environment inside the university but also with reputed institutions across the country and the world.", 
+        "intent": "campus_life"
+      }, 
+      {
+        "text": "Carnival", 
+        "intent": "fests"
+      }, 
+      {
+        "text": "Fests", 
+        "intent": "fests"
+      }, 
+      {
+        "text": "Festival", 
+        "intent": "fests"
+      }, 
+      {
+        "text": "Annual fests", 
+        "intent": "fests"
+      }, 
+      {
+        "text": "riviera", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "Sports Carnival", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "cultural Carnival", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "arts", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "sports", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "music", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "dance", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "drama", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "debate", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "fashion", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "celebrities", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "Cultural fest", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "culture", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "diversity", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "annual ISO certified sports and cultural fest", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "entertainers", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "arm wrestling", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "human hand", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "celebration", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "literature", 
+        "intent": "riviera"
+      }, 
+      {
+        "text": "technical fest", 
+        "intent": "gravitas"
+      }, 
+      {
+        "text": "design carnival", 
+        "intent": "gravitas"
+      }, 
+      {
+        "text": "showcase their skills", 
+        "intent": "gravitas"
+      }, 
+      {
+        "text": "technology", 
+        "intent": "gravitas"
+      }, 
+      {
+        "text": "competitions", 
+        "intent": "gravitas"
+      }, 
+      {
+        "text": "workshops", 
+        "intent": "gravitas"
+      }, 
+      {
+        "text": "extracurricular", 
+        "intent": "student_clubs"
+      }, 
+      {
+        "text": "interests", 
+        "intent": "student_clubs"
+      }, 
+      {
+        "text": "student clubs", 
+        "intent": "student_clubs"
+      }, 
+      {
+        "text": "leadership skills", 
+        "intent": "student_clubs"
+      }, 
+      {
+        "text": "team-building skills", 
+        "intent": "student_clubs"
+      }, 
+      {
+        "text": "activities", 
+        "intent": "student_clubs"
+      }, 
+      {
+        "text": "events", 
+        "intent": "student_clubs"
+      }, 
+      {
+        "text": "Technical", 
+        "intent": "student_clubs"
+      }, 
+      {
+        "text": "artistic", 
+        "intent": "student_clubs"
+      }, 
+      {
+        "text": "research-oriented", 
+        "intent": "student_clubs"
+      }, 
+      {
+        "text": "public speaking", 
+        "intent": "student_clubs"
+      }, 
+      {
+        "text": "creativity club", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "photography club", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "quiz club", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "culnary club", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "fine arts club", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "arts", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "dance club", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "debate society", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "debsoc", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "dramatics club", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "film society", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "music club", 
+        "intent": "student_clubs_arts"
+      }, 
+      {
+        "text": "english literary association", 
+        "intent": "student_clubs_literature"
+      }, 
+      {
+        "text": "KANNADA KASTHURI(KLA)", 
+        "intent": "student_clubs_literature"
+      }, 
+      {
+        "text": "hindi literary association", 
+        "intent": "student_clubs_literature"
+      }, 
+      {
+        "text": "literature clubs", 
+        "intent": "student_clubs_literature"
+      }, 
+      {
+        "text": "language", 
+        "intent": "student_clubs_literature"
+      }, 
+      {
+        "text": "technology clubs", 
+        "intent": "student_clubs_technology"
+      }, 
+      {
+        "text": "Animation club", 
+        "intent": "student_clubs_technology"
+      }, 
+      {
+        "text": "sabest", 
+        "intent": "student_clubs_technology"
+      }, 
+      {
+        "text": "robovitics", 
+        "intent": "student_clubs_technology"
+      }, 
+      {
+        "text": "TAG", 
+        "intent": "student_clubs_technology"
+      }, 
+      {
+        "text": "gaming club", 
+        "intent": "student_clubs_technology"
+      }, 
+      {
+        "text": "TEC", 
+        "intent": "student_clubs_technology"
+      }, 
+      {
+        "text": "electronics club", 
+        "intent": "student_clubs_technology"
+      }, 
+      {
+        "text": "outreach clubs", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Environmental club", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "energy conservation club", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "fepsi", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "TEDx", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Juvenile Care", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "NGO", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Uddeshya", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "YRC", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Youth Red Cross", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Red Cross", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Hindu education plus", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "THEP", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Anokha", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Cool the world", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Edforall", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "MAD", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Make a difference", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "KALVI", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Spartans", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Rotaract Club", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "Becoming I Foundation", 
+        "intent": "student_clubs_outreach"
+      }, 
+      {
+        "text": "fitness club", 
+        "intent": "student_clubs_fitness"
+      }, 
+      {
+        "text": "outdoor club", 
+        "intent": "student_clubs_fitness"
+      }, 
+      {
+        "text": "health club", 
+        "intent": "student_clubs_fitness"
+      }, 
+      {
+        "text": "trekking club", 
+        "intent": "student_clubs_fitness"
+      }, 
+      {
+        "text": "anandham", 
+        "intent": "student_clubs_fitness"
+      }, 
+      {
+        "text": "international tie-ups", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "MoUs with colleges worldwide", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "foreign", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "students who come to our university from other countries", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "other countries", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "connection with universities worldwide", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "International Relations Office", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "internationalization efforts", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "international cooperation", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "student exchange", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "Joint Programmes", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "international students", 
+        "intent": "international_relations"
+      }, 
+      {
+        "text": "Admissions Office", 
+        "intent": "admissions"
+      }, 
+      {
+        "text": "admissions", 
+        "intent": "admissions"
+      }, 
+      {
+        "text": "programmes", 
+        "intent": "admissions"
+      }, 
+      {
+        "text": "entrance exams", 
+        "intent": "admissions"
+      }, 
+      {
+        "text": "counselling", 
+        "intent": "admissions"
+      }, 
+      {
+        "text": "admit", 
+        "intent": "admissions"
+      }, 
+      {
+        "text": "getting into", 
+        "intent": "admissions"
+      }, 
+      {
+        "text": "joining", 
+        "intent": "admissions"
+      }, 
+      {
+        "text": "studying at", 
+        "intent": "admissions"
+      }, 
+      {
+        "text": "attending", 
+        "intent": "admissions"
+      }, 
+      {
+        "text": "learning at", 
+        "intent": "admissions"
+      }, 
+      {
+        "text": "BTech", 
+        "intent": "admissions_UG"
+      }, 
+      {
+        "text": "VITEEE", 
+        "intent": "admissions_UG"
+      }, 
+      {
+        "text": "Undergraduate", 
+        "intent": "admissions_UG"
+      }, 
+      {
+        "text": "BArch", 
+        "intent": "admissions_UG"
+      }, 
+      {
+        "text": "B. Sc.", 
+        "intent": "admissions_UG"
+      }, 
+      {
+        "text": "UG Arts and Science", 
+        "intent": "admissions_UG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "energy conservation club"
-      },
+        "text": "Bachelor of Science", 
+        "intent": "admissions_UG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "fepsi"
-      },
+        "text": "Bachelor of Architecture", 
+        "intent": "admissions_UG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "TEDx"
-      },
+        "text": "Bachelor of Technology", 
+        "intent": "admissions_UG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Juvenile Care"
-      },
+        "text": "School of law", 
+        "intent": "admissions_UG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "NGO"
-      },
+        "text": "B. Des. Industrial Design", 
+        "intent": "admissions_UG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Uddeshya"
-      },
+        "text": "BA", 
+        "intent": "admissions_UG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "YRC"
-      },
+        "text": "BBA", 
+        "intent": "admissions_UG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Youth Red Cross"
-      },
+        "text": "LLB", 
+        "intent": "admissions_UG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Red Cross"
-      },
+        "text": "M.Tech", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Hindu education plus"
-      },
+        "text": "Master of Technology", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "THEP"
-      },
+        "text": "M. Sc.", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Anokha"
-      },
+        "text": "Master of Science", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Cool the world"
-      },
+        "text": "MCA", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Edforall"
-      },
+        "text": "Master in Computer Applications", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "MAD"
-      },
+        "text": "MBA", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Make a difference"
-      },
+        "text": "Master of Business Administration", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "KALVI"
-      },
+        "text": "M. Des", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Spartans"
-      },
+        "text": "Master of Design", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Rotaract Club"
-      },
+        "text": "Postgraduate", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_outreach",
-        "text": "Becoming I Foundation"
-      },
+        "text": "Post-graduate", 
+        "intent": "admissions_PG"
+      }, 
       {
-        "intent": "student_clubs_fitness",
-        "text": "fitness club"
-      },
+        "text": "Research", 
+        "intent": "admissions_R"
+      }, 
       {
-        "intent": "student_clubs_fitness",
-        "text": "outdoor club"
-      },
+        "text": "M. Phil", 
+        "intent": "admissions_R"
+      }, 
       {
-        "intent": "student_clubs_fitness",
-        "text": "health club"
-      },
+        "text": "M. Tech. by Research", 
+        "intent": "admissions_R"
+      }, 
       {
-        "intent": "student_clubs_fitness",
-        "text": "trekking club"
-      },
+        "text": "Ph. D.", 
+        "intent": "admissions_R"
+      }, 
       {
-        "intent": "student_clubs_fitness",
-        "text": "anandham"
+        "text": "Doctorate", 
+        "intent": "admissions_R"
       }
-    ],
-    "regex_features": [],
-    "lookup_tables": [],
-    "entity_synonyms": []
+    ], 
+    "entity_synonyms": [], 
+    "regex_features": [], 
+    "lookup_tables": []
   }
 }
