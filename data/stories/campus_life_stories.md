@@ -35,3 +35,28 @@
 ## story_student_clubs_fitness
 * student_clubs_fitness
  - utter_student_clubs_fitness
+
+## story_student_chapters
+* student_chapters
+ - utter_student_chapters
+ - utter_specify
+
+## story_student_chapters_IEEE
+* student_chapters_IEEE
+ - utter_student_chapters_IEEE
+
+## story_student_chapters_indian
+* student_chapters_indian
+ - utter_student_chapters_indian
+
+## story_student_chapters_international
+* student_chapters_international
+ - utter_student_chapters_international
+
+## story_student_chapters_university
+* student_chapters_university
+ - utter_student_chapters_university
+
+## story_student_chapters_american
+* student_chapters_american
+ - utter_student_chapters_american

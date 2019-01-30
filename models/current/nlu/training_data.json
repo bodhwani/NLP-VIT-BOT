@@ -1048,6 +1048,162 @@
       {
         "intent": "student_clubs_fitness",
         "text": "anandham"
+      },
+      {
+        "intent": "student_chapters",
+        "text": "Multiple active Chapters keep the students engrossed in engaging activities throughout the year. The Chapters always have multiple universities and colleges under them and this creates a student network stopping at no borders. This cross-cultural interactions not only help students build an effective network but also help them in learning new things constantly. Interacting with others has been one of the major sources of knowledge transmission since ages and this helps in keeping it alive."
+      },
+      {
+        "intent": "student_chapters_indian",
+        "text": "ISTE"
+      },
+      {
+        "intent": "student_chapters_indian",
+        "text": "Indian Society for Technical Education"
+      },
+      {
+        "intent": "student_chapters_indian",
+        "text": "IETE"
+      },
+      {
+        "intent": "student_chapters_indian",
+        "text": "Institution of Electronics and Telecommunication Engineers"
+      },
+      {
+        "intent": "student_chapters_indian",
+        "text": "IIChE"
+      },
+      {
+        "intent": "student_chapters_indian",
+        "text": "Indian Institute Of Chemical Engineers"
+      },
+      {
+        "intent": "student_chapters_indian",
+        "text": "CSI"
+      },
+      {
+        "intent": "student_chapters_indian",
+        "text": "Computer Society of India"
+      },
+      {
+        "intent": "student_chapters_indian",
+        "text": "ISOI"
+      },
+      {
+        "intent": "student_chapters_indian",
+        "text": "Society of Instrumentation"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "ISA"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "International Society of Automation"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "TMI"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "Toastmasters International"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "Fifth Pillar"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "IET-VIT"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "Institution of Engineering and Technology"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "ACM"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "Association for Computing Machinery"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "SME"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "Oikos Vellore"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "SAE"
+      },
+      {
+        "intent": "student_chapters_university",
+        "text": "SEDS-VIT"
+      },
+      {
+        "intent": "student_chapters_university",
+        "text": "VIT Materials Advantage"
+      },
+      {
+        "intent": "student_chapters_american",
+        "text": "AIESEC VIT"
+      },
+      {
+        "intent": "student_chapters_american",
+        "text": "ASCE"
+      },
+      {
+        "intent": "student_chapters_american",
+        "text": "American Society of Civil Engineers"
+      },
+      {
+        "intent": "student_chapters_american",
+        "text": "ASME"
+      },
+      {
+        "intent": "student_chapters_american",
+        "text": "American Society of Mechanical Engineers"
+      },
+      {
+        "intent": "student_chapters_american",
+        "text": "AICHE"
+      },
+      {
+        "intent": "student_chapters_american",
+        "text": "TEAM EKLAVYA"
+      },
+      {
+        "intent": "student_chapters_IEEE",
+        "text": "IEEE COMPUTER SOCIETY"
+      },
+      {
+        "intent": "student_chapters_IEEE",
+        "text": "IEEE CS"
+      },
+      {
+        "intent": "student_chapters_IEEE",
+        "text": "IEEE WIE"
+      },
+      {
+        "intent": "student_chapters_IEEE",
+        "text": "IEEE PES"
+      },
+      {
+        "intent": "student_chapters_IEEE",
+        "text": "IEEE ROBOTICS AND AUTOMATION SOCIETY"
+      },
+      {
+        "intent": "student_chapters_IEEE",
+        "text": "IEEE EMBS"
+      },
+      {
+        "intent": "student_chapters_IEEE",
+        "text": "IEEE EDS"
       }
     ],
     "regex_features": [],

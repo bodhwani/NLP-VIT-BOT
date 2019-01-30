@@ -15,6 +15,12 @@
     "intent_international_relations",
     "intent_name",
     "intent_riviera",
+    "intent_student_chapters",
+    "intent_student_chapters_IEEE",
+    "intent_student_chapters_american",
+    "intent_student_chapters_indian",
+    "intent_student_chapters_international",
+    "intent_student_chapters_university",
     "intent_student_clubs",
     "intent_student_clubs_arts",
     "intent_student_clubs_fitness",
@@ -52,6 +58,12 @@
     "prev_utter_student_clubs_literature",
     "prev_utter_student_clubs_technology",
     "prev_utter_student_clubs_outreach",
-    "prev_utter_student_clubs_fitness"
+    "prev_utter_student_clubs_fitness",
+    "prev_utter_student_chapters",
+    "prev_utter_student_chapters_indian",
+    "prev_utter_student_chapters_university",
+    "prev_utter_student_chapters_international",
+    "prev_utter_student_chapters_american",
+    "prev_utter_student_chapters_IEEE"
   ]
 }

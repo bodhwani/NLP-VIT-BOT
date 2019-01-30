@@ -120,10 +120,76 @@
 
 <!--end of clubs-->
 
+<!--start of chapters-->
+## intent:student_chapters
+- Chapters
+- student network 
+- effective network
+- chapter
+- 
 
 
-<!--end of fests-->
-<!--end of fests-->
+## intent:student_chapters_indian
+- Indian chapters
+- ISTE
+- Indian Society for Technical Education
+- IETE
+- Institution of Electronics and Telecommunication Engineers
+- IIChE
+- Indian Institute Of Chemical Engineers
+- CSI
+- Computer Society of India
+- ISOI
+- Society of Instrumentation
+
+## intent:student_chapters_international
+- international chapters
+- ISA
+- International Society of Automation
+- TMI
+- Toastmasters International
+- Fifth Pillar
+- IET-VIT
+- Institution of Engineering and Technology
+- ACM
+- Association for Computing Machinery
+- SME
+- Oikos Vellore
+- SAE 
+
+## intent:student_chapters_university
+- university chapters
+- SEDS-VIT
+- VIT Materials Advantage
+
+## intent:student_chapters_american 
+- american chapters
+- AIESEC VIT
+- ASCE
+- American Society of Civil Engineers
+- ASME
+- American Society of Mechanical Engineers
+- AICHE
+- TEAM EKLAVYA
+
+## intent:student_chapters_IEEE
+- IEEE chapters
+- IEEE COMPUTER SOCIETY
+- IEEE CS
+- IEEE WIE
+- IEEE PES
+- IEEE ROBOTICS AND AUTOMATION SOCIETY
+- IEEE EMBS
+- IEEE EDS
+
+<!--end of chapters-->
+
+
+
+
+
+
+
 <!--end of fests-->
 <!--end of fests-->
 <!--end of fests-->

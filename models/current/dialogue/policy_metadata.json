@@ -5,16 +5,7 @@
         "name"
       ]
     },
-    "utter_student_clubs_arts": {
-      "slots": []
-    },
-    "utter_rename": {
-      "slots": []
-    },
-    "utter_admissions_PG": {
-      "slots": []
-    },
-    "utter_admissions_R": {
+    "utter_student_chapters_university": {
       "slots": []
     },
     "utter_goodbye": {
@@ -23,40 +14,64 @@
     "utter_admissions_UG": {
       "slots": []
     },
-    "utter_thanks": {
+    "utter_admissions_R": {
       "slots": []
     },
-    "utter_IR_response": {
-      "slots": []
-    },
-    "utter_specify": {
-      "slots": []
-    },
-    "utter_student_clubs_technology": {
-      "slots": []
-    },
-    "utter_student_clubs_literature": {
-      "slots": []
-    },
-    "utter_admissions_IR": {
+    "utter_admissions_PG": {
       "slots": []
     },
     "utter_riviera": {
       "slots": []
     },
-    "utter_student_clubs_fitness": {
+    "utter_admissions_IR": {
+      "slots": []
+    },
+    "utter_rename": {
+      "slots": []
+    },
+    "utter_student_chapters_IEEE": {
       "slots": []
     },
     "utter_gravitas": {
       "slots": []
     },
+    "utter_student_chapters_international": {
+      "slots": []
+    },
+    "utter_student_clubs_arts": {
+      "slots": []
+    },
     "utter_name": {
+      "slots": []
+    },
+    "utter_specify": {
+      "slots": []
+    },
+    "utter_student_clubs_outreach": {
+      "slots": []
+    },
+    "utter_IR_response": {
+      "slots": []
+    },
+    "utter_student_clubs_fitness": {
+      "slots": []
+    },
+    "utter_student_clubs_literature": {
       "slots": []
     },
     "utter_help_start": {
       "slots": []
     },
-    "utter_student_clubs_outreach": {
+    "utter_student_chapters_indian": {
+      "slots": []
+    },
+    "utter_student_clubs_technology": {
+      "slots": []
+    },
+    "utter_student_chapters_american": {
+      "slots": []
+    },
+    "utter_thanks": {
       "slots": []
     }
   },
@@ -71,5 +86,5 @@
     "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.memoization.MemoizationPolicy"
   ],
-  "trained_at": "20190127-233705"
+  "trained_at": "20190128-122142"
 }
