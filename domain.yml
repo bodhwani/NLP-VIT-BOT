@@ -28,6 +28,8 @@ intents:
 - student_chapters_international
 - student_chapters_american
 - student_chapters_IEEE
+- academics
+- ffcs
 
 entities:
 - name
@@ -70,6 +72,13 @@ actions:
 - utter_student_chapters_international
 - utter_student_chapters_american
 - utter_student_chapters_IEEE
+- utter_academics
+- utter_ffcs
+- utter_coe
+- utter_international_transfer_program
+- utter_library
+- utter_international_relations
+- utter_schools
 
 
 templates:
@@ -183,9 +192,8 @@ More at : http://www.vit.ac.in/admissions/international"
   showcase their skills and improve their innovation skills in the fields of 
   technology. The three day festival sees participation of students from all 
   across the country and also promotes exchange of ideas and sparks a collective
-  growth in development of this nation and its youth.
-  Visit : www.vitgravitas.com"
-  
+ growth in development of this nation and its youth.
+ Visit : www.vitgravitas.com"  
 
   utter_student_clubs:
   - text: "Student Clubs
@@ -314,3 +322,26 @@ throughout the year. The Chapters always have multiple universities and colleges
     IEEE-Electron Device Society
     Visit http://www.vit.ac.in/campus/studentchapters/ieee for more.
     "
+
+  utter_academics:
+  - text: "Teaching at VIT University is structured around Thirteen schools of study. A student should register in one of the schools, depending on the degree/programme he/she is interested in pursuing. Research centers are also part of the schools, encouraging inter-departmental collaboration and opportunity for students to participate in exciting research projects. The university offers 27 Undergraduate, 30 Postgraduate, 4 Integrated Programmes and 4 Research programmes. In addition to full-time/part-time Ph.D., M.S.(BY RESEARCH) Degrees in Engineering and Management Disciplines, M.Phil, Ph.D., in Science and Languages, Integrated Ph.D. programmes also offered for engineering disciplines in selected schools. If you want to find more information about Schools, International Relations, FFCS, Centers, Library, check out here - http://vit.ac.in/academics"
+
+
+  utter_ffcs:
+  - text: "FFCS is a way in which a student has complete freedom in tailoring his course the way he wishes. It accommodates the wants and needs of the entire student community as a whole. With this system, a student can prepare his/her own timetable with the specific courses he/she intends to do in that semester along with the timings of classes and choice of professors. More info at http://vit.ac.in/academics/ffcs"
+
+  utter_coe:
+  - text: "The Office of the Controller of Examinations is responsible for preparation, scheduling, and conduct of Final Assessment Test (FAT) for all the programmes offered by the institute. It also facilitates central valuation of answer scripts and timely publication of Results. More information at http://vit.ac.in/academics/coe"
+
+  utter_international_transfer_program:
+  - text: "ITP offers the entering students with an opportunity to study the first two years of the bachelors degree in engineering at VIT and complete the last two years of study in the USA, UK or Australia and get a degree from a partner university there. More information can be found here - http://vit.ac.in/academics/itp"
+
+  utter_library:
+  - text: "The Central Library is centrally air-conditioned, well-protected with fire alarm, Flap Barrier and CCTV surveillance. It has specialized collections of Books, Journals & other resources in Sciences, Engineering and Technology, Biotechnology, Humanities, Social Sciences and Management ranging from printed books, e-books, back volumes and CDs/DVDs. More information can be found at http://vit.ac.in/academics/library"
+
+  utter_international_relations:
+  - text: "A very sophisticated International Relations Office has been established to help in the internationalization efforts. The office facilitates the initiation and follow-up of international cooperation with substantial faculty & student exchange, joint R&D and Joint Programmes. It also takes care of the international students enrolled in the University in addition to the already existing exemplary guest care. More information can be found at http://vit.ac.in/academics/internationalRelations"
+
+  utter_schools:
+  - text: "Teaching at VIT is structured around ten schools of study. A student is registered in one of the schools, depending on the degree/programme he/she student is interested in pursuing. Research centers are also part of the schools, encouraging interdepartmental collaboration and opportunity for students to participate in exciting research projects. The university offers 27 Undergraduate and 30 Postgraduate programmes. More information can be found at http://vit.ac.in/academics/schools"
+
