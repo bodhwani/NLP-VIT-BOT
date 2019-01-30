@@ -1,8 +1,12 @@
-
 ## intent:campus_life
-- Every effort has been made by the administration and other management boards to ensure that all students find VIT a very active, fun and resourceful place to spend their academic years. Aware of the impact these vital years can have on the minds of the future of our nation and the world, VIT strives to encourage, introduce and develop any and all activities to shape their minds. Through bringing clubs, chapters and college festivals, students are not only exposed to a competitive environment inside the university but also with reputed institutions across the country and the world.
+- student activities
+- campus life
+- amenities
+- environment
+- extracurriculars
+- co-curriculars
 
-<!--start of fests-->
+<!--start fests-->
 ## intent:fests
 - Carnival
 - Fests
@@ -24,7 +28,7 @@
 - Cultural fest
 - culture
 - diversity
-- annual ISO certified sports and cultural fest
+- annual ISO certified sports cultural fest
 - entertainers
 - arm wrestling
 - human hand
@@ -39,9 +43,9 @@
 - competitions
 - workshops
 
-<!--end of fests-->
+<!--end fests-->
 
-<!--start of clubs-->
+<!--start clubs-->
 
 ## intent:student_clubs
 - extracurricular
@@ -102,14 +106,11 @@
 - Hindu education plus
 - THEP
 - Anokha
-- Cool the world
 - Edforall
 - MAD 
-- Make a difference
 - KALVI
 - Spartans
 - Rotaract Club
-- Becoming I Foundation
 
 ## intent:student_clubs_fitness
 - fitness club
@@ -118,41 +119,40 @@
 - trekking club
 - anandham
 
-<!--end of clubs-->
+<!--end clubs-->
 
-<!--start of chapters-->
+<!--start chapters-->
 ## intent:student_chapters
 - Chapters
 - student network 
 - effective network
 - chapter
-- 
 
 
 ## intent:student_chapters_indian
 - Indian chapters
 - ISTE
-- Indian Society for Technical Education
+- Indian Society Technical Education
 - IETE
-- Institution of Electronics and Telecommunication Engineers
+- Institution Electronics Telecommunication Engineers
 - IIChE
-- Indian Institute Of Chemical Engineers
+- Indian Institute Chemical Engineers
 - CSI
-- Computer Society of India
+- Computer Society India
 - ISOI
-- Society of Instrumentation
+- Society Instrumentation
 
 ## intent:student_chapters_international
 - international chapters
 - ISA
-- International Society of Automation
+- International Society Automation
 - TMI
 - Toastmasters International
 - Fifth Pillar
 - IET-VIT
-- Institution of Engineering and Technology
+- Institution Engineering Technology
 - ACM
-- Association for Computing Machinery
+- Association Computing Machinery
 - SME
 - Oikos Vellore
 - SAE 
@@ -166,9 +166,9 @@
 - american chapters
 - AIESEC VIT
 - ASCE
-- American Society of Civil Engineers
+- American Society Civil Engineers
 - ASME
-- American Society of Mechanical Engineers
+- American Society Mechanical Engineers
 - AICHE
 - TEAM EKLAVYA
 
@@ -178,11 +178,11 @@
 - IEEE CS
 - IEEE WIE
 - IEEE PES
-- IEEE ROBOTICS AND AUTOMATION SOCIETY
+- IEEE ROBOTICS AUTOMATION SOCIETY
 - IEEE EMBS
 - IEEE EDS
 
-<!--end of chapters-->
+<!--end chapters-->
 
 
 
@@ -190,11 +190,11 @@
 
 
 
-<!--end of fests-->
-<!--end of fests-->
-<!--end of fests-->
-<!--end of fests-->
-<!--end of fests-->
+<!--end fests-->
+<!--end fests-->
+<!--end fests-->
+<!--end fests-->
+<!--end fests-->
 <!--
 ## intent:clubs
 

@@ -2,6 +2,254 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
+        "intent": "academics",
+        "text": "academics"
+      },
+      {
+        "intent": "academics",
+        "text": "study"
+      },
+      {
+        "intent": "academics",
+        "text": "subjects"
+      },
+      {
+        "intent": "academics",
+        "text": "education"
+      },
+      {
+        "intent": "academics",
+        "text": "faculties"
+      },
+      {
+        "intent": "academics",
+        "text": "professor"
+      },
+      {
+        "intent": "academics",
+        "text": "research"
+      },
+      {
+        "intent": "academics",
+        "text": "program"
+      },
+      {
+        "intent": "academics",
+        "text": "Masters"
+      },
+      {
+        "intent": "academics",
+        "text": "M.S."
+      },
+      {
+        "intent": "academics",
+        "text": "Ph.D."
+      },
+      {
+        "intent": "academics",
+        "text": "M.Phil"
+      },
+      {
+        "intent": "ffcs",
+        "text": "ffcs"
+      },
+      {
+        "intent": "ffcs",
+        "text": "fully flexible credit system"
+      },
+      {
+        "intent": "ffcs",
+        "text": "course"
+      },
+      {
+        "intent": "ffcs",
+        "text": "credits"
+      },
+      {
+        "intent": "ffcs",
+        "text": "timetable"
+      },
+      {
+        "intent": "ffcs",
+        "text": "semester"
+      },
+      {
+        "intent": "ffcs",
+        "text": "class"
+      },
+      {
+        "intent": "ffcs",
+        "text": "semester"
+      },
+      {
+        "intent": "ffcs",
+        "text": "balance curriculum"
+      },
+      {
+        "intent": "ffcs",
+        "text": "branch change"
+      },
+      {
+        "intent": "coe",
+        "text": "controller examinations"
+      },
+      {
+        "intent": "coe",
+        "text": "coe"
+      },
+      {
+        "intent": "coe",
+        "text": "final assessment test"
+      },
+      {
+        "intent": "coe",
+        "text": "fat"
+      },
+      {
+        "intent": "coe",
+        "text": "consolidated"
+      },
+      {
+        "intent": "coe",
+        "text": "grade"
+      },
+      {
+        "intent": "coe",
+        "text": "transcripts"
+      },
+      {
+        "intent": "coe",
+        "text": "paper seeing"
+      },
+      {
+        "intent": "coe",
+        "text": "revaluation"
+      },
+      {
+        "intent": "coe",
+        "text": "arrear"
+      },
+      {
+        "intent": "coe",
+        "text": "re-fat"
+      },
+      {
+        "intent": "coe",
+        "text": "evaluation"
+      },
+      {
+        "intent": "coe",
+        "text": "results"
+      },
+      {
+        "intent": "international_transfer_program",
+        "text": "higher studies"
+      },
+      {
+        "intent": "international_transfer_program",
+        "text": "transfer"
+      },
+      {
+        "intent": "international_transfer_program",
+        "text": "usa"
+      },
+      {
+        "intent": "international_transfer_program",
+        "text": "uk"
+      },
+      {
+        "intent": "international_transfer_program",
+        "text": "australia"
+      },
+      {
+        "intent": "international_transfer_program",
+        "text": "partner university"
+      },
+      {
+        "intent": "library",
+        "text": "library"
+      },
+      {
+        "intent": "library",
+        "text": "books"
+      },
+      {
+        "intent": "library",
+        "text": "conference"
+      },
+      {
+        "intent": "library",
+        "text": "meeting"
+      },
+      {
+        "intent": "library",
+        "text": "study place"
+      },
+      {
+        "intent": "international_relations",
+        "text": "internaltional"
+      },
+      {
+        "intent": "international_relations",
+        "text": "foreign"
+      },
+      {
+        "intent": "international_relations",
+        "text": "exchange program"
+      },
+      {
+        "intent": "international_relations",
+        "text": "NRI"
+      },
+      {
+        "intent": "schools",
+        "text": "school"
+      },
+      {
+        "intent": "schools",
+        "text": "degree"
+      },
+      {
+        "intent": "schools",
+        "text": "program"
+      },
+      {
+        "intent": "schools",
+        "text": "advance science SAS"
+      },
+      {
+        "intent": "schools",
+        "text": "electronic engineering SENSE"
+      },
+      {
+        "intent": "schools",
+        "text": "architecture SPARC"
+      },
+      {
+        "intent": "schools",
+        "text": "information technology SITE"
+      },
+      {
+        "intent": "schools",
+        "text": "bio science SBST"
+      },
+      {
+        "intent": "schools",
+        "text": "mechanical SMED"
+      },
+      {
+        "intent": "schools",
+        "text": "civil SCE"
+      },
+      {
+        "intent": "schools",
+        "text": "computer science SCOPE"
+      },
+      {
+        "intent": "schools",
+        "text": "electrical SELECT"
+      },
+      {
         "intent": "international_relations",
         "text": "international tie-ups"
       },
@@ -1051,7 +1299,23 @@
       },
       {
         "intent": "student_chapters",
-        "text": "Multiple active Chapters keep the students engrossed in engaging activities throughout the year. The Chapters always have multiple universities and colleges under them and this creates a student network stopping at no borders. This cross-cultural interactions not only help students build an effective network but also help them in learning new things constantly. Interacting with others has been one of the major sources of knowledge transmission since ages and this helps in keeping it alive."
+        "text": "Chapters"
+      },
+      {
+        "intent": "student_chapters",
+        "text": "student network"
+      },
+      {
+        "intent": "student_chapters",
+        "text": "effective network"
+      },
+      {
+        "intent": "student_chapters",
+        "text": "chapter"
+      },
+      {
+        "intent": "student_chapters_indian",
+        "text": "Indian chapters"
       },
       {
         "intent": "student_chapters_indian",
@@ -1092,6 +1356,10 @@
       {
         "intent": "student_chapters_indian",
         "text": "Society of Instrumentation"
+      },
+      {
+        "intent": "student_chapters_international",
+        "text": "international chapters"
       },
       {
         "intent": "student_chapters_international",
@@ -1143,11 +1411,19 @@
       },
       {
         "intent": "student_chapters_university",
+        "text": "university chapters"
+      },
+      {
+        "intent": "student_chapters_university",
         "text": "SEDS-VIT"
       },
       {
         "intent": "student_chapters_university",
         "text": "VIT Materials Advantage"
+      },
+      {
+        "intent": "student_chapters_american",
+        "text": "american chapters"
       },
       {
         "intent": "student_chapters_american",
@@ -1176,6 +1452,10 @@
       {
         "intent": "student_chapters_american",
         "text": "TEAM EKLAVYA"
+      },
+      {
+        "intent": "student_chapters_IEEE",
+        "text": "IEEE chapters"
       },
       {
         "intent": "student_chapters_IEEE",

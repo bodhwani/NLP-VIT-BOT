@@ -4,3 +4,4 @@
 - v1.1.0 file structure for nlu training data and stories under data/nlu/ and data/stories/ , Updated Make commands , Campus life(Fests,Clubs)
 - v1.1.0 Added Academics section.
 - v1.2.0 Campus Life(Chapters)
+- v1.2.1 Stopword temp fix and Campus life story fix
