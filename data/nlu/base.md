@@ -13,7 +13,7 @@
 - i'm off
 - see you later alligator
 - we'll speak soon
-
+ 
 ## intent:greet
 - Hi
 - Hey
@@ -65,7 +65,7 @@
 
 ## intent:deny
 - No
-- Not at all
+- Not all
 - Nope
 - Nuh uh
 - Incorrect
@@ -74,20 +74,4 @@
 - Fail
 - Disagreed 
 
-## intent:name
-- My name is [Juste](name)  <!--- Square brackets contain the value of entity while the text in parentheses is a a label of the entity --> 
-- I am [Josh](name)
-- I'm [Lucy](name)
-- People call me [Greg](name)
-- It's [David](name)
-- Usually people call me [Amy](name)
-- My name is [John](name)
-- You can call me [Sam](name)
-- Please call me [Linda](name)
-- Name name is [Tom](name)
-- I am [Richard](name)
-- I'm [Tracy](name)
-- Call me [Sally](name)
-- I am [Philipp](name)
-- I am [Charlie](name)
-- [John](name)
+

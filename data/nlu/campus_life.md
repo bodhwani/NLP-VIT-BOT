@@ -12,7 +12,7 @@
 - Fests
 - Festival
 - Annual fests
-
+ 
 ## intent:riviera
 - riviera
 - Sports Carnival
@@ -42,6 +42,7 @@
 - technology
 - competitions
 - workshops
+- gravitas
 
 <!--end fests-->
 

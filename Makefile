@@ -35,3 +35,6 @@ cmdline:
 	
 action-server:
 	python -m rasa_core_sdk.endpoint --actions actions
+
+model_remove:
+	python model_remove.py

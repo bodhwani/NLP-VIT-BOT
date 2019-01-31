@@ -202,15 +202,15 @@
         "intent": "international_relations"
       }, 
       {
-        "text": "school", 
+        "text": "schools", 
         "intent": "schools"
       }, 
       {
-        "text": "degree", 
+        "text": "degrees", 
         "intent": "schools"
       }, 
       {
-        "text": "program", 
+        "text": "programs", 
         "intent": "schools"
       }, 
       {
@@ -482,7 +482,7 @@
         "intent": "deny"
       }, 
       {
-        "text": "Not at all", 
+        "text": "Not all", 
         "intent": "deny"
       }, 
       {
@@ -512,198 +512,6 @@
       {
         "text": "Disagreed", 
         "intent": "deny"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 11, 
-            "end": 16, 
-            "value": "Juste", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "My name is Juste"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 5, 
-            "end": 9, 
-            "value": "Josh", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I am Josh"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 8, 
-            "value": "Lucy", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I'm Lucy"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 15, 
-            "end": 19, 
-            "value": "Greg", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "People call me Greg"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 5, 
-            "end": 10, 
-            "value": "David", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "It's David"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 23, 
-            "end": 26, 
-            "value": "Amy", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "Usually people call me Amy"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 11, 
-            "end": 15, 
-            "value": "John", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "My name is John"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 16, 
-            "end": 19, 
-            "value": "Sam", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "You can call me Sam"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 15, 
-            "end": 20, 
-            "value": "Linda", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "Please call me Linda"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 13, 
-            "end": 16, 
-            "value": "Tom", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "Name name is Tom"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 5, 
-            "end": 12, 
-            "value": "Richard", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I am Richard"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 4, 
-            "end": 9, 
-            "value": "Tracy", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I'm Tracy"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 8, 
-            "end": 13, 
-            "value": "Sally", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "Call me Sally"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 5, 
-            "end": 12, 
-            "value": "Philipp", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I am Philipp"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 5, 
-            "end": 12, 
-            "value": "Charlie", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "I am Charlie"
-      }, 
-      {
-        "entities": [
-          {
-            "start": 0, 
-            "end": 4, 
-            "value": "John", 
-            "entity": "name"
-          }
-        ], 
-        "intent": "name", 
-        "text": "John"
       }, 
       {
         "text": "student activities", 
@@ -1290,10 +1098,6 @@
         "intent": "international_relations"
       }, 
       {
-        "text": "students who come to our university from other countries", 
-        "intent": "international_relations"
-      }, 
-      {
         "text": "other countries", 
         "intent": "international_relations"
       }, 
@@ -1350,7 +1154,7 @@
         "intent": "admissions"
       }, 
       {
-        "text": "getting into", 
+        "text": "getting", 
         "intent": "admissions"
       }, 
       {
@@ -1358,7 +1162,7 @@
         "intent": "admissions"
       }, 
       {
-        "text": "studying at", 
+        "text": "studying", 
         "intent": "admissions"
       }, 
       {
@@ -1366,7 +1170,7 @@
         "intent": "admissions"
       }, 
       {
-        "text": "learning at", 
+        "text": "learning", 
         "intent": "admissions"
       }, 
       {
@@ -1394,19 +1198,19 @@
         "intent": "admissions_UG"
       }, 
       {
-        "text": "Bachelor of Science", 
+        "text": "Bachelor Science", 
         "intent": "admissions_UG"
       }, 
       {
-        "text": "Bachelor of Architecture", 
+        "text": "Bachelor Architecture", 
         "intent": "admissions_UG"
       }, 
       {
-        "text": "Bachelor of Technology", 
+        "text": "Bachelor Technology", 
         "intent": "admissions_UG"
       }, 
       {
-        "text": "School of law", 
+        "text": "School law", 
         "intent": "admissions_UG"
       }, 
       {
@@ -1430,15 +1234,15 @@
         "intent": "admissions_PG"
       }, 
       {
-        "text": "Master of Technology", 
+        "text": "Master Technology", 
         "intent": "admissions_PG"
       }, 
       {
-        "text": "M. Sc.", 
+        "text": "M.Sc.", 
         "intent": "admissions_PG"
       }, 
       {
-        "text": "Master of Science", 
+        "text": "Master Science", 
         "intent": "admissions_PG"
       }, 
       {
@@ -1446,7 +1250,7 @@
         "intent": "admissions_PG"
       }, 
       {
-        "text": "Master in Computer Applications", 
+        "text": "Master Computer Applications", 
         "intent": "admissions_PG"
       }, 
       {
@@ -1458,7 +1262,7 @@
         "intent": "admissions_PG"
       }, 
       {
-        "text": "M. Des", 
+        "text": "M.Des", 
         "intent": "admissions_PG"
       }, 
       {
@@ -1478,15 +1282,15 @@
         "intent": "admissions_R"
       }, 
       {
-        "text": "M. Phil", 
+        "text": "M.Phil", 
         "intent": "admissions_R"
       }, 
       {
-        "text": "M. Tech. by Research", 
+        "text": "M.Tech. Research", 
         "intent": "admissions_R"
       }, 
       {
-        "text": "Ph. D.", 
+        "text": "Ph.D.", 
         "intent": "admissions_R"
       }, 
       {
@@ -1494,9 +1298,7 @@
         "intent": "admissions_R"
       }
     ], 
-    "entity_synonyms": [
-
-    ], 
+    "entity_synonyms": [], 
     "regex_features": [], 
     "lookup_tables": []
   }

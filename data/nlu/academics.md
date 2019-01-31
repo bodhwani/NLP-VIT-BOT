@@ -5,12 +5,8 @@
 - education
 - faculties
 - professor 
-- research
 - program
-- Masters
-- M.S.
-- Ph.D.
-- M.Phil
+
 
 ## intent:ffcs
 - ffcs
@@ -62,9 +58,9 @@
 - NRI
 
 ## intent:schools
-- school
-- degree
-- program
+- schools
+- degrees
+- programs
 - advance science SAS
 - electronic engineering SENSE
 - architecture SPARC

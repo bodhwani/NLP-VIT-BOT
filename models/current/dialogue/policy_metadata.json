@@ -6,7 +6,7 @@
   "python": "2.7.13", 
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
   "rasa_core": "0.12.4", 
-  "trained_at": "20190130-203153", 
+  "trained_at": "20190131-135033", 
   "policy_names": [
     "rasa_core.policies.keras_policy.KerasPolicy", 
     "rasa_core.policies.memoization.MemoizationPolicy"
@@ -24,7 +24,7 @@
     "utter_coe": {
       "slots": []
     }, 
-    "utter_IR_response": {
+    "utter_student_chapters_university": {
       "slots": []
     }, 
     "utter_student_chapters_IEEE": {
@@ -47,7 +47,7 @@
     "utter_specify": {
       "slots": []
     }, 
-    "utter_thanks": {
+    "utter_campus_life": {
       "slots": []
     }, 
     "utter_name": {
@@ -62,10 +62,13 @@
     "utter_student_clubs_literature": {
       "slots": []
     }, 
-    "utter_student_chapters_university": {
+    "utter_IR_response": {
       "slots": []
     }, 
     "utter_student_chapters_indian": {
+      "slots": []
+    }, 
+    "utter_thanks": {
       "slots": []
     }, 
     "utter_international_relations": {

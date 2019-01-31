@@ -2,7 +2,6 @@
 - international tie-ups
 - MoUs with colleges worldwide
 - foreign 
-- students who come to our university from other countries
 - other countries
 - connection with universities worldwide
 - International Relations Office
@@ -11,7 +10,7 @@
 - student exchange
 - Joint Programmes
 - international students 
-
+  
 ## intent:admissions
 - Admissions Office
 - admissions
@@ -19,11 +18,11 @@
 - entrance exams
 - counselling
 - admit
-- getting into 
+- getting 
 - joining 
-- studying at 
+- studying
 - attending 
-- learning at
+- learning
 
 ## intent:admissions_UG
 - BTech
@@ -32,10 +31,10 @@
 - BArch
 - B. Sc.
 - UG Arts and Science
-- Bachelor of Science
-- Bachelor of Architecture
-- Bachelor of Technology
-- School of law
+- Bachelor Science
+- Bachelor Architecture
+- Bachelor Technology
+- School law
 - B. Des. Industrial Design
 - BA
 - BBA
@@ -43,21 +42,21 @@
 
 ## intent:admissions_PG
 - M.Tech
-- Master of Technology
-- M. Sc.
-- Master of Science
+- Master Technology
+- M.Sc.
+- Master Science
 - MCA
-- Master in Computer Applications
+- Master Computer Applications
 - MBA
 - Master of Business Administration
-- M. Des
+- M.Des
 - Master of Design
 - Postgraduate
 - Post-graduate
 
 ## intent:admissions_R
 - Research
-- M. Phil
-- M. Tech. by Research
-- Ph. D.
+- M.Phil
+- M.Tech. Research
+- Ph.D.
 - Doctorate

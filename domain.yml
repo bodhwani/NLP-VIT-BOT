@@ -30,6 +30,7 @@ intents:
 - student_chapters_IEEE
 - academics
 - ffcs
+- coe
 
 entities:
 - name
@@ -83,10 +84,10 @@ actions:
 
 templates:
   utter_name:
-  - text: "Hey there! Tell me your name."
+  - text: "Hey there! How can I help you."
 
   utter_rename:
-  - text: "Sorry, lets try again then! Tell me your name."
+  - text: "Sorry, lets try again then! What would you like to know."
 
   utter_IR_response:
   - text: "The International Relations office is responsible for handling all the international tie-ups and MoUs with colleges worldwide. They also engage in helping students of our college get internships and foreign admissions after their studies here. The IR office also takes care of the students who come to our university from other countries by co-ordinating with all departments and making sure they have a very pleasant experience in our university.
