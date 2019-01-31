@@ -7,3 +7,4 @@
 - v1.2.1 Stopword temp fix and Campus life story fix.
 - v1.3.1 Dockerfile added and deployed successfuly.
 - v1.4.0 Chatbot-UI
+- v1.4.1 Hyper Linking and New line formattion , respective UI changes

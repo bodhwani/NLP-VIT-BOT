@@ -6,5 +6,6 @@ lib/
 Include/
 models/
 models
+models/*
 rasa_core.log
 requirements.txt
