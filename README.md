@@ -6,8 +6,12 @@
 - v1.2.0 Campus Life(Chapters)
 - v1.2.1 Stopword temp fix.
 - v1.3.1 Dockerfile added and deployed successfuly.
+- v1.4.0 Chatbot-UI
 - v1.4.1 Campus life story fix.
-- v1.4.2 Bug fix [Remove common words in the dataset]
+- v1.5.0 Hyper Linking and New line formattion , respective UI changes
+- v1.5.1 Bug fix [Remove common words in the dataset]
 
 ### Note:
 Run "make model_remove" after doing changes in the dataset. 
+
+
