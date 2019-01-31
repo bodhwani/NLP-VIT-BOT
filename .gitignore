@@ -4,6 +4,7 @@ Scripts/
 tcl/
 lib/
 Include/
-rasa_core.log
 models/
+models
+rasa_core.log
 requirements.txt

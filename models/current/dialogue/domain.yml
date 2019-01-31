@@ -1,3 +1,5 @@
+%YAML 1.1
+---
 actions:
 - utter_name
 - utter_help_start
@@ -43,65 +45,65 @@ entities:
 - name
 forms: []
 intents:
-- student_clubs_technology:
+- greet:
     use_entities: true
 - goodbye:
     use_entities: true
-- gravitas:
-    use_entities: true
-- admissions:
-    use_entities: true
-- academics:
-    use_entities: true
-- student_chapters_IEEE:
-    use_entities: true
 - thanks:
-    use_entities: true
-- student_chapters_international:
-    use_entities: true
-- international_relations:
-    use_entities: true
-- student_clubs_literature:
-    use_entities: true
-- student_chapters_american:
-    use_entities: true
-- student_clubs_outreach:
     use_entities: true
 - deny:
     use_entities: true
-- admissions_PG:
-    use_entities: true
 - name:
-    use_entities: true
-- student_clubs_arts:
-    use_entities: true
-- affirm:
-    use_entities: true
-- riviera:
-    use_entities: true
-- ffcs:
-    use_entities: true
-- campus_life:
-    use_entities: true
-- admissions_R:
-    use_entities: true
-- greet:
-    use_entities: true
-- student_chapters:
     use_entities: true
 - contact:
     use_entities: true
-- fests:
+- affirm:
     use_entities: true
-- student_chapters_university:
+- international_relations:
     use_entities: true
-- student_clubs:
+- admissions:
     use_entities: true
 - admissions_UG:
     use_entities: true
-- student_chapters_indian:
+- admissions_PG:
+    use_entities: true
+- admissions_R:
+    use_entities: true
+- campus_life:
+    use_entities: true
+- riviera:
+    use_entities: true
+- gravitas:
+    use_entities: true
+- fests:
+    use_entities: true
+- student_clubs:
+    use_entities: true
+- student_clubs_arts:
+    use_entities: true
+- student_clubs_literature:
+    use_entities: true
+- student_clubs_technology:
+    use_entities: true
+- student_clubs_outreach:
     use_entities: true
 - student_clubs_fitness:
+    use_entities: true
+- student_chapters:
+    use_entities: true
+- student_chapters_indian:
+    use_entities: true
+- student_chapters_university:
+    use_entities: true
+- student_chapters_international:
+    use_entities: true
+- student_chapters_american:
+    use_entities: true
+- student_chapters_IEEE:
+    use_entities: true
+- academics:
+    use_entities: true
+- ffcs:
     use_entities: true
 slots:
   name:

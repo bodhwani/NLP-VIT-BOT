@@ -1,2 +1,2 @@
-model_checkpoint_path: "/Users/Vinit/Desktop/NLP/NLP-VIT-BOT/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt"
-all_model_checkpoint_paths: "/Users/Vinit/Desktop/NLP/NLP-VIT-BOT/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt"
+model_checkpoint_path: "C:\\Users\\KARTHIK RAJARAMAN\\Desktop\\Chatbot\\models\\current\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "C:\\Users\\KARTHIK RAJARAMAN\\Desktop\\Chatbot\\models\\current\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
