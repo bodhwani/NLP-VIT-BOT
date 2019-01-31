@@ -1,111 +1,111 @@
 {
+  "max_histories": [
+    3, 
+    3
+  ], 
+  "python": "2.7.13", 
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
+  "rasa_core": "0.12.4", 
+  "trained_at": "20190130-203153", 
+  "policy_names": [
+    "rasa_core.policies.keras_policy.KerasPolicy", 
+    "rasa_core.policies.memoization.MemoizationPolicy"
+  ], 
   "action_fingerprints": {
+    "utter_student_chapters_american": {
+      "slots": []
+    }, 
+    "utter_riviera": {
+      "slots": []
+    }, 
+    "utter_goodbye": {
+      "slots": []
+    }, 
+    "utter_coe": {
+      "slots": []
+    }, 
+    "utter_IR_response": {
+      "slots": []
+    }, 
+    "utter_student_chapters_IEEE": {
+      "slots": []
+    }, 
     "action_listen": {
       "slots": [
         "name"
       ]
-    },
-    "utter_admissions_UG": {
-      "slots": []
-    },
-    "utter_help_start": {
-      "slots": []
-    },
-    "utter_student_clubs_fitness": {
-      "slots": []
-    },
-    "utter_specify": {
-      "slots": []
-    },
-    "utter_gravitas": {
-      "slots": []
-    },
-    "utter_schools": {
-      "slots": []
-    },
-    "utter_international_relations": {
-      "slots": []
-    },
-    "utter_student_clubs_outreach": {
-      "slots": []
-    },
-    "utter_admissions_PG": {
-      "slots": []
-    },
-    "utter_goodbye": {
-      "slots": []
-    },
-    "utter_student_clubs_literature": {
-      "slots": []
-    },
-    "utter_student_chapters_university": {
-      "slots": []
-    },
-    "utter_student_chapters_indian": {
-      "slots": []
-    },
-    "utter_library": {
-      "slots": []
-    },
-    "utter_riviera": {
-      "slots": []
-    },
-    "utter_IR_response": {
-      "slots": []
-    },
-    "utter_admissions_IR": {
-      "slots": []
-    },
-    "utter_student_clubs_technology": {
-      "slots": []
-    },
-    "utter_international_transfer_program": {
-      "slots": []
-    },
-    "utter_admissions_R": {
-      "slots": []
-    },
-    "utter_student_chapters_international": {
-      "slots": []
-    },
-    "utter_student_chapters_IEEE": {
-      "slots": []
-    },
-    "utter_student_chapters_american": {
-      "slots": []
-    },
-    "utter_student_clubs_arts": {
-      "slots": []
-    },
+    }, 
     "utter_rename": {
       "slots": []
-    },
-    "utter_ffcs": {
+    }, 
+    "utter_admissions_R": {
       "slots": []
-    },
+    }, 
+    "utter_student_clubs_technology": {
+      "slots": []
+    }, 
+    "utter_specify": {
+      "slots": []
+    }, 
     "utter_thanks": {
       "slots": []
-    },
-    "utter_academics": {
-      "slots": []
-    },
-    "utter_coe": {
-      "slots": []
-    },
+    }, 
     "utter_name": {
       "slots": []
+    }, 
+    "utter_admissions_UG": {
+      "slots": []
+    }, 
+    "utter_student_clubs_arts": {
+      "slots": []
+    }, 
+    "utter_student_clubs_literature": {
+      "slots": []
+    }, 
+    "utter_student_chapters_university": {
+      "slots": []
+    }, 
+    "utter_student_chapters_indian": {
+      "slots": []
+    }, 
+    "utter_international_relations": {
+      "slots": []
+    }, 
+    "utter_help_start": {
+      "slots": []
+    }, 
+    "utter_gravitas": {
+      "slots": []
+    }, 
+    "utter_ffcs": {
+      "slots": []
+    }, 
+    "utter_international_transfer_program": {
+      "slots": []
+    }, 
+    "utter_admissions_PG": {
+      "slots": []
+    }, 
+    "utter_schools": {
+      "slots": []
+    }, 
+    "utter_academics": {
+      "slots": []
+    }, 
+    "utter_admissions_IR": {
+      "slots": []
+    }, 
+    "utter_student_chapters_international": {
+      "slots": []
+    }, 
+    "utter_student_clubs_outreach": {
+      "slots": []
+    }, 
+    "utter_student_clubs_fitness": {
+      "slots": []
+    }, 
+    "utter_library": {
+      "slots": []
     }
-  },
-  "rasa_core": "0.12.4",
-  "python": "3.6.0",
-  "max_histories": [
-    3,
-    3
-  ],
-  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
-  "policy_names": [
-    "rasa_core.policies.keras_policy.KerasPolicy",
-    "rasa_core.policies.memoization.MemoizationPolicy"
-  ],
-  "trained_at": "20190130-130846"
+  }
 }
