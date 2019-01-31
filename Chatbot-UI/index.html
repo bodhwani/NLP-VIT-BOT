@@ -12,69 +12,45 @@
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
 		<script type="text/javascript">
-				$(document).ready(function(){
-$('#action_menu_btn').click(function(){
-	$('.action_menu').toggle();
-});
+		$(document).ready(function(){
+			$('#action_menu_btn').click(function(){
+			$('.action_menu').toggle();
+			});
+		});
+		document.addEventListener('keydown', function(event) {
+		  if (event.code == 'Enter') {
+		    clickHandler()
+		  }
+		});
+		function clickHandler() {
+			$(".card-body")[0].innerHTML+=`	<div class="d-flex justify-content-end mb-4"><div class="msg_cotainer_send">`+$(".form-control")[0].value+`</div></div>	`;
+			var query=$(".form-control")[0].value;		
+			var settings = {
+			  "async": true,
+			  "crossDomain": true,
+			  "url": "http://localhost:5005/conversations/default/respond",
+			  "method": "POST",
+			  "headers": {
+			    "content-type": "application/json",
+			    "cache-control": "no-cache",
+			    "postman-token": "93e80c0a-3625-8ef5-ac82-07e718b5c7b7"
+			  },
+			  "processData": false,
+			  "data": "{\"query\":\""+query+"\"}"
+			}
 
-	});
-				document.addEventListener('keydown', function(event) {
-  if (event.code == 'Enter') {
-    clickHandler()
-  }
-});
-				function clickHandler() {
-					$(".card-body")[0].innerHTML+=	
-					`
-					<div class="d-flex justify-content-end mb-4">
-								<div class="msg_cotainer_send">
-									`+$(".form-control")[0].value
-									+
-								`</div>
-							</div>	
-							`;
-							var query=$(".form-control")[0].value;
-							
-var myKeyVals = {"query":query}
-
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "http://localhost:5005/conversations/default/respond",
-  "method": "POST",
-  "headers": {
-    "content-type": "application/json",
-    "cache-control": "no-cache",
-    "postman-token": "93e80c0a-3625-8ef5-ac82-07e718b5c7b7"
-  },
-  "processData": false,
-  "data": "{\"query\":\""+query+"\"}"
-}
-
-$.ajax(settings).done(function (response) {
-
-$(".card-body")[0].innerHTML+=	
-					`
-					<div class="d-flex justify-content-start mb-4">
-								<div class="img_cont_msg">
-									<img src="vit.png" class="rounded-circle user_img_msg">
-								</div>
-								<div class="msg_cotainer">`+response[0]["text"]+`
-								</div>
-							</div>
-							`;
-var elem = document.getElementById('data');
-  elem.scrollTop = elem.scrollHeight;
-});
-							$(".form-control")[0].value="";
+			$.ajax(settings).done(function (response) {
+				var a = response[0]["text"].split("\n")
+				$(".card-body")[0].innerHTML+=`<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="vit.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer"><p>`+a.join("<p></p>")+`</p></div></div>`;
+				var elem = document.getElementById('data');
+  				elem.scrollTop = elem.scrollHeight;
+			});
+			$(".form-control")[0].value="";
 
 
-				};
-				
-
+		};
 		</script>
 	</head>
-	<!--Coded With Love By Mutiullah Samim-->
 	<body>
 		<div class="container-fluid h-100">
 			<div class="row justify-content-center h-100">
