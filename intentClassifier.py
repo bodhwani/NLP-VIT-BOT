@@ -39,8 +39,27 @@ class CNN(Component):
     # Default value is None which means it can handle all languages.
     # This is an important feature for backwards compatibility of components.
     language_list = None
+    MAX_SEQUENCE_LENGTH = None
+    words_index = None
     model = None
+    macro_to_id = None
     def __init__(self, component_config=None):
+        self.MAX_SEQUENCE_LENGTH = 1000
+        import json
+        import pandas as pd
+        with open('models/current/nlu/data.json') as f:
+           self.words_index = json.load(f)
+        df = pd.read_json('models/current/nlu/training_data.json')
+        dataset = pd.DataFrame()
+        label = []
+        text = []
+        for a in list(df["rasa_nlu_data"][0]):
+            label.append(a["intent"])
+            text.append(a["text"])
+        dataset["data"]=text
+        dataset["label"]=label
+        macronum=sorted(set(dataset["label"]))
+        self.macro_to_id = dict((note, number) for number, note in enumerate(macronum))
         super(CNN, self).__init__(component_config)
 
     def train(self, training_data, cfg, **kwargs):
@@ -59,14 +78,10 @@ class CNN(Component):
         from keras.models import Model
         from keras.callbacks import ModelCheckpoint
         from gensim.models import Word2Vec
-        MAX_SEQUENCE_LENGTH = 1000
         MAX_NB_WORDS = 20000
         EMBEDDING_DIM = 100
         VALIDATION_SPLIT = 0.2
         MAX_WORDS_IN_SENTENCE = 20
-        import json
-        with open('models/current/nlu/data.json') as f:
-            words_index = json.load(f)
         model = Word2Vec.load('models/current/nlu/model.bin')
         df = pd.read_json('models/current/nlu/training_data.json')
         dataset = pd.DataFrame()
@@ -78,18 +93,17 @@ class CNN(Component):
         dataset["data"]=text
         dataset["label"]=label
         macronum=sorted(set(dataset["label"]))
-        macro_to_id = dict((note, number) for number, note in enumerate(macronum))
         def fun(i):
-            return macro_to_id[i]
+            return self.macro_to_id[i]
         dataset["label"]=dataset["label"].apply(fun)
-        embedding_matrix = np.zeros((len(words_index)+1, EMBEDDING_DIM))
-        for word, i in words_index.items():
+        embedding_matrix = np.zeros((len(self.words_index)+1, EMBEDDING_DIM))
+        for word, i in self.words_index.items():
             embedding_vector = model[word]
             embedding_matrix[i] = embedding_vector
-        embedding_layer = Embedding(len(words_index)+1,
+        embedding_layer = Embedding(len(self.words_index)+1,
                                     EMBEDDING_DIM,weights=[embedding_matrix],
-                                    input_length=MAX_SEQUENCE_LENGTH,trainable=True)
-        sequence_input = Input(shape=(MAX_SEQUENCE_LENGTH,), dtype='int32')
+                                    input_length=self.MAX_SEQUENCE_LENGTH,trainable=True)
+        sequence_input = Input(shape=(self.MAX_SEQUENCE_LENGTH,), dtype='int32')
         embedded_sequences = embedding_layer(sequence_input)
         l_cov1= Conv1D(32, 2, activation='relu')(embedded_sequences)
         l_pool1 = MaxPooling1D(5)(l_cov1)
@@ -110,20 +124,21 @@ class CNN(Component):
         cp=ModelCheckpoint('model_cnn.hdf5',monitor='val_acc',verbose=1,save_best_only=True)
         X_train = [row.split() for row in list(dataset["data"])]
         for a in range(len(X_train)):
-            X_train[a]=[words_index[x] for x in X_train[a]]
-        X_train = pad_sequences(X_train, padding='post',maxlen=MAX_SEQUENCE_LENGTH)
+            X_train[a]=[self.words_index[x] for x in X_train[a]]
+        X_train = pad_sequences(X_train, padding='post',maxlen=self.MAX_SEQUENCE_LENGTH)
         y_train = [[0 for a in range(len(macronum))] for b in range(len(dataset["label"]))]
         print(dataset["label"][0])
         for a in range(len(dataset["label"])):
             y_train[a][dataset["label"][a]]=1
         print(np.array(X_train).shape)
-        history=self.model.fit(np.array(X_train),np.array(y_train),epochs=3,validation_split=0.2,batch_size=5,callbacks=[cp],verbose=1,shuffle=True)
+        history=self.model.fit(np.array(X_train),np.array(y_train),epochs=100,validation_split=0.2,batch_size=1,callbacks=[cp],verbose=1,shuffle=True)
 
     def process(self, message, **kwargs):
         # load json and create model
         from keras.preprocessing.sequence import pad_sequences
         from keras.models import model_from_json
-        MAX_SEQUENCE_LENGTH = 1000
+        import numpy as np
+        print(self.MAX_SEQUENCE_LENGTH)
         json_file = open('models/current/nlu/model.json', 'r')
         loaded_model_json = json_file.read()
         json_file.close()
@@ -132,10 +147,13 @@ class CNN(Component):
         print("Loaded model from disk")
         X = message.get("feature_matrix")
         print(type(X))
-        X = pad_sequences([X], padding='post',maxlen=MAX_SEQUENCE_LENGTH)
+        X = pad_sequences([X], padding='post',maxlen=self.MAX_SEQUENCE_LENGTH)
         Y = loaded_model.predict(X)
-        print(X)
-        message.set("intent", {"name": Y, "conf" : 1})
+        i=np.argmax(Y[0])
+        m=np.amax(Y[0])
+        inv_map = {v: k for k, v in self.macro_to_id.items()}
+        print(inv_map[i] , m)
+        message.set("intent", {"name": inv_map[i], "conf" : m})
 
     def persist(self, model_dir):
         from keras.models import model_from_json
