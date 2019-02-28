@@ -46,16 +46,6 @@ class SlangReplace(Component):
         super(SlangReplace, self).__init__(component_config)
 
     def train(self, training_data, cfg, **kwargs):
-        """Train this component.
-
-        This is the components chance to train itself provided
-        with the training data. The component can rely on
-        any context attribute to be present, that gets created
-        by a call to :meth:`components.Component.pipeline_init`
-        of ANY component and
-        on any context attributes created by a call to
-        :meth:`components.Component.train`
-        of components previous to this one."""
         print("TRAINING SLANGS")
         pass
 

@@ -15,6 +15,9 @@ class WordVectorizer(Component):
     model = None
     words_index = None
     def __init__(self, component_config=None):
+        import json
+        with open('models/current/nlu/data.json') as f:
+            self.words_index = json.load(f)
         super(WordVectorizer, self).__init__(component_config)
 
     def train(self, training_data, cfg, **kwargs):
@@ -48,9 +51,6 @@ class WordVectorizer(Component):
             self.words_index[word]=index
 
     def process(self, message, **kwargs):
-        import json
-        with open('models/current/nlu/data.json') as f:
-            self.words_index = json.load(f)
         feature_matrix = []
         for token in message.get("token_spellchecked"):
             feature_matrix.append(self.words_index[token.text])
