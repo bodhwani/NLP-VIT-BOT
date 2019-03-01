@@ -4,40 +4,29 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 from rasa_nlu.components import Component
+import numpy as np
+import pandas as pd
+from collections import defaultdict
+import re
+import sys
+import os 
+from keras.preprocessing.sequence import pad_sequences
+from keras.utils.np_utils import to_categorical
+from keras.layers import Embedding
+from keras.layers import Dense, Input, Flatten
+from keras.layers import Conv1D, MaxPooling1D, Embedding, Dropout
+from keras.models import Model
+from keras.callbacks import ModelCheckpoint
+from gensim.models import Word2Vec
+import json
+import pandas as pd
 
 
 class CNN(Component):
-    """A new component"""
-
-    # Name of the component to be used when integrating it in a
-    # pipeline. E.g. ``[ComponentA, ComponentB]``
-    # will be a proper pipeline definition where ``ComponentA``
-    # is the name of the first component of the pipeline.
     name = "CNN"
-
-    # Defines what attributes the pipeline component will
-    # provide when called. The listed attributes
-    # should be set by the component on the message object
-    # during test and train, e.g.
-    # ```message.set("entities", [...])```
     provides = ["intent","intent_ranking"]
-
-    # Which attributes on a message are required by this
-    # component. e.g. if requires contains "tokens", than a
-    # previous component in the pipeline needs to have "tokens"
-    # within the above described `provides` property.
     requires = ["feature_matrix"]
-
-    # Defines the default configuration parameters of a component
-    # these values can be overwritten in the pipeline configuration
-    # of the model. The component should choose sensible defaults
-    # and should be able to create reasonable results with the defaults.
     defaults = {}
-
-    # Defines what language(s) this component can handle.
-    # This attribute is designed for instance method: `can_handle_language`.
-    # Default value is None which means it can handle all languages.
-    # This is an important feature for backwards compatibility of components.
     language_list = None
     MAX_SEQUENCE_LENGTH = None
     words_index = None
@@ -45,8 +34,6 @@ class CNN(Component):
     macro_to_id = None
     def __init__(self, component_config=None):
         self.MAX_SEQUENCE_LENGTH = 1000
-        import json
-        import pandas as pd
         with open('models/current/nlu/data.json') as f:
            self.words_index = json.load(f)
         df = pd.read_json('models/current/nlu/training_data.json')
@@ -64,20 +51,6 @@ class CNN(Component):
 
     def train(self, training_data, cfg, **kwargs):
         print("TRAINING CNN")
-        import numpy as np
-        import pandas as pd
-        from collections import defaultdict
-        import re
-        import sys
-        import os # Why theano why not
-        from keras.preprocessing.sequence import pad_sequences
-        from keras.utils.np_utils import to_categorical
-        from keras.layers import Embedding
-        from keras.layers import Dense, Input, Flatten
-        from keras.layers import Conv1D, MaxPooling1D, Embedding, Dropout
-        from keras.models import Model
-        from keras.callbacks import ModelCheckpoint
-        from gensim.models import Word2Vec
         MAX_NB_WORDS = 20000
         EMBEDDING_DIM = 100
         VALIDATION_SPLIT = 0.2
@@ -92,7 +65,7 @@ class CNN(Component):
             text.append(a["text"])
         dataset["data"]=text
         dataset["label"]=label
-        macronum=sorted(set(dataset["label"]))
+        macronum = sorted(set(dataset["label"]))
         def fun(i):
             return self.macro_to_id[i]
         dataset["label"]=dataset["label"].apply(fun)

@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
-
+from pprint import pprint
 from rasa_nlu.components import Component
 
 
@@ -54,6 +54,7 @@ class WordVectorizer(Component):
         feature_matrix = []
         for token in message.get("token_spellchecked"):
             feature_matrix.append(self.words_index[token.text])
+        pprint(feature_matrix)
         message.set("feature_matrix", feature_matrix)
 
     def persist(self, model_dir):
