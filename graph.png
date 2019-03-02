@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style>
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.styleSheets[0].cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_admissions_response];
+2 [class="", fontsize=12, label=utter_admissions_clarification];
+3 [class="", fontsize=12, label=utter_goodbye];
+4 [class="", fontsize=12, label=utter_campus_life];
+5 [class="", fontsize=12, label=utter_academics];
+6 [class="", fontsize=12, label=utter_student_chapters];
+7 [class="", fontsize=12, label=utter_specify];
+8 [class="", fontsize=12, label=utter_admissions_UG];
+9 [class="", fontsize=12, label=utter_student_chapters_university];
+10 [class="", fontsize=12, label=utter_student_clubs_fitness];
+11 [class="", fontsize=12, label=utter_ffcs];
+12 [class="", fontsize=12, label=utter_admissions_R];
+15 [class="", fontsize=12, label=utter_admissions_PG];
+16 [class="", fontsize=12, label=utter_gravitas];
+20 [class="", fontsize=12, label=utter_student_clubs_technology];
+21 [class="", fontsize=12, label=utter_thanks];
+23 [class="", fontsize=12, label=utter_student_clubs_literature];
+24 [class="", fontsize=12, label=utter_student_chapters_indian];
+25 [class="", fontsize=12, label=utter_riviera];
+26 [class="", fontsize=12, label=utter_international_relations];
+27 [class="", fontsize=12, label=utter_student_chapters_IEEE];
+31 [class="", fontsize=12, label=utter_coe];
+32 [class="", fontsize=12, label=utter_student_clubs];
+34 [class="", fontsize=12, label=utter_student_chapters_american];
+35 [class="", fontsize=12, label=utter_library];
+36 [class="", fontsize=12, label=utter_name];
+37 [class="", fontsize=12, label=utter_international_transfer_program];
+38 [class="", fontsize=12, label=utter_fests];
+40 [class="", fontsize=12, label=utter_student_clubs_arts];
+41 [class="", fontsize=12, label=utter_student_chapters_international];
+42 [class="", fontsize=12, label=utter_name_check];
+43 [class="", fontsize=12, label=utter_help_start];
+45 [class="", fontsize=12, label=utter_rename];
+49 [class="", fontsize=12, label=utter_IR_response];
+50 [class="", fontsize=12, label=utter_student_clubs_outreach];
+51 [class="", fontsize=12, label=utter_schools];
+55 [class="", fontsize=12, label=utter_admissions_IR];
+56 [class=intent, fillcolor=lightblue, label=admissions, shape=rect, style=filled];
+57 [class=intent, fillcolor=lightblue, label=campus_life, shape=rect, style=filled];
+58 [class=intent, fillcolor=lightblue, label=academics, shape=rect, style=filled];
+59 [class=intent, fillcolor=lightblue, label=student_chapters, shape=rect, style=filled];
+60 [class=intent, fillcolor=lightblue, label=admissions_UG, shape=rect, style=filled];
+61 [class=intent, fillcolor=lightblue, label=student_chapters_university, shape=rect, style=filled];
+62 [class=intent, fillcolor=lightblue, label=student_clubs_fitness, shape=rect, style=filled];
+63 [class=intent, fillcolor=lightblue, label=ffcs, shape=rect, style=filled];
+64 [class=intent, fillcolor=lightblue, label=admissions_R, shape=rect, style=filled];
+65 [class=intent, fillcolor=lightblue, label=gravitas, shape=rect, style=filled];
+66 [class=intent, fillcolor=lightblue, label=student_clubs_technology, shape=rect, style=filled];
+67 [class=intent, fillcolor=lightblue, label=thanks, shape=rect, style=filled];
+68 [class=intent, fillcolor=lightblue, label=student_clubs_literature, shape=rect, style=filled];
+69 [class=intent, fillcolor=lightblue, label=student_chapters_indian, shape=rect, style=filled];
+70 [class=intent, fillcolor=lightblue, label=riviera, shape=rect, style=filled];
+71 [class=intent, fillcolor=lightblue, label=international_relations, shape=rect, style=filled];
+72 [class=intent, fillcolor=lightblue, label=student_chapters_IEEE, shape=rect, style=filled];
+73 [class=intent, fillcolor=lightblue, label=coe, shape=rect, style=filled];
+74 [class=intent, fillcolor=lightblue, label=student_clubs, shape=rect, style=filled];
+75 [class=intent, fillcolor=lightblue, label=student_chapters_american, shape=rect, style=filled];
+76 [class=intent, fillcolor=lightblue, label=library, shape=rect, style=filled];
+77 [class=intent, fillcolor=lightblue, label=greet, shape=rect, style=filled];
+78 [class=intent, fillcolor=lightblue, label=international_transfer_program, shape=rect, style=filled];
+79 [class=intent, fillcolor=lightblue, label=fests, shape=rect, style=filled];
+80 [class=intent, fillcolor=lightblue, label=student_clubs_arts, shape=rect, style=filled];
+81 [class=intent, fillcolor=lightblue, label=student_chapters_international, shape=rect, style=filled];
+82 [class=intent, fillcolor=lightblue, label=namenameLucy, shape=rect, style=filled];
+83 [class=intent, fillcolor=lightblue, label=international_relations, shape=rect, style=filled];
+84 [class=intent, fillcolor=lightblue, label=student_clubs_outreach, shape=rect, style=filled];
+85 [class=intent, fillcolor=lightblue, label=schools, shape=rect, style=filled];
+86 [class=intent, fillcolor=lightblue, label=goodbye, shape=rect, style=filled];
+87 [class=intent, fillcolor=lightblue, label=admissions_PG, shape=rect, style=filled];
+88 [class=intent, fillcolor=lightblue, label=deny, shape=rect, style=filled];
+89 [class=intent, fillcolor=lightblue, label=goodbye, shape=rect, style=filled];
+90 [class=intent, fillcolor=lightblue, label=admissions_PG, shape=rect, style=filled];
+91 [class=intent, fillcolor=lightblue, label=international_relations, shape=rect, style=filled];
+92 [class=intent, fillcolor=lightblue, label=admissions_UG, shape=rect, style=filled];
+93 [class=intent, fillcolor=lightblue, label=admissions_R, shape=rect, style=filled];
+94 [class=intent, fillcolor=lightblue, label=affirm, shape=rect, style=filled];
+95 [class=intent, fillcolor=lightblue, label=deny, shape=rect, style=filled];
+0 -> 56  [class="", key=0];
+0 -> 57  [class="", key=0];
+0 -> 58  [class="", key=0];
+0 -> 59  [class="", key=0];
+0 -> 60  [class="", key=0];
+0 -> 61  [class="", key=0];
+0 -> 62  [class="", key=0];
+0 -> 63  [class="", key=0];
+0 -> 64  [class="", key=0];
+0 -> 65  [class="", key=0];
+0 -> 66  [class="", key=0];
+0 -> 67  [class="", key=0];
+0 -> 68  [class="", key=0];
+0 -> 69  [class="", key=0];
+0 -> 70  [class="", key=0];
+0 -> 71  [class="", key=0];
+0 -> 72  [class="", key=0];
+0 -> 73  [class="", key=0];
+0 -> 74  [class="", key=0];
+0 -> 75  [class="", key=0];
+0 -> 76  [class="", key=0];
+0 -> 77  [class="", key=0];
+0 -> 78  [class="", key=0];
+0 -> 79  [class="", key=0];
+0 -> 80  [class="", key=0];
+0 -> 81  [class="", key=0];
+0 -> 82  [class="", key=0];
+0 -> 83  [class="", key=0];
+0 -> 84  [class="", key=0];
+0 -> 85  [class="", key=0];
+0 -> 86  [class="", key=0];
+0 -> 87  [class="", key=0];
+1 -> 2  [class="", key=NONE, label=""];
+2 -> 88  [class="", key=0];
+2 -> 89  [class="", key=0];
+2 -> 90  [class="", key=0];
+2 -> 91  [class="", key=0];
+2 -> 92  [class="", key=0];
+2 -> 93  [class="", key=0];
+3 -> "-1"  [class="", key=NONE, label=""];
+4 -> "-1"  [class="", key=NONE, label=""];
+5 -> "-1"  [class="", key=NONE, label=""];
+6 -> 7  [class="", key=NONE, label=""];
+7 -> "-1"  [class="", key=NONE, label=""];
+8 -> "-1"  [class="", key=NONE, label=""];
+9 -> "-1"  [class="", key=NONE, label=""];
+10 -> "-1"  [class="", key=NONE, label=""];
+11 -> "-1"  [class="", key=NONE, label=""];
+12 -> "-1"  [class="", key=NONE, label=""];
+15 -> "-1"  [class="", key=NONE, label=""];
+16 -> "-1"  [class="", key=NONE, label=""];
+20 -> "-1"  [class="", key=NONE, label=""];
+21 -> "-1"  [class="", key=NONE, label=""];
+23 -> "-1"  [class="", key=NONE, label=""];
+24 -> "-1"  [class="", key=NONE, label=""];
+25 -> "-1"  [class="", key=NONE, label=""];
+26 -> "-1"  [class="", key=NONE, label=""];
+27 -> "-1"  [class="", key=NONE, label=""];
+31 -> "-1"  [class="", key=NONE, label=""];
+32 -> 7  [class="", key=NONE, label=""];
+34 -> "-1"  [class="", key=NONE, label=""];
+35 -> "-1"  [class="", key=NONE, label=""];
+36 -> "-1"  [class="", key=NONE, label=""];
+37 -> "-1"  [class="", key=NONE, label=""];
+38 -> 7  [class="", key=NONE, label=""];
+40 -> "-1"  [class="", key=NONE, label=""];
+41 -> "-1"  [class="", key=NONE, label=""];
+42 -> 94  [class="", key=0];
+42 -> 95  [class="", key=0];
+43 -> "-1"  [class="", key=NONE, label=""];
+45 -> "-1"  [class="", key=NONE, label=""];
+49 -> "-1"  [class="", key=NONE, label=""];
+50 -> "-1"  [class="", key=NONE, label=""];
+51 -> "-1"  [class="", key=NONE, label=""];
+55 -> "-1"  [class="", key=NONE, label=""];
+56 -> 1  [class="", key=0];
+57 -> 4  [class="", key=0];
+58 -> 5  [class="", key=0];
+59 -> 6  [class="", key=0];
+60 -> 8  [class="", key=0];
+61 -> 9  [class="", key=0];
+62 -> 10  [class="", key=0];
+63 -> 11  [class="", key=0];
+64 -> 12  [class="", key=0];
+65 -> 16  [class="", key=0];
+66 -> 20  [class="", key=0];
+67 -> 21  [class="", key=0];
+68 -> 23  [class="", key=0];
+69 -> 24  [class="", key=0];
+70 -> 25  [class="", key=0];
+71 -> 26  [class="", key=0];
+72 -> 27  [class="", key=0];
+73 -> 31  [class="", key=0];
+74 -> 32  [class="", key=0];
+75 -> 34  [class="", key=0];
+76 -> 35  [class="", key=0];
+77 -> 36  [class="", key=0];
+78 -> 37  [class="", key=0];
+79 -> 38  [class="", key=0];
+80 -> 40  [class="", key=0];
+81 -> 41  [class="", key=0];
+82 -> 42  [class="", key=0];
+83 -> 49  [class="", key=0];
+84 -> 50  [class="", key=0];
+85 -> 51  [class="", key=0];
+86 -> 3  [class="", key=0];
+87 -> 15  [class="", key=0];
+88 -> 3  [class="", key=0];
+89 -> 3  [class="", key=0];
+90 -> 15  [class="", key=0];
+91 -> 55  [class="", key=0];
+92 -> 8  [class="", key=0];
+93 -> 12  [class="", key=0];
+94 -> 43  [class="", key=0];
+95 -> 45  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>
