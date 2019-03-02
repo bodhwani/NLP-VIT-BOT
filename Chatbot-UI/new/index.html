@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid h-100">
+			<div class="row h-100">
+				<div class="col-md-12 col-xl-12 chat">
+					<div class="card">
+						<div class="card-header msg_head">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="vit.png" class="rounded-circle user_img">
+								</div>
+								<div class="user_info">
+									<span>Emotional AI</span>
+								</div>
+							</div>
+							<div class="action_menu">
+								<ul>
+									<li><i class="fas fa-user-circle"></i>Feedback</li>
+								</ul>
+							</div>
+						</div>
+						<div id="data" class="card-body msg_card_body">						
+						</div>
+						<div class="card-footer">
+							<div class="input-group">
+								<input type="text" name="userinput" class="form-control type_msg" placeholder="Type your message..."></textarea>
+								<div class="input-group-append">
+									<span class="input-group-text send_btn" onclick='clickHandler()'><i class="fas fa-location-arrow"></i></span>
+									<button id="recordButton"><i class="fas fa-location-arrow"></i></button>
+									<button id="stopButton" disabled><i class="fas fa-location-arrow"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#action_menu_btn').click(function(){
+			$('.action_menu').toggle();
+			});
+		});
+		document.addEventListener('keydown', function(event) {
+		  if (event.code == 'Enter') {
+		    clickHandler()
+		  }
+		});
+		function clickHandler() {
+			$(".card-body")[0].innerHTML+=`	<div class="d-flex justify-content-end mb-4"><div class="msg_cotainer_send">`+$(".form-control")[0].value+`</div></div>	`;
+			var query=$(".form-control")[0].value;		
+			var settings = {
+			  "async": true,
+			  "crossDomain": true,
+			  "url": "http://localhost:5005/conversations/default/respond",
+			  "method": "POST",
+			  "headers": {
+			    "content-type": "application/json",
+			    "cache-control": "no-cache",
+			    "postman-token": "93e80c0a-3625-8ef5-ac82-07e718b5c7b7"
+			  },
+			  "processData": false,
+			  "data": "{\"query\":\""+query+"\"}"
+			}
+
+			$.ajax(settings).done(function (response) {
+				var a = response[0]["text"].split("\n")
+				$(".card-body")[0].innerHTML+=`<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="vit.png" class="rounded-circle user_img_msg"></div><div class="msg_cotainer"><p>`+a.join("<p></p>")+`</p></div></div>`;
+				var elem = document.getElementById('data');
+  				elem.scrollTop = elem.scrollHeight;
+			});
+			$(".form-control")[0].value="";
+		};
+	</script>
+  		<!-- <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+  		<script src="app.js"></script> -->
+	</body>
+</html>
