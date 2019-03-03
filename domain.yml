@@ -31,6 +31,7 @@ intents:
 - academics
 - ffcs
 - coe
+- quora
 
 entities:
 - name
@@ -80,6 +81,7 @@ actions:
 - utter_library
 - utter_international_relations
 - utter_schools
+- action_quora
 
 
 templates:
