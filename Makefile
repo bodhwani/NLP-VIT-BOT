@@ -36,5 +36,10 @@ cmdline:
 action-server:
 	python -m rasa_core_sdk.endpoint --actions actions
 
+quora-search:
+	python -m rasa_core_sdk.endpoint --actions quoraSearch
+
 model_remove:
 	python model_remove.py
+
+

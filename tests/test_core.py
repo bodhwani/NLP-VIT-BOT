@@ -8,9 +8,11 @@ from rasa_core.channels import CollectingOutputChannel
 from rasa_core.nlg import TemplatedNaturalLanguageGenerator
 
 from actions import ActionJoke
+from quoraSearch import QuoraSearch
+
 import uuid
 
-
+ 
 def test_agent_and_persist():
     policies = config.load('policies.yml')
     policies[0] = KerasPolicy(epochs=2)       # Keep training times low
@@ -28,15 +30,13 @@ def test_agent_and_persist():
     assert loaded.domain.entities == agent.domain.entities
     assert loaded.domain.templates == agent.domain.templates
 
-
+ 
 def test_action():
     domain = Domain.load('domain.yml')
     nlg = TemplatedNaturalLanguageGenerator(domain.templates)
     dispatcher = Dispatcher("my-sender", CollectingOutputChannel(), nlg)
     uid = str(uuid.uuid1())
     tracker = DialogueStateTracker(uid, domain.slots)
-
-    action = ActionJoke()
+    action = QuoraSearch()
     action.run(dispatcher, tracker, domain)
 
-    assert 'norris' in dispatcher.output_channel.latest_output()['text'].lower()
