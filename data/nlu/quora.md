@@ -1,4 +1,0 @@
-## intent:quora
-- rank
-- quora
-

@@ -1,3 +1,2 @@
-## story_joke_01
-* quora
+## story_quora
  - action_quora
