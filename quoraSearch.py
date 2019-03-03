@@ -17,32 +17,36 @@ import re
 logger = logging.getLogger(__name__)
 
 answers = []
-
+headers = {
+    
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+        
+    }
 class QuoraSearch(Action):
     def name(self):
         # define the name of the action which can then be included in training stories
         return "action_quora"
 
     def GoogleSearch(self, url):
-        page = requests.get(url)
+        link = []
+        page = requests.get(url, headers=headers)
         response = page.text
         soup = bs4.BeautifulSoup(response, 'lxml')
-        container = soup.find('h3',{'class':'r'})
-    #     start = timeit.timeit()
-        for l in container:
-            link = l.get('href')
-        quora_link = re.findall(r'q=[\'"]?([^\& >]+)', link)
-        quora_link = "".join(quora_link)
-        text = container.getText()
-    #     end = timeit.timeit()
-    #     print "time taken=",end - start
-        return text,quora_link
+        # print "soup is",soup
+        container = soup.find('li',{'class':'b_algo'})
+        # print ("container is",container)
+        
+        for i in container.findAll('a'):
+            link.append(i.get('href'))
+        return link[0]
 
     def QuoraSearch(self, url):
-        page = requests.get(url)
+        answers = []
+        page = requests.get(url, headers=headers)
         response = page.text
         soup = bs4.BeautifulSoup(response, 'lxml')
         container = soup.find('div',{'class':'ui_qtext_expanded'})
+        # print ("container in quora is",container)
         for p in container:
             answers.append(p.text)
         return answers[0]
@@ -51,13 +55,20 @@ class QuoraSearch(Action):
     	query = tracker.latest_message.get('text')
 
         search = query.replace(" ", "+")
-        question_url = "https://google.com/search?q="+search
+        question_url = "https://www.bing.com/search?q="+search+"quora"
+        # print ("question_url=",question_url)
 
-        text, quora_link = self.GoogleSearch(question_url)
-        response_text = self.QuoraSearch(quora_link)
+        quora_link = self.GoogleSearch(question_url)
+        # print ("quora_link is ",quora_link)
+
+        quora_answer = self.QuoraSearch(quora_link)
+        if(len(quora_answer)>250):
+            quora_answer_split = quora_answer.split(".")
+            quora_answer = ".".join(quora_answer_split[:5])
+        # print ("quora answers is",quora_answer)
 
         dispatcher.utter_message("The given information is not available on VIT's website. \nBut here is what I found on Quora:\n")
-        dispatcher.utter_message(response_text)  # send the message back to the user
+        dispatcher.utter_message(quora_answer)  # send the message back to the user
         dispatcher.utter_message("More information can be found at:")
         dispatcher.utter_message(quora_link)
         return []
