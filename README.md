@@ -10,6 +10,7 @@
 - v1.4.1 Campus life story fix.
 - v1.5.0 Hyper Linking and New line formattion , respective UI changes
 - v1.5.1 Bug fix [Remove common words in the dataset]
+- v1.6.0 Search in quora added
 
 ### Note:
 Run "make model_remove" after doing changes in the dataset. 

@@ -32,6 +32,7 @@ intents:
 - ffcs
 - coe
 - request_contact
+- quora
 
 entities:
 - name
@@ -86,6 +87,7 @@ actions:
 - utter_international_relations
 - utter_schools
 - action_contact
+- action_quora
 
 
 templates:
