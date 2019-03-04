@@ -25,3 +25,8 @@
  - utter_name_check
 * deny
  - utter_rename
+
+## story_name_contact
+* request_contact{"contact_number":"Lucy"}
+ - slot{"contact_number":"Karthik"}
+ - action_contact

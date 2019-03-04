@@ -1,8 +1,3 @@
 language: "en"
 
-pipeline:
-- name: "tokenizer_whitespace"
-- name: "slang.SlangReplace"
-- name: "spell.SpellingCorrect"
-- name: "vectorizer.WordVectorizer"
-- name: "intentClassifier.CNN"
+pipeline: "tensorflow_embedding"
