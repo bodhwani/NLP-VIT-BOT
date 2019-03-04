@@ -31,15 +31,20 @@ intents:
 - academics
 - ffcs
 - coe
+- request_contact
 - quora
 
 entities:
 - name
+- contact_number
 
 
 slots:
   name:
     type: text
+  contact_number:
+    type: text
+
 
 
 actions:
@@ -81,6 +86,7 @@ actions:
 - utter_library
 - utter_international_relations
 - utter_schools
+- action_contact
 - action_quora
 
 
