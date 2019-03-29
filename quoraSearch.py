@@ -53,6 +53,7 @@ class QuoraSearch(Action):
 
     def run(self, dispatcher, tracker, domain):
     	query = tracker.latest_message.get('text')
+        print ("query is",query)
 
         search = query.replace(" ", "+")
         question_url = "https://www.bing.com/search?q="+search+"quora"
@@ -65,7 +66,7 @@ class QuoraSearch(Action):
         if(len(quora_answer)>250):
             quora_answer_split = quora_answer.split(".")
             quora_answer = ".".join(quora_answer_split[:5])
-        # print ("quora answers is",quora_answer)
+        print ("quora answers is",quora_answer)
 
         dispatcher.utter_message("The given information is not available on VIT's website. \nBut here is what I found on Quora:\n")
         dispatcher.utter_message(quora_answer)  # send the message back to the user

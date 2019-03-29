@@ -150,7 +150,7 @@
 - TMI
 - Toastmasters International
 - Fifth Pillar
-- IET-VIT
+- IET
 - Institution Engineering Technology
 - ACM
 - Association Computing Machinery
@@ -160,12 +160,12 @@
 
 ## intent:student_chapters_university
 - university chapters
-- SEDS-VIT
-- VIT Materials Advantage
+- SEDS
+- Materials Advantage
 
 ## intent:student_chapters_american 
 - american chapters
-- AIESEC VIT
+- AIESEC
 - ASCE
 - American Society Civil Engineers
 - ASME
