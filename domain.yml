@@ -6,7 +6,6 @@ intents:
 - name
 - deny
 - contact
-- affirm
 - international_relations
 - admissions
 - admissions_UG
