@@ -48,20 +48,7 @@
 - cool, thanks
 - cool thank you
 
-## intent:affirm
-- yes
-- yes sure
-- absolutely
-- for sure
-- yes yes yes
-- definitely
-- Kinda
-- Almost
-- Approximately
-- Correct
-- Accepted
-- Success
-- Agreed
+
 
 ## intent:deny
 - No

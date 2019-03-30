@@ -13,8 +13,7 @@
 ## story_name_correct
 * name{"name":"Lucy"}
  - utter_name_check
-* affirm
- - utter_help_start
+
 
 ## story_VIT_international_relations
 * international_relations

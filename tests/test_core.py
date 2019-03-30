@@ -37,6 +37,7 @@ def test_action():
     dispatcher = Dispatcher("my-sender", CollectingOutputChannel(), nlg)
     uid = str(uuid.uuid1())
     tracker = DialogueStateTracker(uid, domain.slots)
+    # print ("dispatcher,uid,tracker ===", dispatcher, uid, tracker)
     action = QuoraSearch()
     action.run(dispatcher, tracker, domain)
 

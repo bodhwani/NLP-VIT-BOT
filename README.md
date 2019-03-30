@@ -11,6 +11,8 @@
 - v1.5.0 Hyper Linking and New line formattion , respective UI changes
 - v1.5.1 Bug fix [Remove common words in the dataset]
 - v1.6.0 Search in quora added
+- v1.6.1 Bug fix [Removed affirmations]
+- v1.7.0 Added Sentimental Analysis. 
 
 ### Note:
 Run "make model_remove" after doing changes in the dataset. 
