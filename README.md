@@ -13,6 +13,7 @@
 - v1.6.0 Search in quora added
 - v1.6.1 Bug fix [Removed affirmations]
 - v1.7.0 Added Sentimental Analysis. 
+- v1.8.0 Custom NLU Pipeline added
 
 ### Note:
 Run "make model_remove" after doing changes in the dataset. 
