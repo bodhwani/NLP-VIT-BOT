@@ -7,37 +7,10 @@ from rasa_nlu.components import Component
 
 
 class CNN(Component):
-    """A new component"""
-
-    # Name of the component to be used when integrating it in a
-    # pipeline. E.g. ``[ComponentA, ComponentB]``
-    # will be a proper pipeline definition where ``ComponentA``
-    # is the name of the first component of the pipeline.
     name = "CNN"
-
-    # Defines what attributes the pipeline component will
-    # provide when called. The listed attributes
-    # should be set by the component on the message object
-    # during test and train, e.g.
-    # ```message.set("entities", [...])```
     provides = ["intent","intent_ranking"]
-
-    # Which attributes on a message are required by this
-    # component. e.g. if requires contains "tokens", than a
-    # previous component in the pipeline needs to have "tokens"
-    # within the above described `provides` property.
     requires = ["feature_matrix"]
-
-    # Defines the default configuration parameters of a component
-    # these values can be overwritten in the pipeline configuration
-    # of the model. The component should choose sensible defaults
-    # and should be able to create reasonable results with the defaults.
     defaults = {}
-
-    # Defines what language(s) this component can handle.
-    # This attribute is designed for instance method: `can_handle_language`.
-    # Default value is None which means it can handle all languages.
-    # This is an important feature for backwards compatibility of components.
     language_list = None
     MAX_SEQUENCE_LENGTH = None
     words_index = None
@@ -45,6 +18,9 @@ class CNN(Component):
     macro_to_id = None
     def __init__(self, component_config=None):
         self.MAX_SEQUENCE_LENGTH = 1000
+        super(CNN, self).__init__(component_config)
+
+    def train(self, training_data, cfg, **kwargs):
         import json
         import pandas as pd
         with open('models/current/nlu/data.json') as f:
@@ -60,9 +36,6 @@ class CNN(Component):
         dataset["label"]=label
         macronum=sorted(set(dataset["label"]))
         self.macro_to_id = dict((note, number) for number, note in enumerate(macronum))
-        super(CNN, self).__init__(component_config)
-
-    def train(self, training_data, cfg, **kwargs):
         print("TRAINING CNN")
         import numpy as np
         import pandas as pd
@@ -83,16 +56,6 @@ class CNN(Component):
         VALIDATION_SPLIT = 0.2
         MAX_WORDS_IN_SENTENCE = 20
         model = Word2Vec.load('models/current/nlu/model.bin')
-        df = pd.read_json('models/current/nlu/training_data.json')
-        dataset = pd.DataFrame()
-        label = []
-        text = []
-        for a in list(df["rasa_nlu_data"][0]):
-            label.append(a["intent"])
-            text.append(a["text"])
-        dataset["data"]=text
-        dataset["label"]=label
-        macronum=sorted(set(dataset["label"]))
         def fun(i):
             return self.macro_to_id[i]
         dataset["label"]=dataset["label"].apply(fun)
@@ -131,10 +94,24 @@ class CNN(Component):
         for a in range(len(dataset["label"])):
             y_train[a][dataset["label"][a]]=1
         print(np.array(X_train).shape)
-        history=self.model.fit(np.array(X_train),np.array(y_train),epochs=100,validation_split=0.2,batch_size=1,callbacks=[cp],verbose=1,shuffle=True)
+        history=self.model.fit(np.array(X_train),np.array(y_train),epochs=1,validation_split=0.2,batch_size=1,callbacks=[cp],verbose=1,shuffle=True)
 
     def process(self, message, **kwargs):
-        # load json and create model
+        import json
+        import pandas as pd
+        with open('models/current/nlu/data.json') as f:
+           self.words_index = json.load(f)
+        df = pd.read_json('models/current/nlu/training_data.json')
+        dataset = pd.DataFrame()
+        label = []
+        text = []
+        for a in list(df["rasa_nlu_data"][0]):
+            label.append(a["intent"])
+            text.append(a["text"])
+        dataset["data"]=text
+        dataset["label"]=label
+        macronum=sorted(set(dataset["label"]))
+        self.macro_to_id = dict((note, number) for number, note in enumerate(macronum))
         from keras.preprocessing.sequence import pad_sequences
         from keras.models import model_from_json
         import numpy as np
@@ -153,7 +130,7 @@ class CNN(Component):
         m=np.amax(Y[0])
         inv_map = {v: k for k, v in self.macro_to_id.items()}
         print(inv_map[i] , m)
-        message.set("intent", {"name": inv_map[i], "conf" : m})
+        message.set("intent", {"name": inv_map[i], "conf" : str(m)}, add_to_output=True)
 
     def persist(self, model_dir):
         from keras.models import model_from_json

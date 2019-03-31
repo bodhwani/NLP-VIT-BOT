@@ -4,20 +4,16 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 from rasa_nlu.components import Component
-
-
+from nltk.corpus import gutenberg
 class WordVectorizer(Component):
     name = "WordVectorizer"
     provides = ["feature_matrix"]
-    requires = ["token_spellchecked"]
+    requires = ["token_lemmatized"]
     defaults = {}
     language_list = None
     model = None
     words_index = None
     def __init__(self, component_config=None):
-        import json
-        with open('models/current/nlu/data.json') as f:
-            self.words_index = json.load(f)
         super(WordVectorizer, self).__init__(component_config)
 
     def train(self, training_data, cfg, **kwargs):
@@ -43,24 +39,35 @@ class WordVectorizer(Component):
         sentences = []
         for row in dataset["data"]:
             sentences.append(row.split())
+        emma=gutenberg.sents('austen-emma.txt')
+        #brown_natural = [[' '.join(sent).replace('``', '"').replace("''", '"').replace('`', "'")]  for sent in brown.sents()[:100]]
+        sentences.extend(emma[3:])
         self.model = Word2Vec(sentences, min_count=1 ,size = EMBEDDING_DIM)
-        print(self.model)
+        # print(self.model)
+        # print(self.model["IEEE"])
+        # print(self.model["clever"])
         words = list(self.model.wv.vocab)
         self.words_index={}
+        #sentences = [" ".join(list_of_words) for list_of_words in emma]
         for index,word in enumerate(words):
             self.words_index[word]=index
+        import json
+        self.model.save("models/current/nlu"+'/model.bin')
+        with open("models/current/nlu"+'/data.json', 'w') as outfile:
+            json.dump(self.words_index, outfile)
 
     def process(self, message, **kwargs):
         feature_matrix = []
-        for token in message.get("token_spellchecked"):
+        import json
+        with open('models/current/nlu/data.json') as f:
+            self.words_index = json.load(f)
+        for token in message.get("token_lemmatized"):
+            print(token.text)
             feature_matrix.append(self.words_index[token.text])
         message.set("feature_matrix", feature_matrix)
 
     def persist(self, model_dir):
-        import json
-        self.model.save(model_dir+'/model.bin')
-        with open(model_dir+'/data.json', 'w') as outfile:
-            json.dump(self.words_index, outfile)
+        pass
 
     @classmethod
     def load(cls, model_dir=None, model_metadata=None, cached_component=None,
