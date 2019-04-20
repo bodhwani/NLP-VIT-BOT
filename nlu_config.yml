@@ -1,16 +1,18 @@
 language: "en"
 
 # "tensorflow_embedding"
-pipeline: 
-- name: "tokenizer_whitespace"
-- name: "slang.SlangReplace"
-- name: "spell.SpellingCorrect"
-- name: "nlp.Lemmatizer"
-- name: "vectorizer.WordVectorizer"
-- name: "intentClassifier.CNN"
+pipeline: "tensorflow_embedding"
 
-#pipeline:
-#- name: "tokenizer_whitespace"
+# - name: "tokenizer_whitespace"
+# - name: "slang.SlangReplace"
+# - name: "spell.SpellingCorrect"
+# - name: "nlp.Lemmatizer"
+# - name: "vectorizer.WordVectorizer"
+# - name: "intentClassifier.CNN"
+
+#pipeline: name#
+# - name: "tokenizer_whitespace"
+# - name: "tokenizer_whitespace"
 #- name: "intent_entity_featurizer_regex"
 #- name: "ner_crf"
 #- name: "ner_synonyms"

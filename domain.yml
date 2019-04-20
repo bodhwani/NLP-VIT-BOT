@@ -32,6 +32,9 @@ intents:
 - coe
 - request_contact
 - quora
+- placements
+- placements_dream
+- PAT
 
 entities:
 - name
@@ -86,7 +89,9 @@ actions:
 - utter_schools
 - action_contact
 - action_quora
-
+- utter_placements
+- utter_placements_dream
+- utter_PAT
 
 templates:
   utter_name:
@@ -333,4 +338,29 @@ throughout the year. The Chapters always have multiple universities and colleges
 
   utter_schools:
   - text: "Teaching at VIT is structured around ten schools of study. A student is registered in one of the schools, depending on the degree/programme he/she student is interested in pursuing. Research centers are also part of the schools, encouraging interdepartmental collaboration and opportunity for students to participate in exciting research projects. The university offers 27 Undergraduate and 30 Postgraduate programmes.\n More information can be found at <a href='http://vit.ac.in/academics/schools'>http://vit.ac.in/academics/schools</a>"
+
+  utter_placements:
+  - text: "The PAT centre plays an integral role in creating the illustrious placement record of VIT. It ensures smooth functioning of the placement activities in the campus. The centre further facilitates training activities of the students and makes sure they get placed in the best of both national and international companies. \n
+  More at: <a href='http://vit.ac.in/placement'>http://vit.ac.in/placement</a>
+  "
+
+  utter_placements_dream:
+  - text: "At VIT, More than 300 companies have visited this year for offering CTC of more than 4.5 Lakhs Per Annum. At VIT, students are enabled to have multiple offers in dream category they can choose IT Services/product/consulting/banking/ Core Engineering companies with regard of CTC which envisages their area of interest in which they wish to pursue their career. \n
+  More at: <a href='http://vit.ac.in/placement/dreamoffers'>http://vit.ac.in/placement/dreamoffers</a>
+  "
+
+  utter_PAT:
+  - text: "If VIT has placement records then it is because of PAT centre. Not only does this function as the working body to facilitate smooth working of the placement activities in the campus but also works to facilitate the training activities of the students and makes sure they get placed in the best of both national and international companies. \n
+  More at: <a href='http://vit.ac.in/placement/pat'>http://vit.ac.in/placement/pat</a>
+  "
+
+  
+
+
+
+
+
+
+
+
 
