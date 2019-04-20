@@ -7,13 +7,13 @@
 - professor 
 - program
 
-
 ## intent:ffcs
 - ffcs
 - fully flexible credit system
 - course
 - credits
 - timetable
+- time table
 - semester
 - class
 - semester
@@ -70,9 +70,3 @@
 - civil SCE
 - computer science SCOPE
 - electrical SELECT
-
-
-
-
-
-

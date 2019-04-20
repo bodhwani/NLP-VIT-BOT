@@ -5,7 +5,6 @@
 ## story_fests
 * fests
  - utter_fests
- - utter_specify
 
 ## story_riviera
 * riviera

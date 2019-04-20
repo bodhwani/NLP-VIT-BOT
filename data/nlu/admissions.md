@@ -10,7 +10,7 @@
 - student exchange
 - Joint Programmes
 - international students 
-  
+   
 ## intent:admissions
 - Admissions Office
 - admissions
@@ -28,6 +28,8 @@
 - BTech
 - VITEEE
 - Undergraduate
+- undergraduation
+- under graduation
 - BArch
 - B. Sc.
 - UG Arts and Science
@@ -53,6 +55,7 @@
 - Master of Design
 - Postgraduate
 - Post-graduate
+- Post graduate
 
 ## intent:admissions_R
 - Research
