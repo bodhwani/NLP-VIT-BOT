@@ -45,7 +45,7 @@ slots:
     type: text
 
 
-
+ 
 actions:
 - utter_name
 - utter_help_start
@@ -65,7 +65,6 @@ actions:
 - utter_campus_life
 - utter_riviera
 - utter_gravitas
-- utter_specify
 - utter_student_clubs
 - utter_student_clubs_arts
 - utter_student_clubs_literature
@@ -110,17 +109,8 @@ Fax : +91-416-2243092\n
 
   utter_admissions_response:
   - text: "
-Admissions\n
 The Admissions Office is in charge of handling all aspects regarding admissions to the various Undergraduate, Postgraduate and research scholar programmes. This includes preparation of the question paper for the VITEEE and VITMEE entrance exams. They also manage the paper correction, counselling and handle the formalities of the selected students.\n
-Contact\n
-location_on G-09, Ground Floor\n
-Dr. MGR block\n
-VIT ,\n
-Vellore,\n
-Tamil Nadu - 632014\n
-phone Under Graduate : +(91) 416 220 2157 / 2168 /: +(91) 416 330 5555\n 
-Post Graduate : +(91) 416 220 4600\n
-More at : <a href='http://www.vit.ac.in/admissions'>http://www.vit.ac.in/admissions</a>\n
+More at : <a href='http://www.vit.ac.in/admissions'>http://www.vit.ac.in/admissions</a>
 "
   utter_admissions_UG:
   - text: "
@@ -175,16 +165,12 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>http://www.vit
     chapters and college festivals, students are not only exposed 
     to a competitive environment inside the university but also 
     with reputed institutions across the country and the world.\n
-    You can know more about:\n
-    Clubs\n
-    Chapters\n
-    Sports\n
-    Fests\n"
+    More at: <a href='http://vit.ac.in/campus'>http://vit.ac.in/campus</a>"
   utter_fests:
   - text: "VIT annually conducts two fests - Gravitas and Riviera\n
-    Gravitas is a technological and design carnival and Riviera is a sports and cultural carnival\n"
-  utter_specify:
-  - text: "Can you specify?"
+    Gravitas is a technological and design carnival and Riviera is a sports and cultural carnival.\n
+    More at: <a href='http://vit.ac.in/campus/fests'>http://vit.ac.in/campus</a>"
+ 
   utter_riviera:
   - text: "Riviera, the annual ISO certified sports and cultural fest of VIT with all its 
     splendour and eminence is the biggest in South India one that boasts of the biggest 
@@ -192,19 +178,19 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>http://www.vit
     number of people arm wrestling, biggest number of people to form a human hand The 
     four day extravaganza is a celebration of dance, drama, debate, literature while 
     celebrating the plurality abode. \n
-    Visit : <a href='http://www.vit.ac.in/campus/riviera'>http://www.vit.ac.in/campus/riviera</a> or <a href='http://vitriviera.com/'>http://vitriviera.com/</a>"
+    Visit : <a href='http://www.vit.ac.in/campus/riviera'>http://www.vit.ac.in/campus/riviera</a>"
   utter_gravitas:
-  - text: "Gravitas\n
+  - text: "
   GraVITas is VIT University’s Annual technological and design Carnival. 
   This festival is an endeavour to provide a platform to all individuals to 
   showcase their skills and improve their innovation skills in the fields of 
   technology. The three day festival sees participation of students from all 
   across the country and also promotes exchange of ideas and sparks a collective
  growth in development of this nation and its youth.\n
- Visit : <a href='www.vitgravitas.com'>www.vitgravitas.com</a>\n"  
+ Visit : <a href='www.vitgravitas.com'>www.vitgravitas.com</a>"  
 
   utter_student_clubs:
-  - text: "Student Clubs\n
+  - text: "
   A club to fit everyone’s interests and clubs to fit everyone on 
   campus, VIT is enriched with these. Student clubs help students
   build leadership and team-building skills. The clubs are 
@@ -213,11 +199,12 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>http://www.vit
   research-oriented or public speaking, everything and everyone 
   are satisfied here.\n
   There are clubs relating to:\n
-  Arts\n
-  Literature\n
-  technology\n
-  Outreach \n
-  Fitness/Outdoor\n
+  Arts,
+  Literature, 
+  technology, 
+  Outreach, 
+  Fitness/Outdoor. \n
+  More at: <a href='http://vit.ac.in/campus/studentclubs'>http://vit.ac.in/campus/studentclubs</a>
   "
   utter_student_clubs_arts:
   - text: " Following are the arts based clubs at VIT:\n
@@ -270,7 +257,7 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>http://www.vit
   Trekking CLub\n
    You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/awareness'>http://www.vit.ac.in/campus/studentclubs/awareness</a>"
   utter_student_chapters:
-    - text: "Student Chapters\n
+    - text: "
 Multiple active Chapters keep the students engrossed in engaging activities 
 throughout the year. The Chapters always have multiple universities and colleges
  under them and this creates a student network stopping at no borders. 
@@ -279,12 +266,6 @@ throughout the year. The Chapters always have multiple universities and colleges
  others has been one of the major sources of knowledge transmission since ages 
  and this helps in keeping it alive.\n
  Visit : <a href='http://www.vit.ac.in/campus/studentchapters'>http://www.vit.ac.in/campus/studentchapters</a>\n
- Following are the categories of chapters in VIT:\n
- IEEE Societies\n
- Indian Societies\n
- International Societies\n
- University Chapters\n
- American Societies\n
  "
   utter_student_chapters_indian:
     - text: "Following are the indian societies at VIT:\n

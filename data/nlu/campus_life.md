@@ -5,7 +5,7 @@
 - environment
 - extracurriculars
 - co-curriculars
-
+ 
 <!--start fests-->
 ## intent:fests
 - Carnival
