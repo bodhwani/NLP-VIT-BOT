@@ -24,7 +24,7 @@ clean:
 	rm -rf *.egg-info
 	rm -rf docs/_build
 
-train-nlu:
+train-nlu: 
 	python -m rasa_nlu.train -c nlu_config.yml --data data/nlu -o models --fixed_model_name nlu --project current --verbose
 
 train-core:
