@@ -6,6 +6,7 @@ from __future__ import unicode_literals
 from rasa_nlu.components import Component
 from nltk.corpus import gutenberg
 class WordVectorizer(Component):
+    
     name = "WordVectorizer"
     provides = ["feature_matrix"]
     requires = ["token_lemmatized"]
@@ -13,6 +14,7 @@ class WordVectorizer(Component):
     language_list = None
     model = None
     words_index = None
+
     def __init__(self, component_config=None):
         super(WordVectorizer, self).__init__(component_config)
 

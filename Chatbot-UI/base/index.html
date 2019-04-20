@@ -107,13 +107,6 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   </head>
   <body class="login-page">
-    <!-- <nav class="navbar navbar-transparent fixed-top navbar-expand-lg marign_add4" id="sectionsNav">
-<div class="container justify-content-center" >
-<div class="navbar-translate">
-<center><div class="top" >
-</div>
-</div></center>
-</nav> -->
     <div class="page-header header-filter" style="background-image: url('../bg1.jpg'); background-size: cover; background-position: top center;">
       <div class="container">
         <div class="row" style="margin-top: 5%">
@@ -126,13 +119,6 @@
                 </h4>
               </div>
               <div class="card-body" style="height: 265px; padding: 0 20 0 20px;overflow-x: hidden;overflow-y: auto;">
-                <!-- 
-<div class="row marign_add2">
-<span class="badge badge-pill badge-success text_send" id="result">HAPPY</span>
-</div>
-<div class="row justify-content-end marign_add3">
-<span class="badge badge-pill badge-success text_receive" id="result">HAPPY</span>
-</div> -->
               </div>
               <div class="footer text-center" style="margin-top:2%;height: 94px;position: relative;">
                 <div class="row" id="chatinput">
@@ -164,12 +150,13 @@
           <button class="btn btn-warning" onclick="report()">Report Chat History
           </button>
           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Submit Feedback
-          </button>
+          </button><br>
+Assisted Mode <br>
+<input type="checkbox" id="assist" checked data-toggle="toggle" data-size="xs">
         </center>
       </div>
     </div>
     <script type="text/javascript">
-        
         var user = "";
       window.onload = function (){
         $.getJSON('http://ipinfo.io', function(data){
@@ -198,14 +185,6 @@
       recognition.onresult = function(event) {
         var current = event.resultIndex;
         var transcript = event.results[current][0].transcript;
-        //noteContent += transcript;
-        // var speech = new SpeechSynthesisUtterance();
-        // // Set the text and voice attributes.
-        // speech.text = transcript;
-        // speech.volume = 1;
-        // speech.rate = 1;
-        // speech.pitch = 1;
-        // window.speechSynthesis.speak(speech);
         console.log(transcript);
         clickHandler2(transcript);
       }
@@ -283,6 +262,7 @@
           var cumm=0;
           for (var i = 0; i <=a.length - 1; i++) {
             texttime(a[i],cumm);
+            if($("#assist").prop("checked"))
             speechtime(a[i],cumm);
             cumm+=a[i].split(" ").length
           }
@@ -292,7 +272,12 @@
         );
         $(".text-input-chat")[0].value="";
       };
+      var ttime=450;
+      var stime=450;
+      
       function texttime(el,i) {
+
+        console.log(ttime);
         setTimeout(function() {
           $(".card-body")[0].innerHTML+=`<div class="row marign_add3">
 <span class="badge-success text_send" id="result">`+el+`</span>
@@ -300,14 +285,14 @@
           var elem = document.getElementsByClassName('card-body')[0];
           elem.scrollTop = elem.scrollHeight;
         }
-                   , i*350);
+                   , i*ttime);
       }
       function speechtime(el,i) {
         setTimeout(function() {
           var res = el.replace(/<[^>]*>/gi, "");
           responsiveVoice.speak(res);
         }
-                   , i*350);
+                   , i*stime);
       }
       function toTitleCase(toTransform) {
         return toTransform.replace(/\b([a-z])/g, function (_, initial) {
@@ -374,6 +359,9 @@
     </script>
     <script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript">
     </script>
+
+    <link href="../assets/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="../assets/js/bootstrap4-toggle.min.js"></script>
     <script src="../assets/js/plugins/moment.min.js">
     </script>
     <script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript">
@@ -381,6 +369,22 @@
     <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript">
     </script>
     <script src="../assets/js/material-kit.js?v=2.0.5" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      
+      $("#assist").change(function(){
+        if($(this).prop("checked")=="true")
+        {
+          ttime=450;
+          stime=450;
+        }
+        else
+        {
+          console.log("HERE")
+          ttime=50;
+          stime=0;
+        }
+      })
     </script>
   </body>
   <div id="myModal" class="modal fade" role="dialog">

@@ -107,7 +107,7 @@ Vellore,\n
 Tamil Nadu - 632014\n
 phone +(91) 416 220 2131 / 2243118 \n
 Fax : +91-416-2243092\n
-  More at <a href='http://www.vit.ac.in/academics/internationalRelations'>http://www.vit.ac.in/academics/internationalRelations</a>"
+  More at <a href='http://www.vit.ac.in/academics/internationalRelations'>this link</a>"
 
   utter_admissions_response:
   - text: "
@@ -121,31 +121,31 @@ Vellore,\n
 Tamil Nadu - 632014\n
 phone Under Graduate : +(91) 416 220 2157 / 2168 /: +(91) 416 330 5555\n 
 Post Graduate : +(91) 416 220 4600\n
-More at : <a href='http://www.vit.ac.in/admissions'>http://www.vit.ac.in/admissions</a>\n
+More at : <a href='http://www.vit.ac.in/admissions'>this link</a>\n
 "
   utter_admissions_UG:
   - text: "
 UG Admissions 2019 - 2020\n
-More at : <a href='http://www.vit.ac.in/admissions/ug'>http://www.vit.ac.in/admissions/ug</a>"
+More at : <a href='http://www.vit.ac.in/admissions/ug'>this link</a>"
 
   utter_admissions_PG:
   - text: "
 PG Admissions\n
 In the post-graduation programme (M.Tech) students are allowed to pursue the course of their choice from one of the 7 schools of VIT. The entry into these programmes occurs by successfully getting through the VITMEE examination conducted every year.\n
-More at : <a href='http://www.vit.ac.in/admissions/pg'>http://www.vit.ac.in/admissions/pg</a>"
+More at : <a href='http://www.vit.ac.in/admissions/pg'>this link</a>"
 
   utter_admissions_R:
   - text: "
 Research Admissions\n
 Amidst the numerous courses offered by VIT, there are a few that cater to the research domain as well, namely M. Phil, M. Tech. and Ph. D. Students have a wide of variety of choices ranging from Nano electronics, disaster management, HR, Finance to Cancer biology, structural engineering and several languages.\n
 \n
-More at : <a href='http://www.vit.ac.in/admissions/research'>http://www.vit.ac.in/admissions/research</a>"
+More at : <a href='http://www.vit.ac.in/admissions/research'>this link</a>"
 
   utter_admissions_IR:
   - text: "
   International Admissions\n
   VIT prides itself in the ability to provide an education that is coveted not only within in India but abroad as well. Proof of this is seen in the increasing number of international students pursuing their higher education in the university. There are currently students from over 50 different countries studying in the university. VIT also has over 200 MoUs with foreign universities. These tie ups along with the university’s ABET accreditation ensures that all of our students have the opportunity to experience a truly global education. Attractive scholarships are also provided to deserving candidates. These aside, the facilities and extra-curricular activities within the university provide our students a truly vibrant campus life.\n
-More at : <a href='http://www.vit.ac.in/admissions/international'>http://www.vit.ac.in/admissions/international</a>"
+More at : <a href='http://www.vit.ac.in/admissions/international'>this link</a>"
 
   utter_admissions_clarification:
   - text: "Would you like to know in detail about any of the following? \n : Undergraduate ,\n Postgraduate ,\n Research \nor International/NRI admissions"
@@ -193,7 +193,7 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>http://www.vit
     number of people arm wrestling, biggest number of people to form a human hand The 
     four day extravaganza is a celebration of dance, drama, debate, literature while 
     celebrating the plurality abode. \n
-    Visit : <a href='http://www.vit.ac.in/campus/riviera'>http://www.vit.ac.in/campus/riviera</a> or <a href='http://vitriviera.com/'>http://vitriviera.com/</a>"
+    Visit : <a href='http://www.vit.ac.in/campus/riviera'>this link</a>"
   utter_gravitas:
   - text: "Gravitas\n
   GraVITas is VIT University’s Annual technological and design Carnival. 
@@ -232,13 +232,13 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>http://www.vit
   Debate Society\n
   Dramatics Club\n
   Film society\n
-  You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/arts'>http://www.vit.ac.in/campus/studentclubs/arts</a>"
+  You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/arts'>this link</a>"
   utter_student_clubs_literature:
   - text: " Following are the literature based clubs at VIT:\n
   English Literary Association\n
   KANNADA KASTHURI(KLA)\n
   Hindi Literary Association\n
-  You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/literature'>http://www.vit.ac.in/campus/studentclubs/literature</a>"
+  You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/literature'>this link</a>"
   utter_student_clubs_technology:
   - text: " Following are the technology based clubs at VIT:\n
   VIT Animation Club\n
@@ -246,7 +246,7 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>http://www.vit
   RoboVITics\n
   Technology and Gaming Club\n
   The Electronics Club\n
-  You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/technology'>http://www.vit.ac.in/campus/studentclubs/technology</a>"
+  You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/technology'>this link</a>"
   utter_student_clubs_outreach:
   - text: "Following are the clubs at VIT that focus on outreach:\n
   Environmental & Energy Conservation- E2PC\n
@@ -264,12 +264,12 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>http://www.vit
   VIT SPARTANS\n
   Rotaract Club\n
   Becoming I Foundation\n
-   You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/outreach'>http://www.vit.ac.in/campus/studentclubs/outreach</a>"
+   You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/outreach'>this link</a>"
   utter_student_clubs_fitness:
   - text: "Following are the fitness/outdoor based clubs at VIT:\n
   Health Club\n
   Trekking CLub\n
-   You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/awareness'>http://www.vit.ac.in/campus/studentclubs/awareness</a>"
+   You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/awareness'>this link</a>"
   utter_student_chapters:
     - text: "Student Chapters\n
 Multiple active Chapters keep the students engrossed in engaging activities 
@@ -279,7 +279,7 @@ throughout the year. The Chapters always have multiple universities and colleges
  network but also help them in learning new things constantly. Interacting with 
  others has been one of the major sources of knowledge transmission since ages 
  and this helps in keeping it alive.\n
- Visit : <a href='http://www.vit.ac.in/campus/studentchapters'>http://www.vit.ac.in/campus/studentchapters</a>\n
+ Visit : <a href='http://www.vit.ac.in/campus/studentchapters'>this link</a>\n
  Following are the categories of chapters in VIT:\n
  IEEE Societies\n
  Indian Societies\n
@@ -294,13 +294,13 @@ throughout the year. The Chapters always have multiple universities and colleges
     Indian Institute Of Chemical Engineers\n
     Computer Society of India (National)\n
     Society of Instrumentation\n
-    Visit <a href='http://www.vit.ac.in/campus/studentchapters/indian'>http://www.vit.ac.in/campus/studentchapters/indian</a> for more.
+    Visit <a href='http://www.vit.ac.in/campus/studentchapters/indian'>this link</a> for more.
     "
   utter_student_chapters_university:
     - text: "Following are the university chapters at VIT:\n
     SEDS-VIT\n
     VIT Materials Advantage\n
-    Visit <a href='http://www.vit.ac.in/campus/studentchapters/university'>http://www.vit.ac.in/campus/studentchapters/university</a> for more.\n
+    Visit <a href='http://www.vit.ac.in/campus/studentchapters/university'>this link</a> for more.\n
     "
   utter_student_chapters_international:
     - text: "TEAM EKLAVYA\n
@@ -310,7 +310,7 @@ throughout the year. The Chapters always have multiple universities and colleges
     IET-VIT (The Institution of engineering and technology)\n
     Association for Computing Machinery (ACM)\n
     SME\n
-    Visit <a href='http://www.vit.ac.in/campus/studentchapters/international'>http://www.vit.ac.in/campus/studentchapters/international</a> for more.\n
+    Visit <a href='http://www.vit.ac.in/campus/studentchapters/international'>this link</a> for more.\n
     "
   utter_student_chapters_american:
     - text: "Following are the american chapters at VIT:\n
@@ -319,7 +319,7 @@ throughout the year. The Chapters always have multiple universities and colleges
     American Society of Mechanical Engineers (ASME)\n
     AICHE\n
     TEAM EKLAVYA\n
-    Visit <a href='http://www.vit.ac.in/campus/studentchapters/american'>http://www.vit.ac.in/campus/studentchapters/american</a> for more
+    Visit <a href='http://www.vit.ac.in/campus/studentchapters/american'>this link</a> for more
     "
   utter_student_chapters_IEEE:
     - text: " Following are the IEEE based chapters at VIT:\n
@@ -329,28 +329,28 @@ throughout the year. The Chapters always have multiple universities and colleges
     IEEE ROBOTICS AND AUTOMATION SOCIETY\n
     IEEE-EMBS, Engineering in Medicine and Biology\n
     IEEE-Electron Device Society\n
-    Visit <a href='http://www.vit.ac.in/campus/studentchapters/ieee'>http://www.vit.ac.in/campus/studentchapters/ieee</a> for more.\n
+    Visit <a href='http://www.vit.ac.in/campus/studentchapters/ieee'>this link</a> for more.\n
     "
 
   utter_academics:
-  - text: "Teaching at VIT University is structured around Thirteen schools of study. A student should register in one of the schools, depending on the degree/programme he/she is interested in pursuing. Research centers are also part of the schools, encouraging inter-departmental collaboration and opportunity for students to participate in exciting research projects. The university offers 27 Undergraduate, 30 Postgraduate, 4 Integrated Programmes and 4 Research programmes. In addition to full-time/part-time Ph.D., M.S.(BY RESEARCH) Degrees in Engineering and Management Disciplines, M.Phil, Ph.D., in Science and Languages, Integrated Ph.D. programmes also offered for engineering disciplines in selected schools.\n If you want to find more information about Schools, International Relations, FFCS, Centers, Library,\n check out here - <a href='http://vit.ac.in/academics'>http://vit.ac.in/academics</a>"
+  - text: "Teaching at VIT University is structured around Thirteen schools of study. A student should register in one of the schools, depending on the degree/programme he/she is interested in pursuing. Research centers are also part of the schools, encouraging inter-departmental collaboration and opportunity for students to participate in exciting research projects. The university offers 27 Undergraduate, 30 Postgraduate, 4 Integrated Programmes and 4 Research programmes. In addition to full-time/part-time Ph.D., M.S.(BY RESEARCH) Degrees in Engineering and Management Disciplines, M.Phil, Ph.D., in Science and Languages, Integrated Ph.D. programmes also offered for engineering disciplines in selected schools.\n If you want to find more information about Schools, International Relations, FFCS, Centers, Library,\n check out here - <a href='http://vit.ac.in/academics'>this link</a>"
 
 
   utter_ffcs:
-  - text: "FFCS is a way in which a student has complete freedom in tailoring his course the way he wishes. It accommodates the wants and needs of the entire student community as a whole. With this system, a student can prepare his/her own timetable with the specific courses he/she intends to do in that semester along with the timings of classes and choice of professors.\n More info at <a href='http://vit.ac.in/academics/ffcs'>http://vit.ac.in/academics/ffcs</a>"
+  - text: "FFCS is a way in which a student has complete freedom in tailoring his course the way he wishes. It accommodates the wants and needs of the entire student community as a whole. With this system, a student can prepare his/her own timetable with the specific courses he/she intends to do in that semester along with the timings of classes and choice of professors.\n More info at <a href='http://vit.ac.in/academics/ffcs'>this link</a>"
 
   utter_coe:
-  - text: "The Office of the Controller of Examinations is responsible for preparation, scheduling, and conduct of Final Assessment Test (FAT) for all the programmes offered by the institute. It also facilitates central valuation of answer scripts and timely publication of Results.\n More information at <a href='http://vit.ac.in/academics/coe'>http://vit.ac.in/academics/coe</a>"
+  - text: "The Office of the Controller of Examinations is responsible for preparation, scheduling, and conduct of Final Assessment Test (FAT) for all the programmes offered by the institute. It also facilitates central valuation of answer scripts and timely publication of Results.\n More information at <a href='http://vit.ac.in/academics/coe'>this link</a>"
 
   utter_international_transfer_program:
-  - text: "ITP offers the entering students with an opportunity to study the first two years of the bachelors degree in engineering at VIT and complete the last two years of study in the USA, UK or Australia and get a degree from a partner university there.\n More information can be found here - <a href='http://vit.ac.in/academics/itp'>http://vit.ac.in/academics/itp</a>"
+  - text: "ITP offers the entering students with an opportunity to study the first two years of the bachelors degree in engineering at VIT and complete the last two years of study in the USA, UK or Australia and get a degree from a partner university there.\n More information can be found here - <a href='http://vit.ac.in/academics/itp'>this link</a>"
 
   utter_library:
-  - text: "The Central Library is centrally air-conditioned, well-protected with fire alarm, Flap Barrier and CCTV surveillance. It has specialized collections of Books, Journals & other resources in Sciences, Engineering and Technology, Biotechnology, Humanities, Social Sciences and Management ranging from printed books, e-books, back volumes and CDs/DVDs.\n More information can be found at <a href='http://vit.ac.in/academics/library'>http://vit.ac.in/academics/library</a>"
+  - text: "The Central Library is centrally air-conditioned, well-protected with fire alarm, Flap Barrier and CCTV surveillance. It has specialized collections of Books, Journals & other resources in Sciences, Engineering and Technology, Biotechnology, Humanities, Social Sciences and Management ranging from printed books, e-books, back volumes and CDs/DVDs.\n More information can be found at <a href='http://vit.ac.in/academics/library'>this link</a>"
 
   utter_international_relations:
-  - text: "A very sophisticated International Relations Office has been established to help in the internationalization efforts. The office facilitates the initiation and follow-up of international cooperation with substantial faculty & student exchange, joint R&D and Joint Programmes. It also takes care of the international students enrolled in the University in addition to the already existing exemplary guest care.\n More information can be found at <a href='http://vit.ac.in/academics/internationalRelations'>http://vit.ac.in/academics/internationalRelations</a>"
+  - text: "A very sophisticated International Relations Office has been established to help in the internationalization efforts. The office facilitates the initiation and follow-up of international cooperation with substantial faculty & student exchange, joint R&D and Joint Programmes. It also takes care of the international students enrolled in the University in addition to the already existing exemplary guest care.\n More information can be found at <a href='http://vit.ac.in/academics/internationalRelations'>this link</a>"
 
   utter_schools:
-  - text: "Teaching at VIT is structured around ten schools of study. A student is registered in one of the schools, depending on the degree/programme he/she student is interested in pursuing. Research centers are also part of the schools, encouraging interdepartmental collaboration and opportunity for students to participate in exciting research projects. The university offers 27 Undergraduate and 30 Postgraduate programmes.\n More information can be found at <a href='http://vit.ac.in/academics/schools'>http://vit.ac.in/academics/schools</a>"
+  - text: "Teaching at VIT is structured around ten schools of study. A student is registered in one of the schools, depending on the degree/programme he/she student is interested in pursuing. Research centers are also part of the schools, encouraging interdepartmental collaboration and opportunity for students to participate in exciting research projects. The university offers 27 Undergraduate and 30 Postgraduate programmes.\n More information can be found at <a href='http://vit.ac.in/academics/schools'>this link</a>"
 
