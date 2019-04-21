@@ -53,19 +53,19 @@ class QuoraSearch(Action):
         # print ("soup is",soup)
         container = soup.findAll('div',{'class':'ui_qtext_expanded'})
         for p in container:
-            answers.append(p.text)
+            answers.append(p.text.encode('utf-8').decode('ascii', 'ignore'))
         # print ("answers are",answers)
         return answers
 
     def sentimentalAnalysis(self, quora_answer):
         dic = {}
         for sentence in quora_answer:
-        #     print "snetence is ",sentence[0:100],snt
+            # print ("snetence is ",sentence[0:100])
             snt = sid.polarity_scores(sentence)
             dic[sentence] = snt['pos']
         # for i,o in dic.iteritems():
-        #     print ("\n",i[0:50], o)
-        # print"\n\n dic is ===== ", dic
+            # print ("\n",i[0:50], o)
+        # print ("\n\n dic is ===== ", dic)
         posAnswer = max(dic.items(), key=operator.itemgetter(1))[0]
         return posAnswer
 
