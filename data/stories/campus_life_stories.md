@@ -5,7 +5,6 @@
 ## story_fests
 * fests
  - utter_fests
- - utter_specify
 
 ## story_riviera
 * riviera
@@ -18,7 +17,6 @@
 ## story_student_clubs
 * student_clubs
  - utter_student_clubs
- - utter_specify
 
 ## story_student_clubs_arts
 * student_clubs_arts
@@ -43,7 +41,6 @@
 ## story_student_chapters
 * student_chapters
  - utter_student_chapters
- - utter_specify
 
 ## story_student_chapters_IEEE
 * student_chapters_IEEE

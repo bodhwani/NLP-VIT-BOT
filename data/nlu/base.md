@@ -50,15 +50,5 @@
 
 
 
-## intent:deny
-- No
-- Not all
-- Nope
-- Nuh uh
-- Incorrect
-- Wrong
-- Denied
-- Fail
-- Disagreed 
 
 

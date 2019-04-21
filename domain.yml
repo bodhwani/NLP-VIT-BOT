@@ -33,6 +33,9 @@ intents:
 - coe
 - request_contact
 - quora
+- placements
+- placements_dream
+- PAT
 
 entities:
 - name
@@ -46,7 +49,7 @@ slots:
     type: text
 
 
-
+ 
 actions:
 - utter_name
 - utter_help_start
@@ -66,7 +69,6 @@ actions:
 - utter_campus_life
 - utter_riviera
 - utter_gravitas
-- utter_specify
 - utter_student_clubs
 - utter_student_clubs_arts
 - utter_student_clubs_literature
@@ -87,8 +89,9 @@ actions:
 - utter_international_relations
 - utter_schools
 - action_contact
-- action_quora
-
+- utter_placements
+- utter_placements_dream
+- utter_PAT
 
 templates:
   utter_name:
@@ -99,28 +102,11 @@ templates:
 
   utter_IR_response:
   - text: "The International Relations office is responsible for handling all the international tie-ups and MoUs with colleges worldwide. They also engage in helping students of our college get internships and foreign admissions after their studies here. The IR office also takes care of the students who come to our university from other countries by co-ordinating with all departments and making sure they have a very pleasant experience in our university.\n
-      Contact\n
-location_on 109, First Floor\n
-Dr. MGR block\n
-VIT,\n
-Vellore,\n
-Tamil Nadu - 632014\n
-phone +(91) 416 220 2131 / 2243118 \n
-Fax : +91-416-2243092\n
   More at <a href='http://www.vit.ac.in/academics/internationalRelations'>this link</a>"
 
   utter_admissions_response:
   - text: "
-Admissions\n
 The Admissions Office is in charge of handling all aspects regarding admissions to the various Undergraduate, Postgraduate and research scholar programmes. This includes preparation of the question paper for the VITEEE and VITMEE entrance exams. They also manage the paper correction, counselling and handle the formalities of the selected students.\n
-Contact\n
-location_on G-09, Ground Floor\n
-Dr. MGR block\n
-VIT ,\n
-Vellore,\n
-Tamil Nadu - 632014\n
-phone Under Graduate : +(91) 416 220 2157 / 2168 /: +(91) 416 330 5555\n 
-Post Graduate : +(91) 416 220 4600\n
 More at : <a href='http://www.vit.ac.in/admissions'>this link</a>\n
 "
   utter_admissions_UG:
@@ -136,9 +122,7 @@ More at : <a href='http://www.vit.ac.in/admissions/pg'>this link</a>"
 
   utter_admissions_R:
   - text: "
-Research Admissions\n
 Amidst the numerous courses offered by VIT, there are a few that cater to the research domain as well, namely M. Phil, M. Tech. and Ph. D. Students have a wide of variety of choices ranging from Nano electronics, disaster management, HR, Finance to Cancer biology, structural engineering and several languages.\n
-\n
 More at : <a href='http://www.vit.ac.in/admissions/research'>this link</a>"
 
   utter_admissions_IR:
@@ -166,26 +150,19 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>this link</a>"
   - text: "My pleasure."
 
   utter_campus_life:
-  - text: "Every effort has been made by the administration and other management boards to ensure that 
-    all students find VIT a very active, fun and 
-    resourceful place to spend their academic years. 
-    Aware of the impact these vital years can have on the 
-    minds of the future of our nation and the world, VIT 
-    strives to encourage, introduce and develop any and all 
-    activities to shape their minds. Through bringing clubs, 
-    chapters and college festivals, students are not only exposed 
+  - text: "
+    VIT strives to encourage, introduce and develop any and all 
+    activities to shape their minds by bringing clubs, 
+    chapters and college festivals. Students are not only exposed 
     to a competitive environment inside the university but also 
     with reputed institutions across the country and the world.\n
-    You can know more about:\n
-    Clubs\n
-    Chapters\n
-    Sports\n
-    Fests\n"
+    More at: <a href='http://vit.ac.in/campus'>http://vit.ac.in/campus</a>"
+
   utter_fests:
   - text: "VIT annually conducts two fests - Gravitas and Riviera\n
-    Gravitas is a technological and design carnival and Riviera is a sports and cultural carnival\n"
-  utter_specify:
-  - text: "Can you specify?"
+    Gravitas is a technological and design carnival and Riviera is a sports and cultural carnival.\n
+    More at: <a href='http://vit.ac.in/campus/fests'>http://vit.ac.in/campus</a>"
+ 
   utter_riviera:
   - text: "Riviera, the annual ISO certified sports and cultural fest of VIT with all its 
     splendour and eminence is the biggest in South India one that boasts of the biggest 
@@ -195,17 +172,17 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>this link</a>"
     celebrating the plurality abode. \n
     Visit : <a href='http://www.vit.ac.in/campus/riviera'>this link</a>"
   utter_gravitas:
-  - text: "Gravitas\n
+  - text: "
   GraVITas is VIT University’s Annual technological and design Carnival. 
   This festival is an endeavour to provide a platform to all individuals to 
   showcase their skills and improve their innovation skills in the fields of 
   technology. The three day festival sees participation of students from all 
   across the country and also promotes exchange of ideas and sparks a collective
  growth in development of this nation and its youth.\n
- Visit : <a href='www.vitgravitas.com'>www.vitgravitas.com</a>\n"  
+ Visit : <a href='www.vitgravitas.com'>www.vitgravitas.com</a>"  
 
   utter_student_clubs:
-  - text: "Student Clubs\n
+  - text: "
   A club to fit everyone’s interests and clubs to fit everyone on 
   campus, VIT is enriched with these. Student clubs help students
   build leadership and team-building skills. The clubs are 
@@ -214,11 +191,12 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>this link</a>"
   research-oriented or public speaking, everything and everyone 
   are satisfied here.\n
   There are clubs relating to:\n
-  Arts\n
-  Literature\n
-  technology\n
-  Outreach \n
-  Fitness/Outdoor\n
+  Arts,
+  Literature, 
+  technology, 
+  Outreach, 
+  Fitness/Outdoor. \n
+  More at: <a href='http://vit.ac.in/campus/studentclubs'>http://vit.ac.in/campus/studentclubs</a>
   "
   utter_student_clubs_arts:
   - text: " Following are the arts based clubs at VIT:\n
@@ -234,11 +212,12 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>this link</a>"
   Film society\n
   You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/arts'>this link</a>"
   utter_student_clubs_literature:
-  - text: " Following are the literature based clubs at VIT:\n
+  - text: "Following are the literature based clubs at VIT:\n
   English Literary Association\n
   KANNADA KASTHURI(KLA)\n
   Hindi Literary Association\n
   You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/literature'>this link</a>"
+
   utter_student_clubs_technology:
   - text: " Following are the technology based clubs at VIT:\n
   VIT Animation Club\n
@@ -269,14 +248,11 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>this link</a>"
   - text: "Following are the fitness/outdoor based clubs at VIT:\n
   Health Club\n
   Trekking CLub\n
-   You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/awareness'>this link</a>"
+  You can get more information about the clubs at <a href='http://www.vit.ac.in/campus/studentclubs/awareness'>this link</a>"
   utter_student_chapters:
-    - text: "Student Chapters\n
+    - text: "
 Multiple active Chapters keep the students engrossed in engaging activities 
-throughout the year. The Chapters always have multiple universities and colleges
- under them and this creates a student network stopping at no borders. 
- This cross-cultural interactions not only help students build an effective 
- network but also help them in learning new things constantly. Interacting with 
+throughout the year.  Interacting with 
  others has been one of the major sources of knowledge transmission since ages 
  and this helps in keeping it alive.\n
  Visit : <a href='http://www.vit.ac.in/campus/studentchapters'>this link</a>\n
@@ -334,8 +310,8 @@ throughout the year. The Chapters always have multiple universities and colleges
 
   utter_academics:
   - text: "Teaching at VIT University is structured around Thirteen schools of study. A student should register in one of the schools, depending on the degree/programme he/she is interested in pursuing. Research centers are also part of the schools, encouraging inter-departmental collaboration and opportunity for students to participate in exciting research projects. The university offers 27 Undergraduate, 30 Postgraduate, 4 Integrated Programmes and 4 Research programmes. In addition to full-time/part-time Ph.D., M.S.(BY RESEARCH) Degrees in Engineering and Management Disciplines, M.Phil, Ph.D., in Science and Languages, Integrated Ph.D. programmes also offered for engineering disciplines in selected schools.\n If you want to find more information about Schools, International Relations, FFCS, Centers, Library,\n check out here - <a href='http://vit.ac.in/academics'>this link</a>"
-
-
+    Visit <a href='http://www.vit.ac.in/campus/studentchapters/ieee'>this link</a> for more.
+    "
   utter_ffcs:
   - text: "FFCS is a way in which a student has complete freedom in tailoring his course the way he wishes. It accommodates the wants and needs of the entire student community as a whole. With this system, a student can prepare his/her own timetable with the specific courses he/she intends to do in that semester along with the timings of classes and choice of professors.\n More info at <a href='http://vit.ac.in/academics/ffcs'>this link</a>"
 
@@ -353,4 +329,29 @@ throughout the year. The Chapters always have multiple universities and colleges
 
   utter_schools:
   - text: "Teaching at VIT is structured around ten schools of study. A student is registered in one of the schools, depending on the degree/programme he/she student is interested in pursuing. Research centers are also part of the schools, encouraging interdepartmental collaboration and opportunity for students to participate in exciting research projects. The university offers 27 Undergraduate and 30 Postgraduate programmes.\n More information can be found at <a href='http://vit.ac.in/academics/schools'>this link</a>"
+
+  utter_placements:
+  - text: "The PAT centre plays an integral role in creating the illustrious placement record of VIT. It ensures smooth functioning of the placement activities in the campus. The centre further facilitates training activities of the students and makes sure they get placed in the best of both national and international companies. \n
+  More at: <a href='http://vit.ac.in/placement'>http://vit.ac.in/placement</a>
+  "
+
+  utter_placements_dream:
+  - text: "At VIT, More than 300 companies have visited this year for offering CTC of more than 4.5 Lakhs Per Annum. At VIT, students are enabled to have multiple offers in dream category they can choose IT Services/product/consulting/banking/ Core Engineering companies with regard of CTC which envisages their area of interest in which they wish to pursue their career. \n
+  More at: <a href='http://vit.ac.in/placement/dreamoffers'>http://vit.ac.in/placement/dreamoffers</a>
+  "
+
+  utter_PAT:
+  - text: "If VIT has placement records then it is because of PAT centre. Not only does this function as the working body to facilitate smooth working of the placement activities in the campus but also works to facilitate the training activities of the students and makes sure they get placed in the best of both national and international companies. \n
+  More at: <a href='http://vit.ac.in/placement/pat'>http://vit.ac.in/placement/pat</a>
+  "
+
+  
+
+
+
+
+
+
+
+
 
