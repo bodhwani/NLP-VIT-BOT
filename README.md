@@ -18,5 +18,5 @@
 
 ### Note:
 Run "make model_remove" after doing changes in the dataset. 
-
+Run "make train-resetall" to remove exiting models, train new nlu and train new core models
 

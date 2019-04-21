@@ -8,6 +8,7 @@ import logging
 import requests
 import json
 from rasa_core_sdk import Action
+import time
 
 import bs4
 import requests
@@ -65,17 +66,15 @@ class QuoraSearch(Action):
         # for i,o in dic.iteritems():
         #     print ("\n",i[0:50], o)
         # print"\n\n dic is ===== ", dic
-        posAnswer = max(dic.iteritems(), key=operator.itemgetter(1))[0]
+        posAnswer = max(dic.items(), key=operator.itemgetter(1))[0]
         return posAnswer
 
 
     def run(self, dispatcher, tracker, domain):
-    	query = tracker.latest_message.get('text')
-
-        search = query.replace(" ", "+")
+        query = tracker.latest_message.get('text')
+    	#query = tracker.latest_message.get('text')
+        search = query.replace(" ","+")
         question_url = "https://www.bing.com/search?q="+search+"quora"
-        # print ("question_url=",question_url)
-
         quora_link = self.GoogleSearch(question_url)
         # print ("quora link is", quora_link)
 
@@ -88,11 +87,10 @@ class QuoraSearch(Action):
             answer_split = sentimentalAnswer.split(".")
             sentimentalAnswer = ".".join(answer_split[:5])
         # print ("quora answers is",quora_answer)
-
-        dispatcher.utter_message("The given information is not available on VIT's website. \nBut here is what I found on Quora:\n")
-        dispatcher.utter_message(sentimentalAnswer)  # send the message back to the user
-        dispatcher.utter_message("More information can be found at:")
-        dispatcher.utter_message(quora_link)
+        dispatcher.utter_message("The given information is not available on VIT's website.But here is what I found on Quora:")
+        dispatcher.utter_message(str(sentimentalAnswer))  # send the message back to the user
+        dispatcher.utter_message("More information can be found at:"+"<a href='"+str(quora_link)+"'> this link</a>")
+        dispatcher
         return []
 
 

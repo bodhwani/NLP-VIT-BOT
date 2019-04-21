@@ -2,7 +2,6 @@ language: "en"
 
 # "tensorflow_embedding"
 pipeline: "tensorflow_embedding"
-
 # - name: "tokenizer_whitespace"
 # - name: "slang.SlangReplace"
 # - name: "spell.SpellingCorrect"

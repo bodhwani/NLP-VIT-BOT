@@ -45,3 +45,6 @@ model_remove:
 http_server:
 	python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml --enable_api --cors "*"
 
+train-resetall:
+	python -m rasa_nlu.train -c nlu_config.yml --data data/nlu -o models --fixed_model_name nlu --project current --verbose
+	python -m rasa_core.train -d domain.yml -s data/stories -o models/current/dialogue -c policies.yml
