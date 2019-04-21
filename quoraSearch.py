@@ -89,8 +89,7 @@ class QuoraSearch(Action):
         # print ("quora answers is",quora_answer)
         dispatcher.utter_message("The given information is not available on VIT's website.But here is what I found on Quora:")
         dispatcher.utter_message(str(sentimentalAnswer))  # send the message back to the user
-        dispatcher.utter_message("More information can be found at:")
-        dispatcher.utter_message(str(quora_link))
+        dispatcher.utter_message("More information can be found at:"+"<a href='"+str(quora_link)+"'> this link</a>")
         dispatcher
         return []
 

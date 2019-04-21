@@ -230,10 +230,39 @@ Assisted Mode <br>
         }
       function clickHandler() {
         var query=$(".text-input-chat")[0].value;
-        query=toTitleCase(query);
-        console.log(query)
+
+        var form = new FormData();
+        form.append("key", "AIzaSyCmxncdzg47oS91-x0h6isUh6wEf1L8sks");
+        form.append("q", query);
+        form.append("target", "en");
+
+        var settings = {
+          "async": true,
+          "crossDomain": true,
+          "url": "https://cors-anywhere.herokuapp.com/https://translation.googleapis.com/language/translate/v2",
+          "method": "POST",
+          "headers": {
+            "cache-control": "no-cache",
+            "Postman-Token": "e496b128-50ff-488f-98e0-8393277ba21c",
+            "Access-Control-Allow-Origin":  "*"
+          },
+          "processData": false,
+          "contentType": false,
+          "mimeType": "multipart/form-data",
+          "data": form
+        }
         $(".card-body")[0].innerHTML+=`<div class="row justify-content-end marign_add3">
 <span class="badge-info text_receive" id="result">`+query+`</span>
+      </div>`;
+        var query="";
+        var lang="en";
+        $.ajax(settings).done(function (response) {
+          //console.log(JSON.parse(response)["data"]["translations"][0]["translatedText"]);
+          query = JSON.parse(response)["data"]["translations"][0]["translatedText"];
+          lang = JSON.parse(response)["data"]["translations"][0]["detectedSourceLanguage"];
+          console.log(query)
+        $(".card-body")[0].innerHTML+=`<div class="row justify-content-end marign_add3">
+<span class="badge-info text_receive" id="result"> <i>English Translated</i>: `+query+`</span>
       </div>`;
         var settings = {
           "async": true,
@@ -252,6 +281,7 @@ Assisted Mode <br>
         }
         $.ajax(settings).done(function (response) {
           console.log(response)
+
           var result=[];
 
           for(var l=0;l<response.length;l++)
@@ -260,19 +290,44 @@ Assisted Mode <br>
           var cumm=0;
           for (var i = 0; i <=a.length - 1; i++) {
             if(a[i].length>1)
-            texttime(a[i],cumm);
-            if($("#assist").prop("checked"))
-            speechtime(a[i],cumm);
+var form = new FormData();
+        form.append("key", "AIzaSyCmxncdzg47oS91-x0h6isUh6wEf1L8sks");
+        form.append("q", a[i]);
+        form.append("target", lang);
+
+        var settings = {
+          "async": true,
+          "crossDomain": true,
+          "url": "https://cors-anywhere.herokuapp.com/https://translation.googleapis.com/language/translate/v2",
+          "method": "POST",
+          "headers": {
+            "cache-control": "no-cache",
+            "Postman-Token": "e496b128-50ff-488f-98e0-8393277ba21c",
+            "Access-Control-Allow-Origin":  "*"
+          },
+          "processData": false,
+          "contentType": false,
+          "mimeType": "multipart/form-data",
+          "data": form
+        }
+         //texttime("<i>English Translated</i>"+a[i],cumm);
+        var ans="";
+        $.ajax(settings).done(function (response) {
+          //console.log(JSON.parse(response)["data"]["translations"][0]["translatedText"]);
+          ans = JSON.parse(response)["data"]["translations"][0]["translatedText"];
+            texttime(ans,cumm);
+        });
             cumm+=a[i].split(" ").length
           }
-
         }
         }
         );
+      });
+        
         $(".text-input-chat")[0].value="";
       };
-      var ttime=450;
-      var stime=450;
+      var ttime=50;
+      var stime=0;
       
       function texttime(el,i) {
         console.log(el);
@@ -366,37 +421,7 @@ Assisted Mode <br>
     </script>
     <script src="../assets/js/material-kit.js?v=2.0.5" type="text/javascript">
     </script>
-    <script type="text/javascript">var http = new XMLHttpRequest();
-
-      function translate(text)
-      {
-        var form = new FormData();
-        form.append("key", "AIzaSyCmxncdzg47oS91-x0h6isUh6wEf1L8sks");
-        form.append("q", text);
-        form.append("target", "en");
-
-        var settings = {
-          "async": true,
-          "crossDomain": true,
-          "url": "https://cors-anywhere.herokuapp.com/https://translation.googleapis.com/language/translate/v2",
-          "method": "POST",
-          "headers": {
-            "cache-control": "no-cache",
-            "Postman-Token": "e496b128-50ff-488f-98e0-8393277ba21c",
-            "Access-Control-Allow-Origin":  "*"
-          },
-          "processData": false,
-          "contentType": false,
-          "mimeType": "multipart/form-data",
-          "data": form
-        }
-        var ret="";
-        $.ajax(settings).done(function (response) {
-          console.log(JSON.parse(response)["data"]["translations"][0]["translatedText"]);
-          ret = JSON.parse(response)["data"]["translations"][0]["translatedText"];
-      });
-        
-      }
+    <script type="text/javascript">
       $("#assist").change(function(){
         if($(this).prop("checked")=="true")
         {
