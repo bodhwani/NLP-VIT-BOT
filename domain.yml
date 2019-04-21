@@ -144,8 +144,8 @@ More at : <a href='http://www.vit.ac.in/admissions/research'>this link</a>"
   utter_admissions_IR:
   - text: "
   International Admissions\n
-  VIT prides itself in the ability to provide an education that is coveted not only within in India but abroad as well. Proof of this is seen in the increasing number of international students pursuing their higher education in the university. There are currently students from over 50 different countries studying in the university. VIT also has over 200 MoUs with foreign universities. These tie ups along with the university’s ABET accreditation ensures that all of our students have the opportunity to experience a truly global education. Attractive scholarships are also provided to deserving candidates. These aside, the facilities and extra-curricular activities within the university provide our students a truly vibrant campus life.\n
-More at : <a href='http://www.vit.ac.in/admissions/international'>this link</a>"
+  VIT prides itself in the ability to provide an education that is coveted not only within in India but abroad as well. There are currently students from over 50 different countries studying in the university. VIT also has over 200 MoUs with foreign universities. These tie ups along with the university’s ABET accreditation ensures that all of our students have the opportunity to experience a truly global education. Attractive scholarships are also provided to deserving candidates.\n
+  More at : <a href='http://www.vit.ac.in/admissions/international'>this link</a>"
 
   utter_admissions_clarification:
   - text: "Would you like to know in detail about any of the following? \n : Undergraduate ,\n Postgraduate ,\n Research \nor International/NRI admissions"
@@ -166,14 +166,9 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>this link</a>"
   - text: "My pleasure."
 
   utter_campus_life:
-  - text: "Every effort has been made by the administration and other management boards to ensure that 
-    all students find VIT a very active, fun and 
-    resourceful place to spend their academic years. 
-    Aware of the impact these vital years can have on the 
-    minds of the future of our nation and the world, VIT 
-    strives to encourage, introduce and develop any and all 
-    activities to shape their minds. Through bringing clubs, 
-    chapters and college festivals, students are not only exposed 
+  - text: "VIT strives to encourage, introduce and develop any and all 
+    activities to shape their minds by bringing clubs, 
+    chapters and college festivals. Students are not only exposed 
     to a competitive environment inside the university but also 
     with reputed institutions across the country and the world.\n
     You can know more about:\n
@@ -273,10 +268,7 @@ More at : <a href='http://www.vit.ac.in/admissions/international'>this link</a>"
   utter_student_chapters:
     - text: "Student Chapters\n
 Multiple active Chapters keep the students engrossed in engaging activities 
-throughout the year. The Chapters always have multiple universities and colleges
- under them and this creates a student network stopping at no borders. 
- This cross-cultural interactions not only help students build an effective 
- network but also help them in learning new things constantly. Interacting with 
+throughout the year.  Interacting with 
  others has been one of the major sources of knowledge transmission since ages 
  and this helps in keeping it alive.\n
  Visit : <a href='http://www.vit.ac.in/campus/studentchapters'>this link</a>\n
@@ -333,8 +325,7 @@ throughout the year. The Chapters always have multiple universities and colleges
     "
 
   utter_academics:
-  - text: "Teaching at VIT University is structured around Thirteen schools of study. A student should register in one of the schools, depending on the degree/programme he/she is interested in pursuing. Research centers are also part of the schools, encouraging inter-departmental collaboration and opportunity for students to participate in exciting research projects. The university offers 27 Undergraduate, 30 Postgraduate, 4 Integrated Programmes and 4 Research programmes. In addition to full-time/part-time Ph.D., M.S.(BY RESEARCH) Degrees in Engineering and Management Disciplines, M.Phil, Ph.D., in Science and Languages, Integrated Ph.D. programmes also offered for engineering disciplines in selected schools.\n If you want to find more information about Schools, International Relations, FFCS, Centers, Library,\n check out here - <a href='http://vit.ac.in/academics'>this link</a>"
-
+  - text: "Teaching at VIT University is structured around Thirteen schools of study. The university offers 27 Undergraduate, 30 Postgraduate, 4 Integrated Programmes and 4 Research programmes. In addition to full-time/part-time Ph.D., M.S.(BY RESEARCH) Degrees in Engineering and Management Disciplines, M.Phil, Ph.D., in Science and Languages, Integrated Ph.D. programmes also offered for engineering disciplines in selected schools.\n More at <a href='http://vit.ac.in/academics'>this link</a>"
 
   utter_ffcs:
   - text: "FFCS is a way in which a student has complete freedom in tailoring his course the way he wishes. It accommodates the wants and needs of the entire student community as a whole. With this system, a student can prepare his/her own timetable with the specific courses he/she intends to do in that semester along with the timings of classes and choice of professors.\n More info at <a href='http://vit.ac.in/academics/ffcs'>this link</a>"
@@ -349,7 +340,8 @@ throughout the year. The Chapters always have multiple universities and colleges
   - text: "The Central Library is centrally air-conditioned, well-protected with fire alarm, Flap Barrier and CCTV surveillance. It has specialized collections of Books, Journals & other resources in Sciences, Engineering and Technology, Biotechnology, Humanities, Social Sciences and Management ranging from printed books, e-books, back volumes and CDs/DVDs.\n More information can be found at <a href='http://vit.ac.in/academics/library'>this link</a>"
 
   utter_international_relations:
-  - text: "A very sophisticated International Relations Office has been established to help in the internationalization efforts. The office facilitates the initiation and follow-up of international cooperation with substantial faculty & student exchange, joint R&D and Joint Programmes. It also takes care of the international students enrolled in the University in addition to the already existing exemplary guest care.\n More information can be found at <a href='http://vit.ac.in/academics/internationalRelations'>this link</a>"
+  - text: "A very sophisticated International Relations Office has been established to help in the internationalization efforts. The office facilitates the initiation and follow-up of international cooperation with substantial faculty & student exchange, joint R&D and Joint Programmes. It also takes care of the international students enrolled in the University in addition to the already existing exemplary guest care.\n
+  \n More information can be found at <a href='http://vit.ac.in/academics/internationalRelations'>this link</a>"
 
   utter_schools:
   - text: "Teaching at VIT is structured around ten schools of study. A student is registered in one of the schools, depending on the degree/programme he/she student is interested in pursuing. Research centers are also part of the schools, encouraging interdepartmental collaboration and opportunity for students to participate in exciting research projects. The university offers 27 Undergraduate and 30 Postgraduate programmes.\n More information can be found at <a href='http://vit.ac.in/academics/schools'>this link</a>"

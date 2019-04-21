@@ -25,10 +25,10 @@
 - debate
 - fashion
 - celebrities
-- Cultural fest
+- Cultural
 - culture
 - diversity
-- annual ISO certified sports cultural fest
+- annual ISO certified sports cultural
 - entertainers
 - arm wrestling
 - human hand
@@ -36,7 +36,7 @@
 - literature
 
 ## intent:gravitas
-- technical fest
+- technical
 - design carnival
 - showcase their skills 
 - technology
