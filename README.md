@@ -15,6 +15,7 @@
 - v1.7.0 Added Sentimental Analysis. 
 - v1.8.0 Custom NLU Pipeline added
 
+
 ### Note:
 Run "make model_remove" after doing changes in the dataset. 
 
