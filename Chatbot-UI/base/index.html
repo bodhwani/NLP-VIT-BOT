@@ -274,6 +274,14 @@ Assisted Mode <br>
       var ttime=450;
       var stime=450;
       
+      function arrayRemove(arr, value) {
+
+         return arr.filter(function(ele){
+             return ele != value;
+         });
+
+      }
+
       function texttime(el,i) {
         console.log(el);
         setTimeout(function() {
@@ -298,7 +306,6 @@ Assisted Mode <br>
                                   );
       }
       function clickHandler2(str) {
-        str=toTitleCase(str);
         $(".card-body")[0].innerHTML+=`<div class="row justify-content-end marign_add3">
 <span class="badge badge-pill badge-info text_receive" id="result">`+str+`</span>
       </div>`;
@@ -321,12 +328,17 @@ Assisted Mode <br>
           for(var i=0;i<response.length;i++)
           {
             var a = response[i]["text"].split("\n")
+            arrayRemove(a,"");
             $(".card-body")[0].innerHTML+=`<div class="row marign_add3">
 <span class="badge-success text_send" id="result">`+a.join("</span></div><div class='row marign_add3'><span class='badge-success text_send' id='result'>")+`</span>
       </div>`;
             var elem = document.getElementsByClassName('card-body')[0];
             elem.scrollTop = elem.scrollHeight;
-            responsiveVoice.speak(a.join('.'));
+
+          var res = a.join('.').replace(/<[^>]*>/gi, "");
+          
+            if($("#assist").prop("checked"))
+            responsiveVoice.speak(res);
             setTimeout(function (){
               console.log("WAIT")},2000);
           }

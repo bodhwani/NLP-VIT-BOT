@@ -333,17 +333,17 @@ throughout the year.  Interacting with
 
   utter_placements:
   - text: "The PAT centre plays an integral role in creating the illustrious placement record of VIT. It ensures smooth functioning of the placement activities in the campus. The centre further facilitates training activities of the students and makes sure they get placed in the best of both national and international companies. \n
-  More at: <a href='http://vit.ac.in/placement'>http://vit.ac.in/placement</a>
+  More at: <a href='http://vit.ac.in/placement'>this link</a>
   "
 
   utter_placements_dream:
   - text: "At VIT, More than 300 companies have visited this year for offering CTC of more than 4.5 Lakhs Per Annum. At VIT, students are enabled to have multiple offers in dream category they can choose IT Services/product/consulting/banking/ Core Engineering companies with regard of CTC which envisages their area of interest in which they wish to pursue their career. \n
-  More at: <a href='http://vit.ac.in/placement/dreamoffers'>http://vit.ac.in/placement/dreamoffers</a>
+  More at: <a href='http://vit.ac.in/placement/dreamoffers'>this link</a>
   "
 
   utter_PAT:
   - text: "If VIT has placement records then it is because of PAT centre. Not only does this function as the working body to facilitate smooth working of the placement activities in the campus but also works to facilitate the training activities of the students and makes sure they get placed in the best of both national and international companies. \n
-  More at: <a href='http://vit.ac.in/placement/pat'>http://vit.ac.in/placement/pat</a>
+  More at: <a href='http://vit.ac.in/placement/pat'>this link</a>
   "
 
   
